@@ -1,7 +1,10 @@
 Welcome back to FEAR Online!
 
-This is a fan-run community server. Log in with any name and password, pick a channel, then:
- - GAME ROOM LIST to join a match
- - HOST GAME to create one (it shows up for everyone)
+Play with your Steam friends - no servers, no port forwarding, and nobody sees anyone's IP (traffic goes through Steam's relay network).
+
+ - HOST: starts a game server on your PC and gives you an invite code (copied to your clipboard).
+ - JOIN: paste a friend's invite code and press JOIN - or right-click them in your Steam friends list > Join Game.
+
+In game: log in with any name/password, pick a channel. The host makes a room (HOST GAME), friends double-click it in GAME ROOM LIST.
 
 Found a bug? Press SUPPORT to report it.

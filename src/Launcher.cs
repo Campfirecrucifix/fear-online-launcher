@@ -18,7 +18,8 @@ class L : Form {
   const string REPO = "Campfirecrucifix/fear-online-launcher"; string RAW = "https://raw.githubusercontent.com/" + REPO + "/main/";
   string game, skin, status = "Checking for updates...", progText = "Loading...", news = "", ver = ""; double p1, p2;
   Dictionary<string, object> m; List<KeyValuePair<string, Action>> todo = new List<KeyValuePair<string, Action>>();
-  Bitmap top, bottom, gauge, banner; List<Btn> btns = new List<Btn>(); Btn start, check; Point drag; bool soundOn = true;
+  Bitmap top, bottom, gauge, banner; List<Btn> btns = new List<Btn>(); Btn start, check, join; Point drag; bool soundOn = true;
+  TextBox code; List<Process> kids = new List<Process>(); public static string AutoJoin; string invite;
   Font small = new Font("Segoe UI", 8f), bold = new Font("Segoe UI", 9f, FontStyle.Bold), big = new Font("Segoe UI", 20f, FontStyle.Bold);
 
   static string Hash(byte[] d) { using (var s = SHA256.Create()) return BitConverter.ToString(s.ComputeHash(d)).Replace("-", "").ToLower(); }
@@ -48,14 +49,19 @@ class L : Form {
     Btn support = new Btn { R = new Rectangle(626, 622, 80, 18), Img = Skin("BTN_support.bmp"), Click = () => Process.Start("https://github.com/" + REPO + "/issues") };
     check = new Btn { R = new Rectangle(708, 622, 80, 18), Img = Skin("BTN_check.bmp"), Click = () => { todo.Clear(); m = null; Recheck(); } };
     start = new Btn { R = new Rectangle(802, 569, 184, 74), Img = Skin("BTN_start.bmp"), Text = "START", Font = big, Enabled = false, Click = Go, Sound = "btnDownStart.wav" };
-    btns.AddRange(new[] { close, min, snd, notice, support, check, start });
+    join = new Btn { R = new Rectangle(708, 648, 80, 22), Text = "JOIN", Font = bold, Enabled = false, Click = () => Join(code.Text) };
+    code = new TextBox { Location = new Point(500, 649), Size = new Size(200, 20), BackColor = Color.FromArgb(20, 26, 36), ForeColor = Color.Gainsboro, BorderStyle = BorderStyle.FixedSingle, Font = bold, CharacterCasing = CharacterCasing.Upper };
+    code.KeyDown += (s2, e2) => { if (e2.KeyCode == Keys.Enter && join.Enabled) Join(code.Text); };
+    Controls.Add(code); if (AutoJoin != null) code.Text = AutoJoin;
+    FormClosed += (s2, e2) => StopKids();
+    btns.AddRange(new[] { close, min, snd, notice, support, check, start, join });
     if (notice.Img == null) notice.Text = "NOTICE"; if (support.Img == null) support.Text = "SUPPORT"; if (check.Img == null) check.Text = "CHECK FILES";
     foreach (var b in new[] { notice, support, check }) b.Font = small;
     if (close.Img == null) { close.Text = "X"; min.Text = "_"; snd.Text = "♪"; foreach (var b in new[] { close, min, snd }) b.Font = small; }
     Shown += (s, e) => Recheck();
   }
   void Redraw() { if (IsHandleCreated) BeginInvoke((Action)Invalidate); }
-  void Set(string s, string startText, bool on) { status = s; if (startText != null) start.Text = startText; start.Enabled = on; check.Enabled = on; Redraw(); }
+  void Set(string s, string startText, bool on) { status = s; if (startText != null) start.Text = startText; start.Enabled = on; check.Enabled = on; if (join != null) join.Enabled = on && start.Text == "HOST"; Redraw(); }
   void Recheck() { start.Enabled = check.Enabled = false; status = "Checking for updates..."; p1 = p2 = 0; Invalidate(); new Thread(Check) { IsBackground = true }.Start(); }
 
   protected override void OnPaint(PaintEventArgs e) {
@@ -76,7 +82,8 @@ class L : Form {
     for (int i = 0; i < 2; i++) { int w = (int)(686 * Math.Max(0, Math.Min(1, i == 0 ? p1 : p2))); if (w > 0) { var r = new Rectangle(20, 595 + 12 * i, w, 6);
       if (gauge != null) g.DrawImage(gauge, r, new Rectangle(0, 0, Math.Max(1, w * gauge.Width / 686), gauge.Height), GraphicsUnit.Pixel); else g.FillRectangle(Brushes.SkyBlue, r); } }
     TextRenderer.DrawText(g, progText, small, new Point(708, 600), Color.FromArgb(150, 190, 235));
-    TextRenderer.DrawText(g, status, small, new Rectangle(20, 618, 470, 30), Color.FromArgb(150, 190, 235), TextFormatFlags.WordBreak);
+    TextRenderer.DrawText(g, status, small, new Rectangle(20, 618, 470, 60), Color.FromArgb(150, 190, 235), TextFormatFlags.WordBreak);
+    TextRenderer.DrawText(g, "Invite code (or Steam > Join Game):", small, new Point(498, 634), Color.FromArgb(150, 190, 235));
     foreach (var b in btns) b.Paint(g);
   }
   Btn At(Point p) { return btns.FirstOrDefault(b => b.R.Contains(p)); }
@@ -143,7 +150,7 @@ class L : Form {
       }
       p1 = p2 = 1; progText = "Ready";
       if (todo.Count > 0) { p1 = p2 = 0; progText = todo.Count + " update" + (todo.Count > 1 ? "s" : ""); Set("Update available. Press PATCH.", "PATCH", true); }
-      else Set("Up to date. Server: " + Server() + "   Press START to play.", "START", true);
+      else { Set("Up to date. HOST a game for your Steam friends, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); }
     } catch (Exception e) { m = null; Set("Error: " + e.Message + "  (press CHECK FILES to retry)", null, false); check.Enabled = true; Redraw(); }
   }
   void GetFile(Dictionary<string, object> f) {
@@ -162,16 +169,75 @@ class L : Form {
     if (todo.Count > 0) {
       Set("Patching...", null, false);
       new Thread(() => { try { for (int i = 0; i < todo.Count; i++) { progText = todo[i].Key; p1 = 0; Redraw(); todo[i].Value(); p1 = 1; p2 = (i + 1.0) / todo.Count; Redraw(); }
-                                todo.Clear(); progText = "Complete"; Set("Patch complete! Server: " + Server() + "   Press START to play.", "START", true); }
+                                todo.Clear(); progText = "Complete"; Set("Patch complete! HOST a game, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); }
                          catch (Exception e) { todo.Clear(); m = null; Set("Patch failed: " + e.Message + " (try running as administrator, then CHECK FILES)", null, false); check.Enabled = true; Redraw(); } }) { IsBackground = true }.Start();
       return;
     }
-    // pick a reachable address: public IP, else the host's LAN IP (same home network; most routers can't loop back), else this PC
-    var ips = new List<string> { Server() };
-    string ip = ips.FirstOrDefault(a => Reachable(a, Convert.ToInt32(m["port"])));
-    if (ip == null) { Set("Server " + Server() + " is offline. Put the host's address in server.txt next to Engine.exe.", null, true); return; }
-    Process.Start(new ProcessStartInfo(Path.Combine(game, "Engine.exe"), "+PB none +LoginServerIP " + ip + " +LoginServerPort " + m["port"] + " +SkipSplashScreens 1 +DisableMovies 1") { WorkingDirectory = game });
-    Close();
+    Host();
   }
-  [STAThread] static void Main() { Application.EnableVisualStyles(); Application.Run(new L()); }
+  // ---- hosting / joining through Steam (FearHost package: embedded Python server + FearLink Steam tunnel) ----
+  string HostDir { get { return Path.Combine(game, "FearHost"); } }
+  void EnsurePackage() {
+    var want = m.ContainsKey("host_sha256") ? (string)m["host_sha256"] : null; var stamp = Path.Combine(HostDir, "package.sha256");
+    if (want == null || (File.Exists(stamp) && File.ReadAllText(stamp).Trim() == want)) return;
+    progText = "FearHost"; status = "Downloading host/join package (first time only)..."; Redraw();
+    var d = Get(RAW + (string)m["host_zip"]); if (Hash(d) != want) throw new Exception("host package download was corrupt");
+    StopKids(); KillStale();
+    if (Directory.Exists(HostDir)) Directory.Delete(HostDir, true);
+    var zip = Path.Combine(game, "FearHost.zip"); File.WriteAllBytes(zip, d);
+    System.IO.Compression.ZipFile.ExtractToDirectory(zip, HostDir); File.Delete(zip); File.WriteAllText(stamp, want);
+  }
+  static void KillStale() {
+    foreach (var p in Process.GetProcessesByName("FearLink")) try { p.Kill(); } catch { }
+    foreach (var p in Process.GetProcessesByName("python")) try { if (p.MainModule.FileName.IndexOf("FearHost", StringComparison.OrdinalIgnoreCase) >= 0) p.Kill(); } catch { }
+  }
+  Process Kid(string exe, string args, string log) {
+    var si = new ProcessStartInfo(exe, args) { WorkingDirectory = HostDir, UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true };
+    si.EnvironmentVariables["PUBLIC_IP"] = "127.0.0.1"; var p = Process.Start(si); kids.Add(p);
+    var w = new StreamWriter(Path.Combine(HostDir, log)) { AutoFlush = true };
+    p.OutputDataReceived += (s, e) => { if (e.Data != null) lock (w) w.WriteLine(e.Data); };
+    p.ErrorDataReceived += (s, e) => { if (e.Data != null) lock (w) w.WriteLine(e.Data); };
+    p.BeginOutputReadLine(); p.BeginErrorReadLine(); return p;
+  }
+  void StopKids() { foreach (var p in kids) try { if (!p.HasExited) p.Kill(); } catch { } kids.Clear(); }
+  void Engine(Action exited) {
+    var g = Process.Start(new ProcessStartInfo(Path.Combine(game, "Engine.exe"), "+PB none +LoginServerIP 127.0.0.1 +LoginServerPort 30003 +SkipSplashScreens 1 +DisableMovies 1") { WorkingDirectory = game });
+    new Thread(() => { g.WaitForExit(); try { BeginInvoke(exited); } catch { } }) { IsBackground = true }.Start();
+  }
+  static bool WaitPort(int port, int ms) { var t = DateTime.Now; while ((DateTime.Now - t).TotalMilliseconds < ms) { if (Reachable("127.0.0.1", port)) return true; Thread.Sleep(300); } return false; }
+  void Busy(string s) { start.Enabled = check.Enabled = join.Enabled = false; status = s; Redraw(); }
+  void Host() {
+    Busy("Starting your game server...");
+    new Thread(() => { try {
+      EnsurePackage(); StopKids(); KillStale();
+      var py = Path.Combine(HostDir, @"python\python.exe");
+      foreach (var port in new[] { 30003, 30004, 30005, 30015, 30025, 30035 }) Kid(py, "-u proud.py " + port, "server_" + port + ".log");
+      var inv = Path.Combine(HostDir, "invite.txt"); if (File.Exists(inv)) File.Delete(inv);
+      var link = Kid(Path.Combine(HostDir, "FearLink.exe"), "host", "fearlink.log");
+      for (int i = 0; i < 50 && !File.Exists(inv) && !link.HasExited; i++) Thread.Sleep(200);
+      if (!File.Exists(inv)) throw new Exception("Steam tunnel failed to start (is Steam running and logged in?). See FearHost\\fearlink.log");
+      invite = File.ReadAllText(inv).Trim();
+      if (!WaitPort(30003, 15000)) throw new Exception("game server failed to start. See FearHost\\server_30003.log");
+      BeginInvoke((Action)(() => {
+        try { Clipboard.SetText(invite); } catch { }
+        Set("HOSTING. Invite code: " + invite + " (copied). Steam friends can also right-click you > Join Game. Keep this launcher open while you play; closing it stops the server.", "STOP", true);
+        join.Enabled = false; start.Click = StopHosting; Engine(() => { }); WindowState = FormWindowState.Minimized; }));
+    } catch (Exception e) { BeginInvoke((Action)(() => { StopKids(); Set("Host failed: " + e.Message, "HOST", true); })); } }) { IsBackground = true }.Start();
+  }
+  void StopHosting() { StopKids(); start.Click = Go; Set("Server stopped. HOST again, or enter an invite code and JOIN.", "HOST", true); }
+  void Join(string c) {
+    c = (c ?? "").Trim(); if (c == "") { Set("Enter the host's invite code (looks like FEAR-XXXXXX), then press JOIN.", null, true); return; }
+    Busy("Connecting to host through Steam...");
+    new Thread(() => { try {
+      EnsurePackage(); StopKids(); KillStale();
+      var link = Kid(Path.Combine(HostDir, "FearLink.exe"), "join " + c, "fearlink.log");
+      if (!WaitPort(30003, 20000) || link.HasExited) throw new Exception("could not reach the host. Check the code, that the host is still hosting, and that Steam is running. See FearHost\\fearlink.log");
+      BeginInvoke((Action)(() => {
+        Set("Connected to " + c + ". Starting the game...", "HOST", false);
+        Engine(() => { StopKids(); Close(); }); WindowState = FormWindowState.Minimized; }));
+    } catch (Exception e) { BeginInvoke((Action)(() => { StopKids(); Set("Join failed: " + e.Message, "HOST", true); })); } }) { IsBackground = true }.Start();
+  }
+  [STAThread] static void Main(string[] args) {
+    int i = Array.FindIndex(args, a => a.Equals("+fearjoin", StringComparison.OrdinalIgnoreCase)); if (i >= 0 && i + 1 < args.Length) AutoJoin = args[i + 1];  // Steam "Join Game"
+    Application.EnableVisualStyles(); Application.Run(new L()); }
 }

@@ -1,7 +1,7 @@
 {
- "version": 11,
+ "version": 12,
  "port": 30003,
- "message": "Clean release",
+ "message": "Steam friends hosting: HOST / JOIN with invite codes",
  "files": [],
  "patches": [
   {
@@ -12,8 +12,10 @@
    "new": "B0 01 C3"
   }
  ],
- "launcher_sha256": "a4f11a2bd9ae012136668083a513b46b71914f51f41e69a5b707e6f42a9c56c7",
- "news": "Welcome back to FEAR Online!\n\nThis is a fan-run community server. Log in with any name and password, pick a channel, then:\n - GAME ROOM LIST to join a match\n - HOST GAME to create one (it shows up for everyone)\n\nFound a bug? Press SUPPORT to report it.",
+ "launcher_sha256": "25522023c4a83ec349588da6aa5fc00c321eba0d043ceaa9be14544c0fd69688",
+ "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, and nobody sees anyone's IP (traffic goes through Steam's relay network).\n\n - HOST: starts a game server on your PC and gives you an invite code (copied to your clipboard).\n - JOIN: paste a friend's invite code and press JOIN - or right-click them in your Steam friends list > Join Game.\n\nIn game: log in with any name/password, pick a channel. The host makes a room (HOST GAME), friends double-click it in GAME ROOM LIST.\n\nFound a bug? Press SUPPORT to report it.",
  "banner": "banner.jpg",
- "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba"
+ "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
+ "host_zip": "FearHost.zip",
+ "host_sha256": "1ba0dff5a2bdf8f4d66964515feb26ed308b1baa2d15ff31e4a2d15f88112417"
 }
