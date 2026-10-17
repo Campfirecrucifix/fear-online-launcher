@@ -193,7 +193,7 @@ class L : Form {
   }
   Process Kid(string exe, string args, string log) {
     var si = new ProcessStartInfo(exe, args) { WorkingDirectory = HostDir, UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true };
-    si.EnvironmentVariables["PUBLIC_IP"] = "127.0.0.1"; var p = Process.Start(si); kids.Add(p);
+    si.EnvironmentVariables["PUBLIC_IP"] = "127.0.0.1"; si.EnvironmentVariables["BIND"] = "127.0.0.1"; var p = Process.Start(si); kids.Add(p);
     var w = new StreamWriter(Path.Combine(HostDir, log)) { AutoFlush = true };
     p.OutputDataReceived += (s, e) => { if (e.Data != null) lock (w) w.WriteLine(e.Data); };
     p.ErrorDataReceived += (s, e) => { if (e.Data != null) lock (w) w.WriteLine(e.Data); };

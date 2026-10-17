@@ -267,7 +267,7 @@ try:  # dev convenience: replace a stale server on this port
         if cn.laddr.port == PORT and cn.status == "LISTEN" and cn.pid != os.getpid(): psutil.Process(cn.pid).kill()
     time.sleep(0.5)
 except ImportError: pass
-s = socket.socket(); s.bind(("0.0.0.0", PORT)); s.listen()
+s = socket.socket(); s.bind((os.environ.get("BIND", "0.0.0.0"), PORT)); s.listen()  # BIND=127.0.0.1 for Steam-tunnel hosting (no firewall prompt)
 log("listening", PORT)
 while True:
     c, a = s.accept(); threading.Thread(target=handle, args=(c, a), daemon=True).start()
