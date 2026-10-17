@@ -19,7 +19,7 @@ class L : Form {
   string game, skin, status = "Checking for updates...", progText = "Loading...", news = "", ver = ""; double p1, p2;
   Dictionary<string, object> m; List<KeyValuePair<string, Action>> todo = new List<KeyValuePair<string, Action>>();
   Bitmap top, bottom, gauge, banner; List<Btn> btns = new List<Btn>(); Btn start, check, join; Point drag; bool soundOn = true;
-  TextBox code; List<Process> kids = new List<Process>(); public static string AutoJoin; string invite;
+  TextBox code; List<Process> kids = new List<Process>(); public static string AutoJoin; public static bool AutoHost; string invite;
   Font small = new Font("Segoe UI", 8f), bold = new Font("Segoe UI", 9f, FontStyle.Bold), big = new Font("Segoe UI", 20f, FontStyle.Bold);
 
   static string Hash(byte[] d) { using (var s = SHA256.Create()) return BitConverter.ToString(s.ComputeHash(d)).Replace("-", "").ToLower(); }
@@ -150,7 +150,7 @@ class L : Form {
       }
       p1 = p2 = 1; progText = "Ready";
       if (todo.Count > 0) { p1 = p2 = 0; progText = todo.Count + " update" + (todo.Count > 1 ? "s" : ""); Set("Update available. Press PATCH.", "PATCH", true); }
-      else { Set("Up to date. HOST a game for your Steam friends, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); }
+      else { Set("Up to date. HOST a game for your Steam friends, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); else if (AutoHost) { AutoHost = false; BeginInvoke((Action)Go); } }
     } catch (Exception e) { m = null; Set("Error: " + e.Message + "  (press CHECK FILES to retry)", null, false); check.Enabled = true; Redraw(); }
   }
   void GetFile(Dictionary<string, object> f) {
@@ -169,7 +169,7 @@ class L : Form {
     if (todo.Count > 0) {
       Set("Patching...", null, false);
       new Thread(() => { try { for (int i = 0; i < todo.Count; i++) { progText = todo[i].Key; p1 = 0; Redraw(); todo[i].Value(); p1 = 1; p2 = (i + 1.0) / todo.Count; Redraw(); }
-                                todo.Clear(); progText = "Complete"; Set("Patch complete! HOST a game, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); }
+                                todo.Clear(); progText = "Complete"; Set("Patch complete! HOST a game, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); else if (AutoHost) { AutoHost = false; BeginInvoke((Action)Go); } }
                          catch (Exception e) { todo.Clear(); m = null; Set("Patch failed: " + e.Message + " (try running as administrator, then CHECK FILES)", null, false); check.Enabled = true; Redraw(); } }) { IsBackground = true }.Start();
       return;
     }
@@ -239,5 +239,6 @@ class L : Form {
   }
   [STAThread] static void Main(string[] args) {
     int i = Array.FindIndex(args, a => a.Equals("+fearjoin", StringComparison.OrdinalIgnoreCase)); if (i >= 0 && i + 1 < args.Length) AutoJoin = args[i + 1];  // Steam "Join Game"
+    AutoHost = args.Any(a => a.Equals("+fearhost", StringComparison.OrdinalIgnoreCase));  // shortcut / automation: host immediately
     Application.EnableVisualStyles(); Application.Run(new L()); }
 }

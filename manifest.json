@@ -1,7 +1,7 @@
 {
- "version": 13,
+ "version": 14,
  "port": 30003,
- "message": "Host server binds to localhost only (no firewall prompt)",
+ "message": "Launcher: +fearhost shortcut",
  "files": [],
  "patches": [
   {
@@ -12,7 +12,7 @@
    "new": "B0 01 C3"
   }
  ],
- "launcher_sha256": "54e645aedf3ca284664dfd17efd3a43af5a27839891f0053802a56faa496565a",
+ "launcher_sha256": "f045f6d102ae09fc0e8b698258716b1dcb9adca53fa9e81698339ec4ba56d1f2",
  "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, and nobody sees anyone's IP (traffic goes through Steam's relay network).\n\n - HOST: starts a game server on your PC and gives you an invite code (copied to your clipboard).\n - JOIN: paste a friend's invite code and press JOIN - or right-click them in your Steam friends list > Join Game.\n\nIn game: log in with any name/password, pick a channel. The host makes a room (HOST GAME), friends double-click it in GAME ROOM LIST.\n\nFound a bug? Press SUPPORT to report it.",
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
