@@ -1,0 +1,19 @@
+{
+ "version": 11,
+ "port": 30003,
+ "message": "Clean release",
+ "files": [],
+ "patches": [
+  {
+   "name": "disable dead XignCode anti-cheat",
+   "file": "Game\\ZNetwork.dll",
+   "offset": "3ED0",
+   "old": "E8 8B DD",
+   "new": "B0 01 C3"
+  }
+ ],
+ "launcher_sha256": "a4f11a2bd9ae012136668083a513b46b71914f51f41e69a5b707e6f42a9c56c7",
+ "news": "Welcome back to FEAR Online!\n\nThis is a fan-run community server. Log in with any name and password, pick a channel, then:\n - GAME ROOM LIST to join a match\n - HOST GAME to create one (it shows up for everyone)\n\nFound a bug? Press SUPPORT to report it.",
+ "banner": "banner.jpg",
+ "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba"
+}

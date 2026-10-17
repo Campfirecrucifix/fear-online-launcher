@@ -1,0 +1,7 @@
+Welcome back to FEAR Online!
+
+This is a fan-run community server. Log in with any name and password, pick a channel, then:
+ - GAME ROOM LIST to join a match
+ - HOST GAME to create one (it shows up for everyone)
+
+Found a bug? Press SUPPORT to report it.
