@@ -1,8 +1,25 @@
 {
- "version": 16,
+ "version": 17,
  "port": 30003,
- "message": "Server: close empty rooms, room leave",
- "files": [],
+ "message": "Fix looping menu music, Steam names, no room kick timer, map fixes",
+ "files": [
+  {
+   "path": "Game\\Database_string\\Loki.strdb",
+   "sha256": "c428a5434b13f223fe51b557e7f425d05e0a0946b858319c7ea2e2a8e0ad3781"
+  },
+  {
+   "path": "Game\\Database_string\\English\\Loki.strdb",
+   "sha256": "c428a5434b13f223fe51b557e7f425d05e0a0946b858319c7ea2e2a8e0ad3781"
+  },
+  {
+   "path": "Game\\Interface\\menu\\main.gfx",
+   "sha256": "cdd6efa7a8ef29dfc35d397c05b6b241d87b06dd02d02722c552c5eb28a22c17"
+  },
+  {
+   "path": "Game\\Interface\\menu\\mp.gfx",
+   "sha256": "8bbca15b254ffe0dc61b71be514baa98af157f5af34c14ec1efb5a00b9caeb3e"
+  }
+ ],
  "patches": [
   {
    "name": "disable dead XignCode anti-cheat",
@@ -10,6 +27,27 @@
    "offset": "3ED0",
    "old": "E8 8B DD",
    "new": "B0 01 C3"
+  },
+  {
+   "name": "disable room ready/start kick timers",
+   "file": "Game\\GameClient.dll",
+   "offset": "5A540",
+   "old": "0F B6 C3",
+   "new": "31 C0 90"
+  },
+  {
+   "name": "disable room ready/start kick timers",
+   "file": "Game\\GameClient.dll",
+   "offset": "5A54B",
+   "old": "0F 94 C0",
+   "new": "31 C0 90"
+  },
+  {
+   "name": "disable room ready/start kick timers",
+   "file": "Game\\GameClient.dll",
+   "offset": "5A572",
+   "old": "0F B6 D3",
+   "new": "31 D2 90"
   }
  ],
  "launcher_sha256": "f045f6d102ae09fc0e8b698258716b1dcb9adca53fa9e81698339ec4ba56d1f2",
@@ -17,5 +55,5 @@
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
  "host_zip": "FearHost.zip",
- "host_sha256": "890477109dbfc3487db9efaea62a8c64e4778770005e8127570fca7bfc6d904b"
+ "host_sha256": "75df16b191321b74e733dda1aae156d17a4b59cd481c9aac1a8b93af3af7d176"
 }
