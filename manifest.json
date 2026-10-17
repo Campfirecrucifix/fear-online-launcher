@@ -1,7 +1,7 @@
 {
- "version": 14,
+ "version": 15,
  "port": 30003,
- "message": "Launcher: +fearhost shortcut",
+ "message": "FearLink: fix Steam relay (no manual dispatch) + session accept callbacks",
  "files": [],
  "patches": [
   {
@@ -17,5 +17,5 @@
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
  "host_zip": "FearHost.zip",
- "host_sha256": "b725f8270aa9d0f9af74195248d7b16d162e0c5dbc524aa2c9d6b58c7f145c9a"
+ "host_sha256": "d8a117c1cd341586d49f44d6cf4dd06a2db23cf74bc6f3ecee3ce98ee0961ff1"
 }
