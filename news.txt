@@ -1,10 +1,16 @@
 Welcome back to FEAR Online!
 
-Play with your Steam friends - no servers, no port forwarding, and nobody sees anyone's IP (traffic goes through Steam's relay network).
+Play with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.
 
- - HOST: starts a game server on your PC and gives you an invite code (copied to your clipboard).
- - JOIN: paste a friend's invite code and press JOIN - or right-click them in your Steam friends list > Join Game.
+HOW TO PLAY TOGETHER (in this order):
+ 1. HOST clicks HOST, sends the invite code (already copied) to friends.
+ 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.
+ 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.
+ 4. FRIENDS click GAME ROOM LIST and double-click the host's room.
+ 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.
+    Anyone not in the room when the host starts is left out (no joining mid-match yet).
 
-In game: log in with any name/password, pick a channel. The host makes a room (HOST GAME), friends double-click it in GAME ROOM LIST.
+New in this version: PvP damage and kills work, players spawn on opposite teams, team score counts.
+Known issues: kill feed has no killer name, Tab scoreboard is empty, Demolition/Soul King don't work with 2 players.
 
 Found a bug? Press SUPPORT to report it.
