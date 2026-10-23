@@ -1,7 +1,7 @@
 {
- "version": 18,
+ "version": 19,
  "port": 30003,
- "message": "PvP damage + kills work, teams fixed, clearer join steps",
+ "message": "Tab scoreboard shows all players; room cleanup; known bugs list",
  "files": [
   {
    "path": "Game\\Database_string\\Loki.strdb",
@@ -97,12 +97,89 @@
    "offset": "16E91E",
    "old": "88 87 C4 08 00 00",
    "new": "E8 6D 89 3F 00 90"
+  },
+  {
+   "name": "player info: send EXIST instead of UPDATE (scoreboard/kill feed)",
+   "file": "Game\\GameServer.dll",
+   "offset": "E209A",
+   "old": "0F B6 8C 24 F4 01 00 00",
+   "new": "33 C9 41 90 90 90 90 90"
+  },
+  {
+   "name": "player info: send EXIST instead of UPDATE (scoreboard/kill feed)",
+   "file": "Game\\GameServer.dll",
+   "offset": "E20AF",
+   "old": "8A 84 24 F4 01 00 00",
+   "new": "B0 01 90 90 90 90 90"
+  },
+  {
+   "name": "player info: add EXIST players to client list (scoreboard/kill feed names)",
+   "file": "Game\\GameClient.dll",
+   "offset": "18B53B",
+   "old": "8B 4C 24 1F 51",
+   "new": "E9 50 02 00 00"
+  },
+  {
+   "name": "host: scoreboard team 1/2 in player info",
+   "file": "Game\\GameServer.dll",
+   "offset": "E1E69",
+   "old": "0F B6 8B CC 08 00 00",
+   "new": "E9 92 54 48 00 90 90"
+  },
+  {
+   "name": "host: scoreboard team 1/2 in player info",
+   "file": "Game\\GameServer.dll",
+   "offset": "567300",
+   "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
+   "new": "0F B6 8B C4 08 00 00 49 83 E1 01 41 E9 5F AB B7 FF"
+  },
+  {
+   "name": "host: send each client its own player info",
+   "file": "Game\\GameServer.dll",
+   "offset": "1C3711",
+   "old": "3B 81 E4 01 00 00 74 6B",
+   "new": "E9 2A 3C 3A 00 90 90 90"
+  },
+  {
+   "name": "host: send each client its own player info",
+   "file": "Game\\GameServer.dll",
+   "offset": "567340",
+   "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
+   "new": "3B 81 E4 01 00 00 74 38 6A 00 50 50 E8 00 00 00 00 59 8B 89 7F FA 0C 00 E8 FD AF AA FF 8B 86 E4 01 00 00 E9 B1 C3 C5 FF CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC 6A 00 50 50 E8 00 00 00 00 59 8B 89 47 FA 0C 00 E8 C5 AF AA FF E9 EA C3 C5 FF"
+  },
+  {
+   "name": "client: always add player info to player list",
+   "file": "Game\\GameClient.dll",
+   "offset": "18B527",
+   "old": "0F 85 93 02 00 00",
+   "new": "90 90 90 90 90 90"
+  },
+  {
+   "name": "client: always add player info to player list",
+   "file": "Game\\GameClient.dll",
+   "offset": "18B535",
+   "old": "0F 85 85 02 00 00",
+   "new": "90 90 90 90 90 90"
+  },
+  {
+   "name": "host: player slot = client id + 1",
+   "file": "Game\\GameServer.dll",
+   "offset": "E1E2A",
+   "old": "0F B6 83 C4 08 00 00",
+   "new": "E9 D1 55 48 00 90 90"
+  },
+  {
+   "name": "host: player slot = client id + 1",
+   "file": "Game\\GameServer.dll",
+   "offset": "567400",
+   "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
+   "new": "FF B3 E4 01 00 00 E8 00 00 00 00 58 8B 80 B5 FD 0C 00 FF 50 3C 83 C4 04 FE C0 88 83 C4 08 00 00 0F B6 C0 E9 09 AA B7 FF"
   }
  ],
- "launcher_sha256": "f045f6d102ae09fc0e8b698258716b1dcb9adca53fa9e81698339ec4ba56d1f2",
- "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST, sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n    Anyone not in the room when the host starts is left out (no joining mid-match yet).\n\nNew in this version: PvP damage and kills work, players spawn on opposite teams, team score counts.\nKnown issues: kill feed has no killer name, Tab scoreboard is empty, Demolition/Soul King don't work with 2 players.\n\nFound a bug? Press SUPPORT to report it.",
+ "launcher_sha256": "3fb77e7288a44a24e5bbd9aaba144f8ae2ce0fe565f928016cf0f9b8667a4e38",
+ "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST, sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n    Anyone not in the room when the host starts is left out (no joining mid-match yet).\n\nNew in this version: the Tab scoreboard shows all players (names + teams). Server cleans up old rooms.\nKnown bugs: the 2nd match in a room can get stuck on the loading screen (restart the game between matches for now); Demolition/Soul King don't work with 2 players; weapon select (N) is empty. Full list on the GitHub page.\n\nFound a bug? Press SUPPORT to report it.",
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
  "host_zip": "FearHost.zip",
- "host_sha256": "50897ac41b7768cef7437250c55cd25ada5da30cb574db0f5977097122ac14f9"
+ "host_sha256": "dab5615e3ea1ab48209d3a873e1d7b07272a4384aff2d582104f30b42f9b85f5"
 }

@@ -23,7 +23,19 @@ Play FEAR Online again with your Steam friends. One player hosts, friends join t
 
 If a friend can't see the room: they click **GAME ROOM LIST** again to refresh. If anything goes wrong, everyone closes the game and starts over from the host step.
 
-**Known issues:** the kill feed doesn't show the killer's name and the Tab scoreboard is empty (being worked on). Demolition and Soul King modes don't work in 2-player matches yet.
+## Known bugs
+
+- **Back-to-back matches:** after the first match in a room ends, the host (and sometimes everyone) can get stuck on the loading screen when the next match starts - you hear "start operation" but the screen never clears. Workaround: everyone closes the game and starts over from the host step for each match. Being worked on.
+- **Kill feed** may still be missing the killer's name (not re-tested since the scoreboard fix).
+- **Demolition** hangs on loading with 2 players; **Soul King** won't start.
+- **Weapon select menu (N)** is empty.
+- Guns jiggle while walking.
+- The channel tab shows "[ERROR: Invalid String ID]" (cosmetic).
+- No joining a match that's already in progress.
+
+Fixed recently: the **Tab scoreboard** now shows every player with their names and teams.
+
+## Notes
 
 Steam must be running and logged in (for the relay). The first HOST/JOIN downloads a ~12 MB package (`FearHost` folder: a small Python runtime running the game server, and FearLink, the Steam tunnel - source in `src/`).
 

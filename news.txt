@@ -10,7 +10,7 @@ HOW TO PLAY TOGETHER (in this order):
  5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.
     Anyone not in the room when the host starts is left out (no joining mid-match yet).
 
-New in this version: PvP damage and kills work, players spawn on opposite teams, team score counts.
-Known issues: kill feed has no killer name, Tab scoreboard is empty, Demolition/Soul King don't work with 2 players.
+New in this version: the Tab scoreboard shows all players (names + teams). Server cleans up old rooms.
+Known bugs: the 2nd match in a room can get stuck on the loading screen (restart the game between matches for now); Demolition/Soul King don't work with 2 players; weapon select (N) is empty. Full list on the GitHub page.
 
 Found a bug? Press SUPPORT to report it.

@@ -182,10 +182,14 @@ class L : Form {
     if (want == null || (File.Exists(stamp) && File.ReadAllText(stamp).Trim() == want)) return;
     progText = "FearHost"; status = "Downloading host/join package (first time only)..."; Redraw();
     var d = Get(RAW + (string)m["host_zip"]); if (Hash(d) != want) throw new Exception("host package download was corrupt");
-    StopKids(); KillStale();
-    if (Directory.Exists(HostDir)) Directory.Delete(HostDir, true);
-    var zip = Path.Combine(game, "FearHost.zip"); File.WriteAllBytes(zip, d);
-    System.IO.Compression.ZipFile.ExtractToDirectory(zip, HostDir); File.Delete(zip); File.WriteAllText(stamp, want);
+    StopKids(); KillStale(); System.Threading.Thread.Sleep(500);
+    var zip = Path.Combine(game, "FearHost.zip"); var tmp = HostDir + ".new"; File.WriteAllBytes(zip, d);
+    if (Directory.Exists(tmp)) Directory.Delete(tmp, true);
+    System.IO.Compression.ZipFile.ExtractToDirectory(zip, tmp); File.Delete(zip);
+    // swap in the new package only when the old one is fully removed (files can be briefly locked by a closing server)
+    for (int i = 0; Directory.Exists(HostDir); i++) {
+      try { Directory.Delete(HostDir, true); } catch { if (i > 20) throw new Exception("could not update FearHost - close any running FEAR Online servers and try again"); KillStale(); System.Threading.Thread.Sleep(500); } }
+    Directory.Move(tmp, HostDir); File.WriteAllText(stamp, want);
   }
   static void KillStale() {
     foreach (var p in Process.GetProcessesByName("FearLink")) try { p.Kill(); } catch { }
