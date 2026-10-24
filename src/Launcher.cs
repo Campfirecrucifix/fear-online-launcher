@@ -149,7 +149,7 @@ class L : Form {
         todo.Add(new KeyValuePair<string, Action>((string)p["file"], () => { File.Copy(path, path + ".bak", true); n.CopyTo(b, o); File.WriteAllBytes(path, b); }));
       }
       p1 = p2 = 1; progText = "Ready";
-      if (todo.Count > 0) { p1 = p2 = 0; progText = todo.Count + " update" + (todo.Count > 1 ? "s" : ""); Set("Update available. Press PATCH.", "PATCH", true); }
+      if (todo.Count > 0) { p1 = p2 = 0; progText = todo.Count + " update" + (todo.Count > 1 ? "s" : ""); Set("Update available. Press PATCH.", "PATCH", true); if (AutoJoin != null || AutoHost) BeginInvoke((Action)Go); }
       else { Set("Up to date. HOST a game for your Steam friends, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); else if (AutoHost) { AutoHost = false; BeginInvoke((Action)Go); } }
     } catch (Exception e) { m = null; Set("Error: " + e.Message + "  (press CHECK FILES to retry)", null, false); check.Enabled = true; Redraw(); }
   }

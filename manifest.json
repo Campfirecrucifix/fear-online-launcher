@@ -1,7 +1,7 @@
 {
- "version": 19,
+ "version": 20,
  "port": 30003,
- "message": "Tab scoreboard shows all players; room cleanup; known bugs list",
+ "message": "Launcher: invite links now apply updates automatically before joining.",
  "files": [
   {
    "path": "Game\\Database_string\\Loki.strdb",
@@ -176,7 +176,7 @@
    "new": "FF B3 E4 01 00 00 E8 00 00 00 00 58 8B 80 B5 FD 0C 00 FF 50 3C 83 C4 04 FE C0 88 83 C4 08 00 00 0F B6 C0 E9 09 AA B7 FF"
   }
  ],
- "launcher_sha256": "3fb77e7288a44a24e5bbd9aaba144f8ae2ce0fe565f928016cf0f9b8667a4e38",
+ "launcher_sha256": "7592baab86c81ddcec576f83832482f9b3244ec6a69a093c29f76f720ba0f6ae",
  "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST, sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n    Anyone not in the room when the host starts is left out (no joining mid-match yet).\n\nNew in this version: the Tab scoreboard shows all players (names + teams). Server cleans up old rooms.\nKnown bugs: the 2nd match in a room can get stuck on the loading screen (restart the game between matches for now); Demolition/Soul King don't work with 2 players; weapon select (N) is empty. Full list on the GitHub page.\n\nFound a bug? Press SUPPORT to report it.",
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
