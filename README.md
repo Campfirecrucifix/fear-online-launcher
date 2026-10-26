@@ -65,7 +65,7 @@ When a match ends everyone goes back to the room. The host can change the map/mo
 
 ## Known issues
 
-- **Demolition** can hang on the loading screen with 2 players, and **Soul King** won't start. Use the other modes.
+- **Soul King** is closed: its map isn't in the Steam version of the game (it kicked everyone while loading).
 - Joining a match that's already running isn't supported when a player hosts: be in the room before the host presses START.
 - The channel tab may show `[ERROR: Invalid String ID]` (cosmetic).
 
@@ -79,6 +79,11 @@ When a match ends everyone goes back to the room. The host can change the map/mo
 - It points the game at the local server / Steam tunnel instead of the dead official servers.
 
 **Undo everything:** Steam > FEAR Online > Properties > Installed Files > **Verify integrity of game files**, then delete `FEAR_Online_Launcher.exe` and the `FearHost` folder.
+
+## Changelog
+
+- **v1.0.1**: Demolition and the other round modes (everything but Team Deathmatch) no longer hang on the loading screen - the match starts only once every player has loaded. Each player's id now follows their room slot, so two players joining at the same moment can't both become host. Soul King is shown closed and can't be picked (its map isn't shipped with the Steam game). `src/` now matches the shipped server and tunnel.
+- **v1.0**: first full release.
 
 ## Source
 

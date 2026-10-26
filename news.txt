@@ -1,4 +1,4 @@
-FEAR Online Community Launcher v1.0
+FEAR Online Community Launcher v1.0.1
 
 Play with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.
 
@@ -9,5 +9,7 @@ HOW TO PLAY TOGETHER (in this order):
  4. FRIENDS click GAME ROOM LIST and double-click the host's room.
  5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.
 
+NEW in v1.0.1: Demolition and the other round modes no longer hang on the loading screen.
+Soul King is closed for now (its map is missing from the Steam version and kicked everyone).
 Back-to-back matches in the same room now work - no restart needed between matches.
 Full guide and known issues on the GitHub page. Found a bug? Press SUPPORT.

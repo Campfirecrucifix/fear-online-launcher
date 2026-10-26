@@ -11,6 +11,12 @@ static class S {  // Steamworks flat API
   const string D = "steam_api64.dll";
   [DllImport(D)] public static extern int SteamAPI_InitFlat(byte[] err);
   [DllImport(D)] public static extern void SteamAPI_Shutdown();
+  [DllImport(D)] public static extern void SteamAPI_RunCallbacks();
+  [DllImport(D)] public static extern void SteamAPI_RegisterCallback(IntPtr obj, int id);
+  [DllImport(D)] public static extern bool SteamAPI_ISteamNetworkingUtils_SetConfigValue(IntPtr i, int cfg, int scope, IntPtr obj, int type, ref IntPtr val);
+  [UnmanagedFunctionPointer(CallingConvention.Cdecl)] public delegate void NetCb(IntPtr p);
+  [UnmanagedFunctionPointer(CallingConvention.Cdecl)] public delegate void DbgCb(int t, IntPtr msg);
+  [DllImport(D)] public static extern void SteamAPI_ISteamNetworkingUtils_SetDebugOutputFunction(IntPtr i, int level, DbgCb f);
   [DllImport(D)] public static extern void SteamAPI_ManualDispatch_Init();
   [DllImport(D)] public static extern int SteamAPI_GetHSteamPipe();
   [DllImport(D)] public static extern void SteamAPI_ManualDispatch_RunFrame(int pipe);
@@ -24,6 +30,9 @@ static class S {  // Steamworks flat API
   [DllImport(D)] public static extern int SteamAPI_ISteamNetworkingMessages_ReceiveMessagesOnChannel(IntPtr i, int ch, IntPtr[] msgs, int max);
   [DllImport(D)] public static extern bool SteamAPI_ISteamNetworkingMessages_AcceptSessionWithUser(IntPtr i, ref Id id);
   [DllImport(D)] public static extern void SteamAPI_SteamNetworkingMessage_t_Release(IntPtr m);
+  [DllImport(D)] public static extern bool SteamAPI_ISteamNetworkingMessages_CloseSessionWithUser(IntPtr i, ref Id id);
+  [DllImport(D)] public static extern int SteamAPI_ISteamNetworkingMessages_GetSessionConnectionInfo(IntPtr i, ref Id id, byte[] info, byte[] quick);
+  [DllImport(D)] public static extern int SteamAPI_ISteamNetworkingUtils_GetRelayNetworkStatus(IntPtr i, byte[] st);
   [DllImport(D)] public static extern void SteamAPI_ISteamNetworkingUtils_InitRelayNetworkAccess(IntPtr i);
   [DllImport(D)] public static extern bool SteamAPI_ISteamNetworkingUtils_SetGlobalConfigValueInt32(IntPtr i, int cfg, int v);
   [DllImport(D)] public static extern ulong SteamAPI_ISteamUser_GetSteamID(IntPtr i);
@@ -38,18 +47,41 @@ abstract class Transport {  // send(peer, reliable, frame); Poll() returns (peer
   public abstract void Send(ulong peer, bool rel, byte[] f); public abstract IEnumerable<Tuple<ulong, bool, byte[]>> Poll(); public virtual void Tick() { }
   public Func<ulong, bool> Accept = p => true; public Action<ulong> JoinRequest = null; public ulong Me;
 }
+class SteamCb {  // fake CCallbackBase for SteamAPI_RegisterCallback (MSVC x64 vtable: RunCallResult, Run, GetSize)
+  [UnmanagedFunctionPointer(CallingConvention.ThisCall)] delegate void RunD(IntPtr self, IntPtr p);
+  [UnmanagedFunctionPointer(CallingConvention.ThisCall)] delegate void RunResD(IntPtr self, IntPtr p, bool io, ulong h);
+  [UnmanagedFunctionPointer(CallingConvention.ThisCall)] delegate int SizeD(IntPtr self);
+  static List<object> keep = new List<object>();
+  public static void Register(int id, int size, Action<IntPtr> f) {
+    RunD run = (self, p) => { try { f(p); } catch (Exception e) { Log.W("callback error: " + e.Message); } };
+    RunResD res = (self, p, io, h) => run(self, p); SizeD sz = self => size; keep.Add(run); keep.Add(res); keep.Add(sz);
+    var vt = Marshal.AllocHGlobal(24); Marshal.WriteIntPtr(vt, 0, Marshal.GetFunctionPointerForDelegate(res)); Marshal.WriteIntPtr(vt, 8, Marshal.GetFunctionPointerForDelegate(run)); Marshal.WriteIntPtr(vt, 16, Marshal.GetFunctionPointerForDelegate(sz));
+    var o = Marshal.AllocHGlobal(32); for (int i = 0; i < 32; i++) Marshal.WriteByte(o, i, 0); Marshal.WriteIntPtr(o, 0, vt); Marshal.WriteInt32(o, 12, id);
+    S.SteamAPI_RegisterCallback(o, id);
+  }
+}
 class SteamT : Transport {
-  IntPtr nm, fr; int pipe; object lk = new object();
+  IntPtr nm, fr, ut; int pipe; DateTime nextDiag = DateTime.Now; public HashSet<ulong> Peers = new HashSet<ulong>(); object lk = new object();
   public SteamT() {
-    var err = new byte[1024]; S.SteamAPI_ManualDispatch_Init();  // must precede init
+    var err = new byte[1024]; // NOTE: no ManualDispatch - it stalls the relay config fetch (relay net stuck at 'Waiting')
     if (SteamAPI_Init(err) != 0) throw new Exception("Steam not running / not logged in: " + Encoding.UTF8.GetString(err).TrimEnd('\0'));
     pipe = S.SteamAPI_GetHSteamPipe();
-    var ut = S.SteamAPI_SteamNetworkingUtils_SteamAPI_v004();
+    ut = S.SteamAPI_SteamNetworkingUtils_SteamAPI_v004();
     S.SteamAPI_ISteamNetworkingUtils_SetGlobalConfigValueInt32(ut, 104, 0);  // P2P_Transport_ICE_Enable = disable: relay only, IPs never exposed
     S.SteamAPI_ISteamNetworkingUtils_InitRelayNetworkAccess(ut);
+    onReq = p => { var id = (S.Id)Marshal.PtrToStructure(p, typeof(S.Id)); lock (Peers) Peers.Add(id.steamid); bool ok = Accept(id.steamid);
+      if (ok) S.SteamAPI_ISteamNetworkingMessages_AcceptSessionWithUser(nm, ref id); Log.W("session request from " + Name(id.steamid) + (ok ? " (accepted)" : " (ignored)")); };
+    onFail = p => Log.W("connection to peer failed: " + Encoding.ASCII.GetString(Bytes(p + 184, 128)).Split((char)0)[0]);
+    SteamCb.Register(1251, 136, p => onReq(p));   // SteamNetworkingMessagesSessionRequest_t
+    SteamCb.Register(1252, 696, p => onFail(p));  // SteamNetworkingMessagesSessionFailed_t
+    SteamCb.Register(337, 264, p => { var con = Marshal.PtrToStringAnsi(p + 8); var m = System.Text.RegularExpressions.Regex.Match(con ?? "", @"\d{17}"); if (m.Success && JoinRequest != null) JoinRequest(ulong.Parse(m.Value)); });  // GameRichPresenceJoinRequested_t
+    if (Environment.GetEnvironmentVariable("FL_DEBUG") == "1") { onDbg = (t, m) => Log.W("steam: " + Marshal.PtrToStringAnsi(m)); S.SteamAPI_ISteamNetworkingUtils_SetDebugOutputFunction(ut, 5, onDbg); }
+    else { onDbg = (t, m) => Log.W("steam: " + Marshal.PtrToStringAnsi(m)); S.SteamAPI_ISteamNetworkingUtils_SetDebugOutputFunction(ut, 3, onDbg); }  // errors+important
     nm = S.SteamAPI_SteamNetworkingMessages_SteamAPI_v002(); fr = S.SteamAPI_SteamFriends_v018();
     Me = S.SteamAPI_ISteamUser_GetSteamID(S.SteamAPI_SteamUser_v023());
   }
+  static S.NetCb onReq, onFail; static S.DbgCb onDbg;  // kept alive for native callbacks
+  static byte[] Bytes(IntPtr p, int n) { var b = new byte[n]; Marshal.Copy(p, b, 0, n); return b; }
   static int SteamAPI_Init(byte[] e) { return S.SteamAPI_InitFlat(e); }
   public void Presence(string k, string v) { S.SteamAPI_ISteamFriends_SetRichPresence(fr, S.Z(k), v == null ? null : S.Z(v)); }
   public string Name(ulong id) { return Marshal.PtrToStringAnsi(S.SteamAPI_ISteamFriends_GetFriendPersonaName(fr, id)); }
@@ -57,23 +89,26 @@ class SteamT : Transport {
   public override void Send(ulong peer, bool rel, byte[] f) { q.Enqueue(Tuple.Create(peer, rel, f)); }  // Steam calls only from the main thread
   void Flush() { Tuple<ulong, bool, byte[]> m; while (q.TryDequeue(out m)) SendNow(m.Item1, m.Item2, m.Item3); }
   void SendNow(ulong peer, bool rel, byte[] f) {
-    var id = S.Of(peer); S.SteamAPI_ISteamNetworkingMessages_SendMessageToUser(nm, ref id, f, (uint)f.Length, rel ? 8 | 1 : 1, rel ? 0 : 1);  // reliable|nonagle / unreliable|nonagle
+    var id = S.Of(peer); int r = S.SteamAPI_ISteamNetworkingMessages_SendMessageToUser(nm, ref id, f, (uint)f.Length, rel ? 8 | 1 : 1, rel ? 0 : 1);  // reliable|nonagle / unreliable|nonagle
+    if (r != 1) { Log.W("send to " + peer + " failed, EResult " + r + " - resetting session and retrying"); S.SteamAPI_ISteamNetworkingMessages_CloseSessionWithUser(nm, ref id);
+      r = S.SteamAPI_ISteamNetworkingMessages_SendMessageToUser(nm, ref id, f, (uint)f.Length, rel ? 8 | 1 : 1, rel ? 0 : 1); if (r != 1) Log.W("retry failed, EResult " + r); }
+    lock (Peers) Peers.Add(peer);
   }
   public override void Tick() {
     Flush();
+    if (DateTime.Now > nextDiag) { nextDiag = DateTime.Now.AddSeconds(5);  // diagnostics: relay network + each peer session state
+      var rs = new byte[512]; int avail = S.SteamAPI_ISteamNetworkingUtils_GetRelayNetworkStatus(ut, rs);
+      var line = "relay net " + avail + " (" + Encoding.ASCII.GetString(rs, 16, 256).Split('\0')[0] + ")";
+      ulong[] ps; lock (Peers) ps = Peers.ToArray();
+      foreach (var p in ps) { var id = S.Of(p); var info = new byte[1024]; var q = new byte[256]; int st = S.SteamAPI_ISteamNetworkingMessages_GetSessionConnectionInfo(nm, ref id, info, q);
+        line += " | peer " + Name(p) + " state " + st + " end " + BitConverter.ToInt32(info, 180) + " " + Encoding.ASCII.GetString(info, 184, 128).Split('\0')[0] + " ping " + BitConverter.ToInt32(q, 4); }
+      var key = System.Text.RegularExpressions.Regex.Replace(line, @" ping -?\d+|Relays:.*?ignored", "");
+      if (key != lastDiag) { Log.W(line); lastDiag = key; } }
     lock (lk) {
-      S.SteamAPI_ManualDispatch_RunFrame(pipe); S.CB cb;
-      while (S.SteamAPI_ManualDispatch_GetNextCallback(pipe, out cb)) {
-        if (cb.id == 1251) {  // SteamNetworkingMessagesSessionRequest_t { SteamNetworkingIdentity remote }
-          var id = (S.Id)Marshal.PtrToStructure(cb.param, typeof(S.Id));
-          if (Accept(id.steamid)) S.SteamAPI_ISteamNetworkingMessages_AcceptSessionWithUser(nm, ref id); Log.W("session request from " + Name(id.steamid) + (Accept(id.steamid) ? " (accepted)" : " (ignored)"));
-        } else if (cb.id == 337 && JoinRequest != null) {  // GameRichPresenceJoinRequested_t { CSteamID friend; char connect[256] }
-          var con = Marshal.PtrToStringAnsi(cb.param + 8); var m = System.Text.RegularExpressions.Regex.Match(con ?? "", @"\d{17}"); if (m.Success) JoinRequest(ulong.Parse(m.Value));
-        } else if (cb.id == 1252) Log.W("connection to peer failed");
-        S.SteamAPI_ManualDispatch_FreeLastCallback(pipe);
-      }
+      S.SteamAPI_RunCallbacks();  // fires the session request/failed config callbacks above
     }
   }
+  string lastDiag;
   public override IEnumerable<Tuple<ulong, bool, byte[]>> Poll() {
     var r = new List<Tuple<ulong, bool, byte[]>>(); var buf = new IntPtr[64];
     lock (lk) for (int ch = 0; ch < 2; ch++) {
@@ -124,7 +159,7 @@ class Link {
     if (!isHost) {
       foreach (var port in TCP) { var l = new TcpListener(bind, port); try { l.Start(); } catch (Exception e) { Log.W("can't listen tcp " + port + ": " + e.Message); continue; }
         int pp = port; new Thread(() => { while (true) { var s = l.AcceptSocket(); s.NoDelay = true; uint c; lock (lk) { c = next++; tcp["0:" + c] = s; }
-          t.Send(host, true, F(1, c, pp, null, 0)); Pump(s, host, c, pp, "0:" + c); } }) { IsBackground = true }.Start(); }
+          Log.W("game connected to tcp " + pp + ", opening through tunnel"); t.Send(host, true, F(1, c, pp, null, 0)); Pump(s, host, c, pp, "0:" + c); } }) { IsBackground = true }.Start(); }
       foreach (var port in UDP) { UdpClient u; try { u = new UdpClient(new IPEndPoint(bind, port)); } catch (Exception e) { Log.W("can't listen udp " + port + ": " + e.Message); continue; }
         Nocr(u); int pp = port; udp["L:" + port] = u;
         new Thread(() => { while (true) { try { var ep = new IPEndPoint(0, 0); var d = u.Receive(ref ep); uint k; var ek = ep + ">" + pp;
@@ -140,6 +175,7 @@ class Link {
       if (a == 1 && isHost) {
         if (!TCP.Contains(port)) return;
         s = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp) { NoDelay = true }; s.Bind(new IPEndPoint(Src, 0));
+        if (port == 30003) try { Directory.CreateDirectory("state"); File.WriteAllText(Path.Combine("state", "peer_" + ((IPEndPoint)s.LocalEndPoint).Port), Name(peer) ?? ""); } catch { }  // server uses Steam name as in-game name
         try { s.Connect(IPAddress.Loopback, port); } catch { t.Send(peer, true, F(3, c, port, null, 0)); return; }
         lock (lk) tcp[key] = s; Pump(s, peer, c, port, key); Log.W("player " + Name(peer) + " -> tcp " + port);
       } else if (a == 2) { lock (lk) tcp.TryGetValue(key, out s); if (s != null) try { s.Send(f, 7, f.Length - 7, SocketFlags.None); } catch { } }
@@ -185,6 +221,7 @@ static class P {
       if (host) {
         Log.W("HOSTING. Invite code: " + (st != null ? Code(t.Me) : t.Me.ToString()));
         if (st != null) { st.Presence("status", "Hosting a FEAR Online game"); st.Presence("connect", "+fearjoin " + t.Me); st.Presence("steam_display", null); }
+        if (st != null) try { Directory.CreateDirectory("state"); File.WriteAllText(Path.Combine("state", "peer_self"), st.Name(t.Me) ?? ""); } catch { }
         if (File.Exists("invite.txt") || true) File.WriteAllText("invite.txt", st != null ? Code(t.Me) : t.Me.ToString());
       } else Log.W("JOINING " + (st != null ? st.Name(hid) : hid.ToString()) + " - start the game with +LoginServerIP " + (bind ?? "127.0.0.1"));
       timeBeginPeriod(1);

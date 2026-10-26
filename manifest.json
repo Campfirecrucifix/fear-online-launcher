@@ -1,7 +1,7 @@
 {
- "version": 21,
+ "version": 22,
  "port": 30003,
- "message": "v1.0: back-to-back matches work, Shipment default map, all fixes",
+ "message": "v1.0.1: Demolition/round-mode loading fix, Soul King closed",
  "files": [
   {
    "path": "e3.Arch01",
@@ -6356,10 +6356,10 @@
   }
  ],
  "launcher_sha256": "7eaf20ff445f5208de9530cb547bcd7fce6b3a5860de39333131d3eae653b10d",
- "news": "FEAR Online Community Launcher v1.0\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST and sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in and pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n\nBack-to-back matches in the same room now work - no restart needed between matches.\nFull guide and known issues on the GitHub page. Found a bug? Press SUPPORT.",
+ "news": "FEAR Online Community Launcher v1.0.1\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST and sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in and pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n\nNEW in v1.0.1: Demolition and the other round modes no longer hang on the loading screen.\nSoul King is closed for now (its map is missing from the Steam version and kicked everyone).\nBack-to-back matches in the same room now work - no restart needed between matches.\nFull guide and known issues on the GitHub page. Found a bug? Press SUPPORT.",
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
  "host_zip": "FearHost.zip",
- "host_sha256": "1d1b4dbe1e6e942051b8c43fc9098424c0be912114955f2aba19081f12cc61d7",
- "release": "1.0"
+ "host_sha256": "ac70d23a5b30ce06530cd0a4d6a65078e35fdd59dd53ecfa38b9a452523e6948",
+ "release": "1.0.1"
 }
