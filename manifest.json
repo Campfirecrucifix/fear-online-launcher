@@ -1,23 +1,6139 @@
 {
- "version": 20,
+ "version": 21,
  "port": 30003,
- "message": "Launcher: invite links now apply updates automatically before joining.",
+ "message": "v1.0: back-to-back matches work, Shipment default map, all fixes",
  "files": [
   {
+   "path": "e3.Arch01",
+   "sha256": "b84064ab56c69fe421db7b053a9b6f3ec0f237c09fdb1d5c0ba318868eb34dda",
+   "size": 4080,
+   "compressed": "gz",
+   "csize": 923
+  },
+  {
+   "path": "Game\\database\\Loki.gamedb",
+   "sha256": "f2fa573c1fc1ee05827b568278eba41abdf2f83a2be217d3340f96cd84f58864",
+   "size": 3209020,
+   "compressed": "gz",
+   "csize": 496656
+  },
+  {
    "path": "Game\\Database_string\\Loki.strdb",
-   "sha256": "c428a5434b13f223fe51b557e7f425d05e0a0946b858319c7ea2e2a8e0ad3781"
+   "sha256": "0293512555e6dd7daf3036b547964da895063b6e6bb14eb5ac70771d3ec1581f",
+   "size": 886548,
+   "compressed": "gz",
+   "csize": 215124
+  },
+  {
+   "path": "Game\\Database_string\\Chinese\\Loki.strdb",
+   "sha256": "7d83dc3de400033bd3d07d2b018ad9ae220900164cb3a76171fe3cfc49032f93",
+   "size": 634604,
+   "compressed": "gz",
+   "csize": 151208
+  },
+  {
+   "path": "Game\\Database_string\\Czech\\Loki.strdb",
+   "sha256": "ca86685bf080a7c006503a88f512e48f9cb54b26175997a20126ca2261ae2c6e",
+   "size": 630056,
+   "compressed": "gz",
+   "csize": 153345
   },
   {
    "path": "Game\\Database_string\\English\\Loki.strdb",
-   "sha256": "c428a5434b13f223fe51b557e7f425d05e0a0946b858319c7ea2e2a8e0ad3781"
+   "sha256": "0293512555e6dd7daf3036b547964da895063b6e6bb14eb5ac70771d3ec1581f",
+   "size": 886548,
+   "compressed": "gz",
+   "csize": 215124
+  },
+  {
+   "path": "Game\\Database_string\\French\\Loki.strdb",
+   "sha256": "774c200f72a6481acc860df7a55c30b739b798569f59d51a8fb3f1fc897bd9e9",
+   "size": 674564,
+   "compressed": "gz",
+   "csize": 149869
+  },
+  {
+   "path": "Game\\Database_string\\German\\Loki.strdb",
+   "sha256": "d8a797a41c49a8aecfb653ab4df720105c81991939fef59c26bdd31ff5213f8f",
+   "size": 679424,
+   "compressed": "gz",
+   "csize": 154744
+  },
+  {
+   "path": "Game\\Database_string\\Hungarian\\Loki.strdb",
+   "sha256": "580b591b756b2999927fe5b6821e2fe7cda1cec5f478108e7115e490fb9ddebd",
+   "size": 651572,
+   "compressed": "gz",
+   "csize": 153611
+  },
+  {
+   "path": "Game\\Database_string\\Italian\\Loki.strdb",
+   "sha256": "e7e77944262df58d7cb8062a8e66cf9e656a65e618a60ef5a0bd1e043ae77c9f",
+   "size": 688388,
+   "compressed": "gz",
+   "csize": 150567
+  },
+  {
+   "path": "Game\\Database_string\\Japanese\\Loki.strdb",
+   "sha256": "741c54f162ab6ce01745045e1c33888cc8b08f9c6c25524ff3b55cd1076317fb",
+   "size": 533872,
+   "compressed": "gz",
+   "csize": 153034
+  },
+  {
+   "path": "Game\\Database_string\\Korean\\Loki.strdb",
+   "sha256": "8ba54e88ae7222be3c77bd0bcb174e9bab817d4c3ea93a6e0d822a403f9e385c",
+   "size": 789644,
+   "compressed": "gz",
+   "csize": 230672
+  },
+  {
+   "path": "Game\\Database_string\\Polish\\Loki.strdb",
+   "sha256": "760f71f7c27163ef9471a4ce688a3bd3d95ac32028b4157b728243c2a5da74ce",
+   "size": 639884,
+   "compressed": "gz",
+   "csize": 151716
+  },
+  {
+   "path": "Game\\Database_string\\Russian\\Loki.strdb",
+   "sha256": "788b369fa56b269c61f4038551b3b4b7d360f310b327b5579026604ed093ceb3",
+   "size": 629264,
+   "compressed": "gz",
+   "csize": 150681
+  },
+  {
+   "path": "Game\\Database_string\\Spanish\\Loki.strdb",
+   "sha256": "90adacd402e641aa9dc90ce111b277f73586c6a0252f684d39ba1da87223da8e",
+   "size": 678032,
+   "compressed": "gz",
+   "csize": 151073
+  },
+  {
+   "path": "Game\\Database_string\\thailand\\loki.strdb",
+   "sha256": "ad3ddeef352faa6a94721fed68b78c402f32631b0597e5fbdc8a17252f24f883",
+   "size": 740096,
+   "compressed": "gz",
+   "csize": 192477
   },
   {
    "path": "Game\\Interface\\menu\\main.gfx",
-   "sha256": "cdd6efa7a8ef29dfc35d397c05b6b241d87b06dd02d02722c552c5eb28a22c17"
+   "sha256": "19785a66f2c39f1e4191222f1cc9685c28dbb34a81612fe08770ee60b26b91b9",
+   "size": 2106660,
+   "compressed": "gz",
+   "csize": 536750
   },
   {
    "path": "Game\\Interface\\menu\\mp.gfx",
-   "sha256": "8bbca15b254ffe0dc61b71be514baa98af157f5af34c14ec1efb5a00b9caeb3e"
+   "sha256": "8834fbb067cb8e5fa1d32e7c398df0bcbd01c3d22303b52e4d786e9df75f73d8",
+   "size": 2464560,
+   "compressed": "gz",
+   "csize": 634381
+  },
+  {
+   "path": "Game\\materials\\-minimap\\minimap_tam_rust_mansion1f.tex",
+   "sha256": "a15ed610c65577282a8679de928ee76aab948a71be977d43ad7443cb4c4cd68a",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 86750
+  },
+  {
+   "path": "Game\\materials\\-minimap\\minimap_tam_rust_mansion2f.tex",
+   "sha256": "a15ed610c65577282a8679de928ee76aab948a71be977d43ad7443cb4c4cd68a",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 86750
+  },
+  {
+   "path": "Game\\materials\\-minimap\\minimap_tam_ship_mansion1f.tex",
+   "sha256": "570a76fce067aa6a973dee4574348e41c6c4b873a6af928b63cb3de2d38d5f5f",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 76826
+  },
+  {
+   "path": "Game\\materials\\-minimap\\minimap_tam_ship_mansion2f.tex",
+   "sha256": "570a76fce067aa6a973dee4574348e41c6c4b873a6af928b63cb3de2d38d5f5f",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 76826
+  },
+  {
+   "path": "Game\\materials\\rust\\013______________________.mat",
+   "sha256": "ec0b091163ee72bc03b6987015f9b54cb2c9fbc8d264eaa8b55de6e853079fcd",
+   "size": 439,
+   "compressed": "gz",
+   "csize": 276
+  },
+  {
+   "path": "Game\\materials\\rust\\014_______________________.mat",
+   "sha256": "1d7e6fb9fce3f62b9e788db68beb8c0aa98849eb9591d971c79a2ee28cc17df1",
+   "size": 213,
+   "compressed": "gz",
+   "csize": 180
+  },
+  {
+   "path": "Game\\materials\\rust\\015_______________________________.mat",
+   "sha256": "b79a8253455056948a9d11d9dac0cdcf8c1d506917aa29a8c1803836a3294e70",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 208
+  },
+  {
+   "path": "Game\\materials\\rust\\016____________________________.mat",
+   "sha256": "509613c23f143145700288070182c32c3e84672b71a9f233f264e5ca60ad6d8c",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 208
+  },
+  {
+   "path": "Game\\materials\\rust\\017________________.mat",
+   "sha256": "2de79be0375fb67c69c705843e45cb181039c0250221db538dc3649962d00d26",
+   "size": 435,
+   "compressed": "gz",
+   "csize": 271
+  },
+  {
+   "path": "Game\\materials\\rust\\018__________________.mat",
+   "sha256": "3b52b8269938802a7d9b5893493d9e804bb7d6c152dc5b3002d9b1ea6c6f18f7",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 182
+  },
+  {
+   "path": "Game\\materials\\rust\\019________________.mat",
+   "sha256": "f224481058ad93b1f8b7176f8d304d62a9541e4c24ea427d7cd3f684d1143639",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 202
+  },
+  {
+   "path": "Game\\materials\\rust\\020____________________________.mat",
+   "sha256": "bb7c278efbab441ea56c51cadbcadc639b0c0ffe47bacc8c9802d327ce36913c",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 203
+  },
+  {
+   "path": "Game\\materials\\rust\\021__________________.mat",
+   "sha256": "9af425db9c109e335fbf9113b3de71ad3485724643e53ce8e772a6795504c73d",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\rust\\022_____________________.mat",
+   "sha256": "b92c8fad784d0cb872760ae6a539b2abc1f6cf6841c5cec7d2f4e9c1d2c0ce62",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\023___________________.mat",
+   "sha256": "aafb8032b2aca130d20656c11969c0141277b32ea9833907c7c1436f8c870258",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\rust\\024__________________________.mat",
+   "sha256": "9e2a1fbcfd7164cb4f2db0f595ad272ae86e20e920cc51f1f1ab94fefaabb071",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\025__________________________.mat",
+   "sha256": "2fb1aaf5a7316d48f795029bf11c08755c0ea8e82b191e696da3447782271347",
+   "size": 210,
+   "compressed": "gz",
+   "csize": 186
+  },
+  {
+   "path": "Game\\materials\\rust\\026_______________________________________.mat",
+   "sha256": "3f9acb689565c130c5d3c6dd64a95fcd369803a7535ef27032fadc20043f8500",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 207
+  },
+  {
+   "path": "Game\\materials\\rust\\027_____________.mat",
+   "sha256": "f224481058ad93b1f8b7176f8d304d62a9541e4c24ea427d7cd3f684d1143639",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 202
+  },
+  {
+   "path": "Game\\materials\\rust\\028___________________________________.mat",
+   "sha256": "c3bf629ec4280561bf5065e0925e5ae7d834ad4381df83a5f1df0ccce8f1ef07",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\029____________________________.mat",
+   "sha256": "f224481058ad93b1f8b7176f8d304d62a9541e4c24ea427d7cd3f684d1143639",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 202
+  },
+  {
+   "path": "Game\\materials\\rust\\030__________________.mat",
+   "sha256": "c3bf629ec4280561bf5065e0925e5ae7d834ad4381df83a5f1df0ccce8f1ef07",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\031_____________________.mat",
+   "sha256": "51d600ac726303a4d0a67208d163b2a4715c4923fa84c6f0511a998a5c42553b",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 203
+  },
+  {
+   "path": "Game\\materials\\rust\\032_____________________.mat",
+   "sha256": "7f7f2b2f5f4aa836e4ceb7e640e9c555a94fe940dea8233ada7991a5787dc7d1",
+   "size": 361,
+   "compressed": "gz",
+   "csize": 217
+  },
+  {
+   "path": "Game\\materials\\rust\\033_________________________________________.mat",
+   "sha256": "108c6a4a57b338895484c868289a92b8717fcf4a24d35b0bfb4253d14fde2fe9",
+   "size": 361,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\rust\\034__________________________________________.mat",
+   "sha256": "5b248f192f14d4acb7ad1c286da770d7a677c395df232dbb3704b27cdf0a961e",
+   "size": 365,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\rust\\035_______________________________________________.mat",
+   "sha256": "fc1c91bd8e0378fd88f056e176ef3ba16ea52dac8bd4cad041e5ccd22223d41c",
+   "size": 365,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\rust\\036________________.mat",
+   "sha256": "5c538568bf61677c7f61a6de3a9a248274424d2519f9a3652046daad8e0b2ac8",
+   "size": 365,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\rust\\037________________.mat",
+   "sha256": "b3dc6bada30e2a8981314340aa01f2e0ae90ad9900ce2aad6704bba9c1f7c475",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 181
+  },
+  {
+   "path": "Game\\materials\\rust\\038___________________________.mat",
+   "sha256": "5f51510cebce5976f46a8061422dab4f2f48001df521ac30c89699d6153b1e6c",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 200
+  },
+  {
+   "path": "Game\\materials\\rust\\039________________________________.mat",
+   "sha256": "0583664bd0a4752c37beac41a850ee6e02340d2716d4ec8efc175d07b62e2a54",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 204
+  },
+  {
+   "path": "Game\\materials\\rust\\040_______.mat",
+   "sha256": "b3cc0f9c4526fd931822b47690c3e9e47330614db2020cc42aebd40f26bb36aa",
+   "size": 443,
+   "compressed": "gz",
+   "csize": 277
+  },
+  {
+   "path": "Game\\materials\\rust\\041____.mat",
+   "sha256": "2f092a1db7e933e505e41adc92a28b43d235e6c0b61d0a40f5f55cf5fc7311ae",
+   "size": 471,
+   "compressed": "gz",
+   "csize": 281
+  },
+  {
+   "path": "Game\\materials\\rust\\042________.mat",
+   "sha256": "c3bf629ec4280561bf5065e0925e5ae7d834ad4381df83a5f1df0ccce8f1ef07",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\043____________.mat",
+   "sha256": "f3ddeaf69942e41e8d063bf87be91ed0cda0f047d44c2c076246aa9df90f9583",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\044________________.mat",
+   "sha256": "e53af601c40079532ae656686300ba5354e8b238481143057d70bb2a1444e036",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\045__________________.mat",
+   "sha256": "38277b761dce08972327859b6ce984296de7ac92a9408e6af154fd907f56cee0",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\rust\\046______________.mat",
+   "sha256": "43da3a6c495b704833568e577b381f42795b017b8094ce75a6ee37c5609b71a1",
+   "size": 206,
+   "compressed": "gz",
+   "csize": 181
+  },
+  {
+   "path": "Game\\materials\\rust\\047__________________________________.mat",
+   "sha256": "5f32dc4ced3e2c2d50b3df94294c4823fccd037ae0ce64cce403208ac42dfa33",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 180
+  },
+  {
+   "path": "Game\\materials\\rust\\048__________________________________.mat",
+   "sha256": "b075991ad412597eabc0c26edbab107b743f07b084f10ae7938b87e315b9babe",
+   "size": 194,
+   "compressed": "gz",
+   "csize": 176
+  },
+  {
+   "path": "Game\\materials\\rust\\049_______________________________________.mat",
+   "sha256": "51e429b598ebb85d87e2b4ce8a33707da11b98d9efaaca84140da2c94d5474dd",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\050__________________________________________.mat",
+   "sha256": "6329561399a9aa7ea1f4f36c71ac26fe3f73a5a0a41a6038befe7fe434cfebf3",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\rust\\051____________.mat",
+   "sha256": "4efd551ab1fd90bae842dd7ed05f0a85542fa26e5857c4dc860c6f3f7e6551b5",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 199
+  },
+  {
+   "path": "Game\\materials\\rust\\052________________.mat",
+   "sha256": "328fa206662bd9fbd92b197cfbc821373d6242c7c9b16b4324015790007d8751",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\053___________.mat",
+   "sha256": "84f941923b2d5b1fa79196508732380783070ead142ecbcaa0ecb49a258d25bf",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\rust\\054____________________________________.mat",
+   "sha256": "a15fbaad98af3a0c592ad7fdb5773581a3e9029bb620211b8d68d6faf67017a2",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\rust\\055______________________.mat",
+   "sha256": "f7157328b2239313f82b29a521122244b88c7ed58d4031993a93605efd1f259e",
+   "size": 289,
+   "compressed": "gz",
+   "csize": 194
+  },
+  {
+   "path": "Game\\materials\\rust\\056______________________________.mat",
+   "sha256": "49890d7e8722381194a1c1b4bf85225b0c68347ed0dec51e5a91f6a925a51b10",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 207
+  },
+  {
+   "path": "Game\\materials\\rust\\057____________________________________________.mat",
+   "sha256": "cbeb3159d91e35fb54530020a5a4bb990a1bdf0b24e54be7aa582cb8ecc974f4",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 213
+  },
+  {
+   "path": "Game\\materials\\rust\\058___________________________________.mat",
+   "sha256": "e1f6a553e896dee5863b2f27e108afbfe3ea46ca6c7a82882ba8d5d1e3aa8d66",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 199
+  },
+  {
+   "path": "Game\\materials\\rust\\059____________________________.mat",
+   "sha256": "99932a2d8d397c90c544d90617914a864c20341120dd83efe913587430c90ec8",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 198
+  },
+  {
+   "path": "Game\\materials\\rust\\060__________________________.mat",
+   "sha256": "ff0a26a9a3204dbfa6b9eee37f6949cd7142a00123ce8bbd62363c2239137952",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\rust\\061_____________________________.mat",
+   "sha256": "5025be5780def2c629a6b02f57e369801b820c400a3974bd3c81cb5ca604e7d1",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\062________________________________.mat",
+   "sha256": "b4a23dc90efa47df75049463d30f36000e0e3a4bc5ac50ee016e5f6f3cf6c812",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 213
+  },
+  {
+   "path": "Game\\materials\\rust\\063________________________________.mat",
+   "sha256": "e6270da1e649403069d7984f3e411b959e585a23113ba423f7996fd8efa9c970",
+   "size": 443,
+   "compressed": "gz",
+   "csize": 280
+  },
+  {
+   "path": "Game\\materials\\rust\\064________________________________.mat",
+   "sha256": "d0d970c7424fb7ed22f505499ce650a912e078f28af51fed83f764ed2febe53d",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 203
+  },
+  {
+   "path": "Game\\materials\\rust\\065___________________________________.mat",
+   "sha256": "ffa62202b0052aff8961bed0a3b107927662b936ff97af2f63304b0f570ff76d",
+   "size": 435,
+   "compressed": "gz",
+   "csize": 276
+  },
+  {
+   "path": "Game\\materials\\rust\\066_____________.mat",
+   "sha256": "75d627544878c3ce28ec576a9bb48a3e4fd62bafc6459db8dd81f2550b82f224",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 203
+  },
+  {
+   "path": "Game\\materials\\rust\\067__________________.mat",
+   "sha256": "9e2a1fbcfd7164cb4f2db0f595ad272ae86e20e920cc51f1f1ab94fefaabb071",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\068____________.mat",
+   "sha256": "314d958c8e644d2a6f82a88bb2864a7cc2f93e9370e6f7995723f9614e2fee54",
+   "size": 431,
+   "compressed": "gz",
+   "csize": 273
+  },
+  {
+   "path": "Game\\materials\\rust\\069__________________.mat",
+   "sha256": "e6d33adde38b7ecbfbc1cd9288e83db7a677d6e89899dc569d37f8581ffd38be",
+   "size": 415,
+   "compressed": "gz",
+   "csize": 268
+  },
+  {
+   "path": "Game\\materials\\rust\\070_____________________.mat",
+   "sha256": "7f7f6e581435da7bef68bef186485108708800fd32ca51338c696cde06ecbf79",
+   "size": 451,
+   "compressed": "gz",
+   "csize": 285
+  },
+  {
+   "path": "Game\\materials\\rust\\071______________________________________.mat",
+   "sha256": "dcd8e6ded52e75440ca3476750889b326b1e41b54bd5ed67d54fc065d0d511df",
+   "size": 361,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\rust\\072________________________________.mat",
+   "sha256": "8aa4a31f9c9757f66e5d4446c431f5c38d77d278dd7d2c36824a3bc4b0877161",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 208
+  },
+  {
+   "path": "Game\\materials\\rust\\073___________________________________.mat",
+   "sha256": "8b08ebbc024e9227b690d8766f549875529d532d5d9d70fd119380c8c12f0da1",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\074__________________________________________.mat",
+   "sha256": "46244c0d33d3685642fd9469e8d4e026d4224c0af7c75105b7b1dc69568d98d8",
+   "size": 443,
+   "compressed": "gz",
+   "csize": 281
+  },
+  {
+   "path": "Game\\materials\\rust\\075________________________________________________.mat",
+   "sha256": "a60a28a849044ec2706edba8c85f7c3fcd31b9d36204355d3334ea18c9644606",
+   "size": 443,
+   "compressed": "gz",
+   "csize": 279
+  },
+  {
+   "path": "Game\\materials\\rust\\076__________________________________________________.mat",
+   "sha256": "245ca6b55f32beb7b354c3a7b7b209d703b01ef0c63d298a4861885b93aa9495",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\077________________________________________.mat",
+   "sha256": "b1abb6243e68a11181d04f36be476c4f8ad621b757e22f97607e7f0929b9f104",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\078________________________.mat",
+   "sha256": "8bc8cc87354eff74ff0406ae117e130b1508575b290ebc51dc86bbcdf8a93b4a",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\079__________________________________________________________.mat",
+   "sha256": "c981f1ef5b37c4140d1784ab5ea31425db6855297eeaca015dfcf6ce33b9bde7",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 217
+  },
+  {
+   "path": "Game\\materials\\rust\\080__________________________________________.mat",
+   "sha256": "79c6b7571b59d52684ce5de0f12339156582d23ec4e044018d4109bd00ed369f",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 202
+  },
+  {
+   "path": "Game\\materials\\rust\\081_______________________.mat",
+   "sha256": "83f97420ac4a3bafa3450ef7307cf4a638a7a70f7ea9efe7ca4fa09708c042af",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 198
+  },
+  {
+   "path": "Game\\materials\\rust\\082___.mat",
+   "sha256": "13326d670daad215af462abed66ffb0bf2e8d508e6fa91f2c6e113b1dd273345",
+   "size": 289,
+   "compressed": "gz",
+   "csize": 212
+  },
+  {
+   "path": "Game\\materials\\rust\\083__________________.mat",
+   "sha256": "c64c12fcf9da013848f31f206eaf454602ab1d69f94dc015f1ff62070c8c4057",
+   "size": 435,
+   "compressed": "gz",
+   "csize": 277
+  },
+  {
+   "path": "Game\\materials\\rust\\084________________.mat",
+   "sha256": "9a3f56c465f99c2d3caa2b69958a45c8e165d81e57460aa338d4e9b0df8507a2",
+   "size": 411,
+   "compressed": "gz",
+   "csize": 267
+  },
+  {
+   "path": "Game\\materials\\rust\\085________________.mat",
+   "sha256": "a259e1faf12de4960123e899667098d4994e0e5c4e7d050c957b269427f423de",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\086___________________.mat",
+   "sha256": "4d573a10c906b99e78d964f1c0cae2b7ff5fb3f8a6883a13acc37cc3a2c31a5b",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\rust\\087_________________.mat",
+   "sha256": "12eff31f57dd1cd3b1ff4e4050fe3d6ac581842eeb3fec9f55aed2d2fee31a6c",
+   "size": 455,
+   "compressed": "gz",
+   "csize": 276
+  },
+  {
+   "path": "Game\\materials\\rust\\088_____________________.mat",
+   "sha256": "71d9dada9448fb96110b056a6fc00cfb97fe639777bf122988178d6885968026",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 208
+  },
+  {
+   "path": "Game\\materials\\rust\\089___________________.mat",
+   "sha256": "937d976221572e3d7527f3d4ab896f33c75cd40b7681d104de3ef63fb4f6a5f4",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 213
+  },
+  {
+   "path": "Game\\materials\\rust\\090________________________________.mat",
+   "sha256": "ae57487a8455ecf7f2e207515fcd21aed8653edcb32af98aab99f4466bbbb8b9",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 200
+  },
+  {
+   "path": "Game\\materials\\rust\\091_____________________.mat",
+   "sha256": "298c8a008be40cacbe3e0cac8a04ca3795bb63bc32e0c17c778c3bde80056e80",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\rust\\092___________________________.mat",
+   "sha256": "4401e5613584f460402f0af6516a110d5e295fb25899365d543572f71f193f33",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\rust\\093________________________.mat",
+   "sha256": "93f1178e65174e74b38a3468728d91f827a916c1b11a1a55ed6c7e55c93d0183",
+   "size": 419,
+   "compressed": "gz",
+   "csize": 272
+  },
+  {
+   "path": "Game\\materials\\rust\\094________________________.mat",
+   "sha256": "6ed9a828fdce65cc5b93f7d4b2de94be4ae4e96673efd67f24f901f62121db6a",
+   "size": 431,
+   "compressed": "gz",
+   "csize": 272
+  },
+  {
+   "path": "Game\\materials\\rust\\095____________________________________.mat",
+   "sha256": "598035295bc2a25018c1631aeffc20d7b3095f4666f4f4c0da76b165047ce1d8",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 197
+  },
+  {
+   "path": "Game\\materials\\rust\\096_____________________.mat",
+   "sha256": "d17d18642af9e8b5a8b8bfcc1f01677fd833e1d09a1b7a1e25846f7ca8608315",
+   "size": 407,
+   "compressed": "gz",
+   "csize": 264
+  },
+  {
+   "path": "Game\\materials\\rust\\097_____________________.mat",
+   "sha256": "5b0b871b6812bb2fbaff94fa1b78e480f142610e87b3365ed32a9b7229219e52",
+   "size": 289,
+   "compressed": "gz",
+   "csize": 198
+  },
+  {
+   "path": "Game\\materials\\rust\\098________________________.mat",
+   "sha256": "f60faf395f9971deac9fd03c2ab599e6e311147b107fa770b918c39bc143eb5b",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\rust\\099_____________.mat",
+   "sha256": "cbdcaf2e78d82e29b48865310730efc153143e16060998ea8541fcbae9696718",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\rust\\100__________________.mat",
+   "sha256": "ea8fc5dc43217da43eba83bf952cc01453b5c55e96d3bad7badc8f735653b403",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 208
+  },
+  {
+   "path": "Game\\materials\\rust\\101________________.mat",
+   "sha256": "2b700206b048d26b7cfdbfbe4d484f638088a5442e9af7a4500f6c2ebb382ea3",
+   "size": 443,
+   "compressed": "gz",
+   "csize": 280
+  },
+  {
+   "path": "Game\\materials\\rust\\102________________.mat",
+   "sha256": "6b35fedd65485c89d9f25cd009e6bf76e9ca4e832b1ff3eac60caa02fe674bca",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\103________________.mat",
+   "sha256": "16583aed8e1efcf27652b61e3a38293a42f9d2841cc1c5d632c05b98f7ee09bf",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 207
+  },
+  {
+   "path": "Game\\materials\\rust\\104__________________.mat",
+   "sha256": "7353a4f43afc2c2ed523dd773cd3199d82111852d2143f6b2bdd158f080c338c",
+   "size": 281,
+   "compressed": "gz",
+   "csize": 199
+  },
+  {
+   "path": "Game\\materials\\rust\\105___________.mat",
+   "sha256": "82f15faa3804a88448f52310dbaec86cef1747fe5f8199baf2a51b873a77213d",
+   "size": 289,
+   "compressed": "gz",
+   "csize": 199
+  },
+  {
+   "path": "Game\\materials\\rust\\106___________.mat",
+   "sha256": "f3d032be19802129cdc6b10043a533128f8457875f89ae882db4d56c9c9b3642",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 203
+  },
+  {
+   "path": "Game\\materials\\rust\\107_____.mat",
+   "sha256": "ba21f171d531b1d97b0e3c6953f87bfc3d1d666d14dc5bbb5d7ca6b09300876e",
+   "size": 293,
+   "compressed": "gz",
+   "csize": 200
+  },
+  {
+   "path": "Game\\materials\\rust\\108____.mat",
+   "sha256": "c780848a684ff75aa17240a5565c8a75025c38ac020c1b8417f8fe5f082889cb",
+   "size": 431,
+   "compressed": "gz",
+   "csize": 273
+  },
+  {
+   "path": "Game\\materials\\rust\\109___________________________.mat",
+   "sha256": "7afb56218e6e49a4f43184eb63d72a0129f6c1291249131851102828d807ec3b",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 198
+  },
+  {
+   "path": "Game\\materials\\rust\\110___________________________.mat",
+   "sha256": "59866a28b6f4fc3f0d5d6da1ebcc484036b0f99ea21ca187fae0ba8fa2ac335a",
+   "size": 419,
+   "compressed": "gz",
+   "csize": 272
+  },
+  {
+   "path": "Game\\materials\\rust\\111_________________________.mat",
+   "sha256": "2433739dc92eb8f49ea85deecad602f2ab2c33088050209eb08b2c7efe53f77a",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 207
+  },
+  {
+   "path": "Game\\materials\\rust\\112__________________.mat",
+   "sha256": "356639e5bc56d4d7e010d5b3ed018bfe7ee231d10586978c76f190b4a4fc924b",
+   "size": 447,
+   "compressed": "gz",
+   "csize": 278
+  },
+  {
+   "path": "Game\\materials\\rust\\113____________________.mat",
+   "sha256": "77a7cc335eba5f379640e8c8b4b8b7de94797f1e6446e7994d80c6fb8e08efb7",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\rust\\114___________________.mat",
+   "sha256": "63529f98bb166b5cfb910e7fe343d704522406554266efb238a452e49676ea11",
+   "size": 447,
+   "compressed": "gz",
+   "csize": 278
+  },
+  {
+   "path": "Game\\materials\\rust\\115___________________.mat",
+   "sha256": "c4e71a35af24fa3ac1c597ce5354d8dd6e7356d802302aa037887602bc19a8f3",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\rust\\116_______________________.mat",
+   "sha256": "80214a308ed57b393d74e75e2d44e80a384ec628455fbaceee1315dc42d73a23",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\rust\\117___________________________.mat",
+   "sha256": "11b95d2746eaa28584f92652c1544813c3c7e3f1b0e2d4b4a9eb5453832e1d2f",
+   "size": 289,
+   "compressed": "gz",
+   "csize": 197
+  },
+  {
+   "path": "Game\\materials\\rust\\118___________________________.mat",
+   "sha256": "88f613db44c20f03f078a03c23f02401caae42d599e8fac65f43d77b6808854f",
+   "size": 407,
+   "compressed": "gz",
+   "csize": 265
+  },
+  {
+   "path": "Game\\materials\\rust\\119_____________________________.mat",
+   "sha256": "0191bd62b0e5ad6c7cea4cc2271d3848ffa8fdb6394b048bd99c9967edf74674",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\rust\\120___________________.mat",
+   "sha256": "6b35fedd65485c89d9f25cd009e6bf76e9ca4e832b1ff3eac60caa02fe674bca",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 205
+  },
+  {
+   "path": "Game\\materials\\rust\\121_____________________.mat",
+   "sha256": "e6d01618ad2be5beb9360c484c8cde3c3b36f14aea17779f1f3bb09a15d00e00",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 206
+  },
+  {
+   "path": "Game\\materials\\rust\\122_____________________.mat",
+   "sha256": "fa1b3ff05745508de5bd96accd7827d3d35afdf98db0a89559ec415812473c94",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 210
+  },
+  {
+   "path": "Game\\materials\\rust\\123________________________.mat",
+   "sha256": "f44ae3345a3314a86f16317a25e8a6918beeeb0f97f1ad121b4ea48862104b28",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 199
+  },
+  {
+   "path": "Game\\materials\\rust\\124____________________.mat",
+   "sha256": "9843a7dd4507bc6881425704d5a144d2607a654979fea802c89c895adced78de",
+   "size": 213,
+   "compressed": "gz",
+   "csize": 179
+  },
+  {
+   "path": "Game\\materials\\rust\\125__________________.mat",
+   "sha256": "1d7e6fb9fce3f62b9e788db68beb8c0aa98849eb9591d971c79a2ee28cc17df1",
+   "size": 213,
+   "compressed": "gz",
+   "csize": 180
+  },
+  {
+   "path": "Game\\materials\\rust\\126________________________.mat",
+   "sha256": "a5fa115192314529ff94559bbf566525691d9a21cd80ee3e89d851aba49de2fb",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 213
+  },
+  {
+   "path": "Game\\materials\\rust\\127___________________________.mat",
+   "sha256": "024e6c0a3d0d6e4c7a39a09350b990a48ed49186fa03b78a3a30b3505d94a8b9",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\rust\\55_gallon_drum_black_rust.tex",
+   "sha256": "6ad2757de4aacc952a377f5c95a6cfc0e5a3293bb56958de900bfa542b818132",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 87018
+  },
+  {
+   "path": "Game\\materials\\rust\\55_gallon_drum_black_rust_e.tex",
+   "sha256": "9cc772a25fdd3a1748aba9e9b3fc2d3a04365ee962cb0806c7b2ee67d4a5cd5e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3133
+  },
+  {
+   "path": "Game\\materials\\rust\\55_gallon_drum_white_dirt.tex",
+   "sha256": "82873b4d331dde94619da1c7a13909ae6a4726050278d80a5dfcf746730658a1",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 123518
+  },
+  {
+   "path": "Game\\materials\\rust\\55_gallon_drum_white_dirt_e.tex",
+   "sha256": "2a1b868c5d837b7b213e99f8b9c61c276478c6a15d870b935d88f85559cb7dfd",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2994
+  },
+  {
+   "path": "Game\\materials\\rust\\antenna_c.tex",
+   "sha256": "af944ea97b2f59064f1a23d3a43cc5e6cc49260d64169cda05010fc2bf339515",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 34667
+  },
+  {
+   "path": "Game\\materials\\rust\\antenna_c_e.tex",
+   "sha256": "32332c8c57afa649521752ce3684bc5965a9c9458b726fffaf00d1f1c9e185da",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3626
+  },
+  {
+   "path": "Game\\materials\\rust\\antenna_n.tex",
+   "sha256": "033e071ccdb3d071461b147991fa762baafb2bf09402198943b846e25308fcd6",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 32085
+  },
+  {
+   "path": "Game\\materials\\rust\\barrel_fire_col_0.tex",
+   "sha256": "7c0e611337ba72b9990b2a75922f0e7f17a3f540ed8e01b32ced5d09c04d518b",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 145088
+  },
+  {
+   "path": "Game\\materials\\rust\\barrel_fire_col_0_e.tex",
+   "sha256": "3fa0b2d4704af950aa85246c9520c19d7c5461cb24d55a3d0ee3bd269f394f14",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2821
+  },
+  {
+   "path": "Game\\materials\\rust\\barrel_fire_nml.tex",
+   "sha256": "7cae8b693609b589db820cadb599d2b03bbd136b0758163cef4734b9af2c0093",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 66238
+  },
+  {
+   "path": "Game\\materials\\rust\\barrier_destroyed_more_col.tex",
+   "sha256": "1580253513cc88506b1466c3a74e8814b46873c8c9260d9b7bbb2ddf7fd08e72",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 143402
+  },
+  {
+   "path": "Game\\materials\\rust\\barrier_destroyed_more_col_e.tex",
+   "sha256": "38f81a23484bf0535047cf4ee1a29a8825525e5fa90bcc4a472c4df49ebb0cd4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4374
+  },
+  {
+   "path": "Game\\materials\\rust\\barrier_destroyed_more_nml.tex",
+   "sha256": "fe73212c2835343d1e2929dfc3dee8fcafab4c36fd865d361f65bb3bad4ab8db",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73186
+  },
+  {
+   "path": "Game\\materials\\rust\\burnt_wood_col.tex",
+   "sha256": "6daa54f3ffb262b8d0dac215ccc4db2a43f2335a2f4c605089667fe314c04ce6",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 67362
+  },
+  {
+   "path": "Game\\materials\\rust\\burnt_wood_col_e.tex",
+   "sha256": "9673161ea99dff881e5ee68272b1ae2790286e0bf649a6e42479c64ad0663121",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5890
+  },
+  {
+   "path": "Game\\materials\\rust\\burnt_wood_nml.tex",
+   "sha256": "4f5a48558a383702039ae2ad70ef8234bb0aef2f24903c8516f89f4230013adf",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 69659
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerdoorhingewhite_col.tex",
+   "sha256": "f47307c060ea40d1e3e7e7a261647734dd37c9292523c8ecbf3119ef9f2e1b0c",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1935
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerdoorhingewhite_col_e.tex",
+   "sha256": "4fe2137c375e7a2a0def17715f3ee5005d58bff9d0a329b791cdb51b18632286",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 124
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerdoorhinge_nml.tex",
+   "sha256": "6abe51ed0c2a1f875a87806c763b7b73489f6712530b7b52df2e7f2e5c6bbc77",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 1070
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerlockingbar_col.tex",
+   "sha256": "739ea54df5c28085444d513eb984dc51e76602c3ba60bcd0ba0ca569078aeaf9",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 34961
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerlockingbar_col_e.tex",
+   "sha256": "85184828d6a0872a546185add2898b8e43e4145cd7aa8de856293a9a247619f2",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2901
+  },
+  {
+   "path": "Game\\materials\\rust\\cargocontainerlockingbar_nml.tex",
+   "sha256": "223ed6c609232d11d4d2018b3c131650b069a64205f7d2068962c2dda0072446",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 13366
+  },
+  {
+   "path": "Game\\materials\\rust\\car_engine_col.tex",
+   "sha256": "a4ad49b2759697cdde7816f916b457869c0f41b4222b9f2aa4261a8e474408fe",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 36231
+  },
+  {
+   "path": "Game\\materials\\rust\\car_engine_col_e.tex",
+   "sha256": "e354b0302475c9b8f54ea59ebc459aae0a8a7600bbdd40e28deae74a8e25888c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4456
+  },
+  {
+   "path": "Game\\materials\\rust\\car_engine_nml.tex",
+   "sha256": "006c00d8e66ccf4c47283e2c068ec904a0ba6c514f651a8c7682e92057fa84b1",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 37205
+  },
+  {
+   "path": "Game\\materials\\rust\\ch46e_body_damaged_col.tex",
+   "sha256": "1b972ef0cf65b7f9f4894bee252e1c0e16b67e3e8ad30a18bf40ae3da35d1e5c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 125775
+  },
+  {
+   "path": "Game\\materials\\rust\\ch46e_body_damaged_col_e.tex",
+   "sha256": "4b76d626480c4e830b9871042adae2106745bec217a129c64d5bd387d3f39be5",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3819
+  },
+  {
+   "path": "Game\\materials\\rust\\ch46e_body_damaged_nml.tex",
+   "sha256": "4a7aa12f82f2036e234abf61c81c8cf92cadbfce659ff90584e92abda2fc47c8",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 53292
+  },
+  {
+   "path": "Game\\materials\\rust\\ch46e_glass_destroyed_col.tex",
+   "sha256": "9bf002805028c7628e5f252c8f7fb3ec8d527a7d0167d2a3dd38de98ec9b0993",
+   "size": 174892,
+   "compressed": "gz",
+   "csize": 137540
+  },
+  {
+   "path": "Game\\materials\\rust\\ch46e_glass_destroyed_col_e.tex",
+   "sha256": "8855a4df727467f49334c0b3ce95068e5c5a53f954f62af61ca912a70809b1cd",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4568
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall03_col.tex",
+   "sha256": "eb85ca8fba121af13e781064548cf042112e2c59c8ec9252c3bf4bc0c0bd5191",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 128291
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall03_col_e.tex",
+   "sha256": "3d50bdc1a815f4201c8df0f642ef82ec35f6360276492a6a74d03af2d81999bc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3337
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall03_nml.tex",
+   "sha256": "1b4878ba312ff176d7e73d58f4032f2f5929960f16cacced0b48f11ce0fa24bf",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 69986
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall06_col.tex",
+   "sha256": "e7f010869b2d306b48dc8ba0deac2ebcd0a506966c13a6dff52a7424c3b00c44",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 142561
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall06_col_e.tex",
+   "sha256": "2bdc8c9dd9b3d1a22250851b5faf0ddb782d705acb474ad572670e157cf97d27",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4119
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_concretewall06_nml.tex",
+   "sha256": "0a3a841b22a32dc9c31ba2e2066e18c3a14f6315ac150c649970e4e00e3ad62e",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 17835
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_factory_floorgrate.tex",
+   "sha256": "32832f7e253033ad3e9f93e1a465377ba9445003d9d1b3ad040d78982ececb88",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 10476
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_factory_floorgrate_bump.tex",
+   "sha256": "ffe9b6a2fb81d16d93ccf7dce45dea77109c20d0e8a09004bab32baabaf99c39",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 935
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_factory_floorgrate_e.tex",
+   "sha256": "15432435da4d99deae609ed7b1ced26cc3cfefb2b3fce28a7ac75521905afda8",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2749
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_factory_ruststain1_m.tex",
+   "sha256": "1f26ca65532d5b9466ecec76d80440e632ca16c442ecc087c65c4a5f3a1f970c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 109792
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_gas_pump_col.tex",
+   "sha256": "81e26f90e79fe36ce6eefe464a38c567ec661ca3337538493139664f08a48ec5",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 141923
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_gas_pump_col_e.tex",
+   "sha256": "7d4c56f8496215db325713eea9b618770713b10ea67b7d78fd99bcae21dd299e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3890
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_gas_pump_glass_col.tex",
+   "sha256": "ed645d9fc2dbded89fcc4cf1c17c4056d729238ed3e1283bd75862c35ed51837",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 4103
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_gas_pump_glass_col_e.tex",
+   "sha256": "1a857f5c8218bc47e1b1fe3d050b60b2a7dd86f8447465d702ff310706e22147",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 435
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_gas_pump_nml.tex",
+   "sha256": "5c6540580049a1fa5dbb0355ca55158e9334f028cbea72e276b7b2e773e7ccd7",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 67746
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_plaster02_col.tex",
+   "sha256": "01990fdd781d54f08c4b3c365468c41d28c35423f8f98c0cdec30609b918615e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139486
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_plaster02_col_e.tex",
+   "sha256": "8420065482a8ebfaeb1a46194b6dbf40345c729ffc3179f8c5ddf2021fccd1cc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5502
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_plaster02_nml.tex",
+   "sha256": "c410b3f81e9c9acda5ee5585a2b16ca70ca7aeb8d526b412d3426b4e4059eb76",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 62584
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_stonewall02_col.tex",
+   "sha256": "28c62fb019ed2b67af93fcc31ed5ea8fd1dde805036e40a4f69dc5a59be3861f",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 142076
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_stonewall02_col_e.tex",
+   "sha256": "8f95c934d8988bb0e1545ac014089f3f358d8bb4ce86147916415650a5504750",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4889
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_stonewall02_nml.tex",
+   "sha256": "3864c5e06d74e20f153af168f3dae26cd0145ff1512e92466f8bd39867bcdabc",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 69233
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_window_13_col.tex",
+   "sha256": "cd6463e617945e1b5e3a7c89a9d4396e98e3faf98e4fc297c1144a40e77e6c2d",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 17885
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_window_13_col_e.tex",
+   "sha256": "518827379863a7725310b28d7ca4155fa182afba5d1569b100d07c09444fe84b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4145
+  },
+  {
+   "path": "Game\\materials\\rust\\ch_window_13_nml.tex",
+   "sha256": "b397a76abd324ba620bd72739d4ba3862747f221af31bada4e79cea0b9445531",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 22245
+  },
+  {
+   "path": "Game\\materials\\rust\\com_wood_log_col.tex",
+   "sha256": "bbcd81299cf5ae0be76f8997fa100cfc4162d98865efcb559686b5ab42f177b3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 132173
+  },
+  {
+   "path": "Game\\materials\\rust\\com_wood_log_col_e.tex",
+   "sha256": "f6372cb140b3da68810b6dd333223ac4ca3599641641f5140a5e838bac29da5c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4569
+  },
+  {
+   "path": "Game\\materials\\rust\\com_wood_log_nml.tex",
+   "sha256": "eb4b1cf8e9c7471cc7aefae39d655c4ee913e99721014e947f72297ee6d85c83",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 71352
+  },
+  {
+   "path": "Game\\materials\\rust\\concrete_dirty_cracked_col.tex",
+   "sha256": "097c11f2c0ee9de746500667e44a2cef4803e729c86903176006a3cf3a84d725",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 148882
+  },
+  {
+   "path": "Game\\materials\\rust\\concrete_dirty_cracked_col_e.tex",
+   "sha256": "32bc60b45ef83e79ad6e515c5d46095eaa204cc25f0a7767fae5da6905666e13",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5076
+  },
+  {
+   "path": "Game\\materials\\rust\\concrete_dirty_cracked_nml.tex",
+   "sha256": "4fb4a8873ee9b895f33a8ea641f6d71dfa77c2ea3be57e12347fc5cb52083c08",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 70148
+  },
+  {
+   "path": "Game\\materials\\rust\\ct_fire_esc_trim01_col.tex",
+   "sha256": "9911a81870c28f81b1b5261b523a902b3c68249a148149ecf3978dab93c341f9",
+   "size": 11020,
+   "compressed": "gz",
+   "csize": 9551
+  },
+  {
+   "path": "Game\\materials\\rust\\ct_fire_esc_trim01_col_e.tex",
+   "sha256": "6ac8a68aae6879c90b55f3e80d7878aa1645dc646c0ba0ba573e4adb7f9eef1b",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 1400
+  },
+  {
+   "path": "Game\\materials\\rust\\ct_fire_esc_trim01_nml.tex",
+   "sha256": "c3dbb67ea63ebfbcfca203f7d3e91f20e4a716159468b473b9fab49e72ad4d38",
+   "size": 11020,
+   "compressed": "gz",
+   "csize": 8988
+  },
+  {
+   "path": "Game\\materials\\rust\\decal_grime_algae_vert01_col_m.tex",
+   "sha256": "5dcd10d5675734544c0d3c1d654321b7bfc08726dc8ba7c4c3a9941c47b04ae3",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 72206
+  },
+  {
+   "path": "Game\\materials\\rust\\desertshrubs.tex",
+   "sha256": "1726a2aac52b575686ada5651e13c7a8b168634f389088ad7ccec1d63b15d146",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 120970
+  },
+  {
+   "path": "Game\\materials\\rust\\desertshrubs_e.tex",
+   "sha256": "fa46d584669e1e4841845199e7f0b6c4b611126ace19e6780d428173570ed335",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2568
+  },
+  {
+   "path": "Game\\materials\\rust\\desert_brush_01_col.tex",
+   "sha256": "57d379489c15bf745b7499346e35295c02baf8711665ab0a4c44a53759dce623",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 92967
+  },
+  {
+   "path": "Game\\materials\\rust\\desert_brush_01_col_e.tex",
+   "sha256": "28c683cd82f08ce971a3bb4dc77c6c06835cdd73c6e65140e648ccdaa0477ec4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2130
+  },
+  {
+   "path": "Game\\materials\\rust\\diamondplate_rusty.tex",
+   "sha256": "4ff8b081d60d1b680d32f43fb6a8a042ae76840958f89fb7b88f2c0d42a0a37c",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 32077
+  },
+  {
+   "path": "Game\\materials\\rust\\diamondplate_rusty_bump.tex",
+   "sha256": "34e6c428fb706b4be4b95935824eacc6dddcdbf4e5ee72585f57e1be5ad7d876",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 9464
+  },
+  {
+   "path": "Game\\materials\\rust\\diamondplate_rusty_e.tex",
+   "sha256": "6501fd9809345590eb52eb9ef93d8e0ec2c73751c6bb311f48263d413f261c08",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4072
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_01_col.tex",
+   "sha256": "4d2a34cb23cd88e44961cc2d27f30944398dbce51ecc0c24458f3d485afde97f",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131394
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_01_col_e.tex",
+   "sha256": "188b701dd67c2ed81a741d58b3fb98c6eff5146970d21196e3fbbf6a0489ff8f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2978
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_01_nml.tex",
+   "sha256": "7eb71ec7c9053375dbcee802d9effab97cd9838e808803a1d532b39886aae89f",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 61866
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_pebbles_col.tex",
+   "sha256": "a59161e5e2a1f91fc814d0c1cb200b5ba52ea5b737f2ec5a84c92e5f6f41e786",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139248
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_pebbles_col_e.tex",
+   "sha256": "a18dafd83f0d9a3a2bdf017e9553a4fe9bc027998138576319c48b3fa911b7ca",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3723
+  },
+  {
+   "path": "Game\\materials\\rust\\dirt_sand_pebbles_nml.tex",
+   "sha256": "f0b1cb4d3e09b63a163ede4206c55139608db25a2fe366671c16231291c54f99",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 68776
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pacific_bushtree01_bark_c.tex",
+   "sha256": "f9eda6bf66ba0574cddcb38bcfac8b6cbe5196409440f27e44a6e7d1643edaaa",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 2485
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pacific_bushtree01_bark_c_e.tex",
+   "sha256": "4a9113f3cee1bb612ec80b3af4478f22bef47952ba944e29a8e75c6b7c0c4cc7",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 1347
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pacific_bushtree01_bark_n.tex",
+   "sha256": "138bd8f6e361d871d78ca35184986e24992700c04ae75e48c4700e78114ac08f",
+   "size": 5580,
+   "compressed": "gz",
+   "csize": 4501
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pacific_bush_wild03_c.tex",
+   "sha256": "0ef94dcce775c7d63278c11fd2e2148198fc4a90b269a98383bf913bbd668a44",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 39840
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pacific_bush_wild03_c_e.tex",
+   "sha256": "1ee1a7269732d110083cd13cad5ede8215087cd4167c726e8cc5d439e87766c4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3625
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03a_c.tex",
+   "sha256": "cb419816980fbba2cb49ec0cf8707a01cf6f567fe5926391eb62878d1aca022c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73255
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03a_c_e.tex",
+   "sha256": "91841e0672a32b465f9ba136b0942a242d6a311fd00ca588772e2822491fd12c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5467
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03a_n.tex",
+   "sha256": "921f90d64d7f40e9d2d46519c4351cfdcc820435340b7895e2a79c97714f1404",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 68034
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03b_c.tex",
+   "sha256": "b179ac5928b6d370ccc953c48765c9abece29a9c73e4d0cf8c94c566040cf8f1",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73519
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03b_c_e.tex",
+   "sha256": "ff4ae1e91d79d7a0c437e746ca1ad87111fd06da3c96a308edab13075c275319",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5533
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_bark03b_n.tex",
+   "sha256": "c345734125e7db0ad2cd3ac9474efab3cf4a54b3df5a430526c4e092fc4473d6",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 68229
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_needles_06_c.tex",
+   "sha256": "647f0a0e8089cfbccd57bb0b028d933c034baabd9560d24081604bcd2afb4aed",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 168109
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_pine_needles_06_c_e.tex",
+   "sha256": "986e47cb47df93ef7b75d32bece542b8b0467f591a48fc7d93278c743705beb5",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2097
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_01_c.tex",
+   "sha256": "f69485362863dc736da80c79517e15112a24b117b2eaef38f0add8e0aa60a0f1",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 70367
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_01_c_e.tex",
+   "sha256": "84d624d7e8d1134dea017567a5e97f3ce330f60596ca2578e4c2933d904604df",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1649
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02a_c.tex",
+   "sha256": "702d42171365056c73e4e049035ce397f8c04fbd8e5b9fbb2f0e6ccf4ec425e9",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 18114
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02a_c_e.tex",
+   "sha256": "78096e22a0877d5467a669ea0ca3b6a748fff3aebb2b5d0ffffe2c9814971f76",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4340
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02a_n.tex",
+   "sha256": "8e34b649d953b053bd9839a7fd050dd10c6a7cc39f9d343ebf3e428b95e8e06c",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 32869
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02b_c.tex",
+   "sha256": "b378bb57dbfaa65e0e4c8412d92794c34bcf7aa104299ed97e8ac459614fdc31",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 18216
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02b_c_e.tex",
+   "sha256": "8b1793e0ff5b6bc8f8ff6216eb572208d6afba156f6356aeb981d604c3e906c5",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4525
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02b_n.tex",
+   "sha256": "7e4a9cb2f7349ab16111d278806b3071342143bb5e65777f13d11950e6ff8217",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 32768
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02c_c.tex",
+   "sha256": "6cf4a816762caaf2be1a40e6a66bc8fa28139b06ad2e365e6f3c369c85a1056c",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 18355
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02c_c_e.tex",
+   "sha256": "54d17b4cc1503957fed3c68fec4f1c5960c0fc31e77aaf226d1cd2baaf249c0e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4158
+  },
+  {
+   "path": "Game\\materials\\rust\\foliage_tropic_shrubs_02c_n.tex",
+   "sha256": "96120b86d2ca3f1be1a7fb3b6302d43b22c6906270c7c02be1ef834f01a94316",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 32045
+  },
+  {
+   "path": "Game\\materials\\rust\\furniture_metal_door01_nml.tex",
+   "sha256": "db32e40e8c49b3997051a3e37c97806a40116f959f72dbb365f35e51ffff83ec",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 11117
+  },
+  {
+   "path": "Game\\materials\\rust\\furniture_metal_door01_rust_col.tex",
+   "sha256": "6a5aa4cf308961d91fc77fe7a975b8582500a991c20006c86ee77c8ede3e40e9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 61813
+  },
+  {
+   "path": "Game\\materials\\rust\\furniture_metal_door01_rust_col_e.tex",
+   "sha256": "8ee2f9af6cf37c0d2b16b264cf17ca23472587906843ba72319517f2c0186453",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2836
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_canister_col.tex",
+   "sha256": "7f1e36295d5762df9c0400b3d849025e7b1efd156f22113b73ee4de2d0fcacc4",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 138883
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_canister_col_e.tex",
+   "sha256": "330ce2e433138b463fd87693312c37d740f45bc1141777ab8be2517d213df8de",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3678
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_canister_nml.tex",
+   "sha256": "5db3c7d55affba2b9fd8a82a8c608ae1c54a045f7a7f98cc0171012586f770d0",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 46773
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_pipes_col.tex",
+   "sha256": "438678fc57e54913d7f75ecf87a67e75292b352b64fff3fe38667dc0c6d8ed42",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 155042
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_pipes_col_e.tex",
+   "sha256": "71ffce08b3c9bd90a6df3dfbb3f5a7d5026f734a908eccabf8ff0f8f55470c94",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4626
+  },
+  {
+   "path": "Game\\materials\\rust\\gas_pipes_nml.tex",
+   "sha256": "65bd5c41ca86a4c0e5db91fd8a422ce01f0a2f89f22238b6ad9dfbee20719cec",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 61846
+  },
+  {
+   "path": "Game\\materials\\rust\\grass01_dry_col.tex",
+   "sha256": "f86eeac462b4779cb3d4fa4f8cfdfc871a9670e56e0d522d4f94ce3b3e17356c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 148801
+  },
+  {
+   "path": "Game\\materials\\rust\\grass01_dry_col_e.tex",
+   "sha256": "61f7f0a3de833c8c56b5be5c8b9ef86109d483ad400ee46afd0ef6adc6b241a8",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5044
+  },
+  {
+   "path": "Game\\materials\\rust\\grass01_dry_nml.tex",
+   "sha256": "77c119ac591404c52dd16c0dc895aa027b4c1f180b5c304d7e539aaaf6ab0db9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 70381
+  },
+  {
+   "path": "Game\\materials\\rust\\grey.tex",
+   "sha256": "d8d5e49bdacb97b4928845c9157f6e115f2d016f80c5dfbf1e3eee4428177f6a",
+   "size": 308,
+   "compressed": "gz",
+   "csize": 72
+  },
+  {
+   "path": "Game\\materials\\rust\\grey_e.tex",
+   "sha256": "b4fe0ff8131c80323c998399ce16cbccc24c98b3eb298c7386c9b1efdc39f73f",
+   "size": 308,
+   "compressed": "gz",
+   "csize": 72
+  },
+  {
+   "path": "Game\\materials\\rust\\hedgewallbush_all_col.tex",
+   "sha256": "1478655c55a75322be7ed7cb016b3df924ee2343f9f3b7dcc8a72f77c6730753",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 183734
+  },
+  {
+   "path": "Game\\materials\\rust\\hedgewallbush_all_col_e.tex",
+   "sha256": "1802066478b148d6119906bef7a8e0df8c451210e82647973cbc4516002a1b5f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2439
+  },
+  {
+   "path": "Game\\materials\\rust\\lawn_chair_1_col.tex",
+   "sha256": "5dc0ff6d56bb9deba90a3037c73c8e773fa4e22351d67ed14ae3a4a5b2eee48c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 45649
+  },
+  {
+   "path": "Game\\materials\\rust\\lawn_chair_1_col_e.tex",
+   "sha256": "deef9f8c0669601743ac403d737e6c3eb4fd9c674be01a60f4e6be764282146c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4820
+  },
+  {
+   "path": "Game\\materials\\rust\\lawn_chair_1_metal_col.tex",
+   "sha256": "fb074aaa948381d3c7d67991944b01f3f1ab96aeeea85430aea8669c16dde6a4",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 35608
+  },
+  {
+   "path": "Game\\materials\\rust\\lawn_chair_1_metal_col_e.tex",
+   "sha256": "cd559dcfc37e9d0c65e7c6e3334f261c5b67c8e023b9d62e62368994ed968418",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4812
+  },
+  {
+   "path": "Game\\materials\\rust\\lawn_chair_1_nml.tex",
+   "sha256": "c7081b7e13ad29a9ed30032095e6cdd5a6eb39cb925ab075fca9a6b9dc49c380",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 22188
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_aluminum_siding_02_col.tex",
+   "sha256": "a7caf88628d4ef114ece288eb657ea70000b4e999fd47755a82aea6ed756147a",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 70852
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_aluminum_siding_02_col_e.tex",
+   "sha256": "1019fcd6d63d63dddd854b52a2b1eb925a76d6ceb5a126e4537e53adf7f57c06",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2026
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_aluminum_siding_02_nml.tex",
+   "sha256": "3eaac841b43a2cb1a227ae85c0224db1e677438c8b73cdf60af491c4dc90c4b1",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 50784
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_pipe_rusted_col.tex",
+   "sha256": "f387efda1fa24849472fbc83f092d305d91b1fb253ed3e5d9698768cebfe5357",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 138895
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_pipe_rusted_col_e.tex",
+   "sha256": "18f5cd0405032e9d0ab95183f9546fb17d1bcbbdf8a8762fafcb642145d77c92",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3566
+  },
+  {
+   "path": "Game\\materials\\rust\\metal_pipe_rusted_nml.tex",
+   "sha256": "7e609b0d82434b275adc5a067b899b24ab62de5670164a4cd3afce39c6777400",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 66754
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerexteriordoor_nml.tex",
+   "sha256": "2e53c566edbf336cf66e74903a8e044ab4ed01cbce52cd58fab2256884344a77",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 21864
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerexteriorwall_nml.tex",
+   "sha256": "58e8bd636c9a88c79e9b6ec2af5f88eb3d632c9fc01959f8b9c674dbc60a6856",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 16747
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriordoor_col.tex",
+   "sha256": "5c88a9b5273d25a4bbe5469b5422380018adb8e1e8c9d4c8eee2282a5a3f624e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 136421
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriordoor_col_e.tex",
+   "sha256": "50ab9cd8e24a192274fb12900ad045bc7e89f63ba858db7ae9ffdb1e2c5a516b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2895
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriordoor_nml.tex",
+   "sha256": "c14630492a8767c9fed3a6769b6ac98442ae894777773ef060607a8eef79de5d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 14385
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriorwall_col.tex",
+   "sha256": "41f7bb9eb3856027435fb699a4dc7e0d00b41167b93b85fc9d79ea3926a5ded3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133232
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriorwall_col_e.tex",
+   "sha256": "e4f4d30b2437b760d3493b4fcf570e82e696cf03cc15c9c7b2aebf50fa988392",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2908
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriorwall_flat_nml.tex",
+   "sha256": "9114cfb99226909a23837f779e315759567c87a3a27d1b199471f697dfe349d9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 7061
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerinteriorwall_nml.tex",
+   "sha256": "d2ef44a6d0bc63f58a308dad4cbff0a128af9213102782ec219528c9a29c54a9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 9731
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerwhite_ext_door_col.tex",
+   "sha256": "7affd55c1abcf260394c60db37b4b3b6c2b82874d6a30a358823ed3d811a0c28",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 112099
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerwhite_ext_door_col_e.tex",
+   "sha256": "7f0571b30b421875f8e80080187c6511b4379655d988760d1f68b989cc0f58fa",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1285
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerwhite_ext_wall_col.tex",
+   "sha256": "d7c2f1c1d1ee95e4a7e0f2e4ff0f344872c6bcae393b5f1d4c4f34cfe02331ae",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 104945
+  },
+  {
+   "path": "Game\\materials\\rust\\me_cargocontainerwhite_ext_wall_col_e.tex",
+   "sha256": "19f9998d251f378e5c82fbb7de4ce60827c2ea70edd6a68bbf7d8744d183391a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1301
+  },
+  {
+   "path": "Game\\materials\\rust\\me_chainlink_fence_color_0.tex",
+   "sha256": "97a95b7650e0c2c9ae6555d14570f97e37071b21b440f0af551dbe5af97724c9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 46234
+  },
+  {
+   "path": "Game\\materials\\rust\\me_chainlink_fence_color_0_e.tex",
+   "sha256": "05dfb6e01acf517a0c5fc3f4fdb3535a66022a45923e6ef7aacb0d484f7b4761",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5054
+  },
+  {
+   "path": "Game\\materials\\rust\\me_chainlink_fence_normal.tex",
+   "sha256": "e509b936558ed54b7169e5f3101a46193d810f987145e06ba779e11ff9cedf63",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 46722
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_col.tex",
+   "sha256": "f37d7b86f4b13f07bee2a7857734f25e721f222b553a92a9f1d981d237421995",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 150597
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_col_e.tex",
+   "sha256": "0552d2299bce9bfae4741d9eefd2cf40a6a16ea220b1baf71e07fb98d62d76c0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4760
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_hole_col.tex",
+   "sha256": "b5efaecbc6864da7f91d38d888b07104a49bd979a18895b0c15bbc3e632d7fae",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 175344
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_hole_col_e.tex",
+   "sha256": "4ff4bea803c74e286c355b10fa5fe12ec3fc044f09eb7885a9c88a082d583a13",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4647
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_hole_nml.tex",
+   "sha256": "9ec47d878161cedd11b6ac1ddbfa63faff1b85922708f0127c48e12495e3c784",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 62855
+  },
+  {
+   "path": "Game\\materials\\rust\\me_corrugated_metal1_nml.tex",
+   "sha256": "f1308fef539dc3553c345cc8860cae7b0dab8e8d87089cd64efd904a33fb607e",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 61034
+  },
+  {
+   "path": "Game\\materials\\rust\\me_decal_oil_leak_col_m.tex",
+   "sha256": "2cce189779940a793f8dc8114388080542c2c14c85dd65dfae7f6f37ef565e6d",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 24840
+  },
+  {
+   "path": "Game\\materials\\rust\\me_decal_oil_stain_col_m.tex",
+   "sha256": "f0b0fbed8fee3453a8cafdd80cc587917bb65dd2fd21c8b821d58361b57abdd9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 91500
+  },
+  {
+   "path": "Game\\materials\\rust\\me_door_07_col.tex",
+   "sha256": "8e3f29c2117f51c8252402fee9a9d7e3bb9852e74bdce9336b45d8a85f56fb5d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 70711
+  },
+  {
+   "path": "Game\\materials\\rust\\me_door_07_col_e.tex",
+   "sha256": "15e621163f0d473840d4cbe62dd91cbce299e199e7340e6c940792c0eb7a3d2a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3011
+  },
+  {
+   "path": "Game\\materials\\rust\\me_door_07_nml.tex",
+   "sha256": "36527702ddb76385366bf950346eff92bae7653502e92179bb7fde7c2bb05e8d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 32959
+  },
+  {
+   "path": "Game\\materials\\rust\\me_floor_metalgratingparallel_col_0.tex",
+   "sha256": "ea0e41fa920e141a34e81290964c1e5dc1d4c962ab35ca76a7d9e6cdbd310ef2",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 116071
+  },
+  {
+   "path": "Game\\materials\\rust\\me_floor_metalgratingparallel_col_0_e.tex",
+   "sha256": "df04022264f9de3836775c720439bc9c65f3b17ea2ef3d290236517cc25cca88",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2048
+  },
+  {
+   "path": "Game\\materials\\rust\\me_floor_metalgratingparallel_nml_0.tex",
+   "sha256": "15e9c733a8908ff5d68d5ba7cc77fcb4b09689ee4a3457b545d864462ea78439",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 53769
+  },
+  {
+   "path": "Game\\materials\\rust\\me_green_door.tex",
+   "sha256": "fe29a84fdafb7fef4af43736b851fffde88253535e2804890112353997af45cd",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 157083
+  },
+  {
+   "path": "Game\\materials\\rust\\me_green_door_bump.tex",
+   "sha256": "57d5928c0ac12d53fdca1e75a78825c1d98b7badd004ed41d9b655a790174194",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 67167
+  },
+  {
+   "path": "Game\\materials\\rust\\me_green_door_e.tex",
+   "sha256": "bbac8d9a546c373a9c4376233deba9b6dd2af93f6140a4a09354fc49122c7a67",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4426
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty02_col.tex",
+   "sha256": "d79b8dfcda7e28ef91ea78672f0515dccae394987ef3fc5296e0e81595e5fb89",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130744
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty02_col_e.tex",
+   "sha256": "376d0559f430905896b1a3cae54716934831f959ff4801680b1d03672e76b0e5",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3154
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty02_nml.tex",
+   "sha256": "8c9f2a923dac64211298101311627f11d22db7ae03f19c67de067f2723ed3116",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 44261
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty03_col.tex",
+   "sha256": "5ca46b03dde56d887df5ff1a9d64e528b5c812bcebf23bfc6406120c7024cb0e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131656
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty03_col_e.tex",
+   "sha256": "43744a00fd8681582af5fb09ff0f696637d9149a6ed6c5544e8a70e8dd3cc57f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4150
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty03_nml.tex",
+   "sha256": "92b3ce8585d4f4cb5681e0dbd0c26dae40f8fd4620474e1c5b74e52a394a5ba9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 58247
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty_big2_col_m.tex",
+   "sha256": "dc126126e63b9d8f38b6280643fe1bdc9346081b18715af50386c9c05841df5b",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139672
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty_big_col.tex",
+   "sha256": "3d28bf8f9f3fac2f368fc93b35688acd916ea5aefeab038f7423df73e3fc45f4",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133226
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty_big_col_e.tex",
+   "sha256": "531efac4c0f791095089de6ea9ec27feb975e06c1ae7a9a6004d3a212f29024e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3873
+  },
+  {
+   "path": "Game\\materials\\rust\\me_metal_rusty_big_nml.tex",
+   "sha256": "5a1c40eb72d7babb44cdb5e568bc53fc05da4fc01b6d207d87cfbcce5b4f3b28",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 56918
+  },
+  {
+   "path": "Game\\materials\\rust\\me_riverstain2_m.tex",
+   "sha256": "b629e5e44402c6acd69039facba7c59a896bb63891c878051271b6438a81e47b",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 66774
+  },
+  {
+   "path": "Game\\materials\\rust\\me_stonewall_01_col.tex",
+   "sha256": "7a72a2f56b55134f6be84b46d5f44691121db66b24b7dc18dbdad924084c5303",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 128057
+  },
+  {
+   "path": "Game\\materials\\rust\\me_stonewall_01_col_e.tex",
+   "sha256": "f163e9b5c774667726a89ec323b7fd8db6ff2d8b5dabab665569619b2917702c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3824
+  },
+  {
+   "path": "Game\\materials\\rust\\me_stonewall_01_nml.tex",
+   "sha256": "84b586b2f31b982f6197a54d9deffeb50379d7549824621f20055efb1ddea03c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 71569
+  },
+  {
+   "path": "Game\\materials\\rust\\me_wire_black.tex",
+   "sha256": "1d2138c14e1aef6c8556d2bfe6c6b3568aa1b83989fa72bdab48806417dd9b78",
+   "size": 5580,
+   "compressed": "gz",
+   "csize": 3817
+  },
+  {
+   "path": "Game\\materials\\rust\\me_wire_black_e.tex",
+   "sha256": "47b5f1e438c9ac6dcceb6dbe31a8e51f67ed2c273950716b418e4f35d5adefdb",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 681
+  },
+  {
+   "path": "Game\\materials\\rust\\me_woodboard_01_nml.tex",
+   "sha256": "cda5bebf7d14e642af62e325d1bcc3639b951989d51cb3269ffaa9dc1c70198c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 50940
+  },
+  {
+   "path": "Game\\materials\\rust\\me_wood_01_col.tex",
+   "sha256": "0c6e4aa93951b6c638afee468103493a8b23c4ec09aa8daa7de4e64f1540fb5c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130383
+  },
+  {
+   "path": "Game\\materials\\rust\\me_wood_01_col_e.tex",
+   "sha256": "59df434a345316772f5aa0d6197b8ca3e227b6b49e3a73353a4f5f08c5b10c78",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2556
+  },
+  {
+   "path": "Game\\materials\\rust\\me_wood_01_nml.tex",
+   "sha256": "a4390c4c8eeb9d1b626f2efe8041ae843a4d42aeb60be4c229669eb0781a3aff",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 53617
+  },
+  {
+   "path": "Game\\materials\\rust\\misc_literock_small_01_col.tex",
+   "sha256": "9dffb4a5dd60dbc20cb58223b0bc356c9742540710126a8741f2b8ffd03ebd0c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 143295
+  },
+  {
+   "path": "Game\\materials\\rust\\misc_literock_small_01_col_e.tex",
+   "sha256": "774687e987002cd1b5ca5e8551acd2b06e798ee425faae8af7a897f0d5055c8f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4351
+  },
+  {
+   "path": "Game\\materials\\rust\\misc_rock_small_01_nml.tex",
+   "sha256": "6af50e9e80e744efadd8d1db845b00479af90ddebb382261baf4257b4f8870b6",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 74912
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_rustybolt.tex",
+   "sha256": "1d90e779799f4e24a71692837a4229e1cdc70c37f8425ecaed5c9bbcf14cab21",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 17220
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_rustybolt_bump.tex",
+   "sha256": "30aeac7f912fe4ce094d21353ea6e2a252768075d164f9697f96f54fa14048be",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 8749
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_rustybolt_e.tex",
+   "sha256": "b3f077dddf72b0ad441da95cc055e5656b7aa3ce0e0fd28368ce07352160f4a0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3377
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_cab_destroy_col.tex",
+   "sha256": "f001f00227c008006f2d5c754d6b11aa30fd08e5ddb9ec3a9d70997d2057b191",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 123884
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_cab_destroy_col_e.tex",
+   "sha256": "a35404c7ff6e0134708b74f869da310e0675e34a227da89bc5008a7bd0f2945a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5234
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_cab_nml.tex",
+   "sha256": "cd455451c17fa66502cdd0a4dd4f530bc98dfe1392cfbb9d317276a88427010e",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 62908
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_trailer_destroy_col.tex",
+   "sha256": "8de062c9b6adeab3c16dceb108d09032209cd09974d3d39170150a964f071a9a",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 106130
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_trailer_destroy_col_e.tex",
+   "sha256": "7e8c30c5e3de6a3f4c9efd041e2cacf8dfdc6e9949430c0220467dffe06819a7",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3303
+  },
+  {
+   "path": "Game\\materials\\rust\\mtl_truck_trailer_nml.tex",
+   "sha256": "d264a60cee7cacccf966ffd5422039f6372d3ea45e061769bad1690201f77092",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 58442
+  },
+  {
+   "path": "Game\\materials\\rust\\newgrasstufts_col_0.tex",
+   "sha256": "88cbe699982c7a5ceb8ac54ba68eff8798666dafbbe0155c4c498c2850dfab78",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 14911
+  },
+  {
+   "path": "Game\\materials\\rust\\newgrasstufts_col_0_e.tex",
+   "sha256": "989ed37f92131d3a21baafb080b8310b9a50821bb1377cb5f0eca1fd9ce9bf90",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 852
+  },
+  {
+   "path": "Game\\materials\\rust\\newgrass_col_0.tex",
+   "sha256": "41f7201b37510413a0c6fdb7812222343adcb6a66bb5ae5d1807fa7d0a676ac4",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 29868
+  },
+  {
+   "path": "Game\\materials\\rust\\newgrass_col_0_e.tex",
+   "sha256": "978c8ac5c11641103798e882357fa896764319f6a63314f84c0140abccc35a48",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 651
+  },
+  {
+   "path": "Game\\materials\\rust\\palmtrees_col.tex",
+   "sha256": "4718ab48b4dd50434ed8d541aa42c1b13020b8f5b2131dc79b242d4869bee08e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 97977
+  },
+  {
+   "path": "Game\\materials\\rust\\palmtrees_col_e.tex",
+   "sha256": "c42b5781faa4028dccb8dc8c2e6a959b721b2647657a65de1ca3df91bf578dc0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2188
+  },
+  {
+   "path": "Game\\materials\\rust\\palmtrees_nml.tex",
+   "sha256": "c08a62d56c74e6a79b91e95c721a0ffbe2d5be4dc93a70cfa061d54a6d5b33cc",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 56377
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_col.tex",
+   "sha256": "8f6c0bd655b572e14f2c4efce3c858d20c25262c9e13145ab6e27d3d1c3f4e1d",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131336
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_col_e.tex",
+   "sha256": "0c4ce2e80adc2fe0f48c539cc5a9ace8b4561a767629d4e48c0fb1d32de23877",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4817
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_destroyed_col.tex",
+   "sha256": "0950b4a44aa3f93d7f1085e8381b9e28abb69d815899a5e2bd435ca40dc33161",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 124719
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_destroyed_col_e.tex",
+   "sha256": "97e273d1b65734f78b618f1576a2c85876589eb0ba803bbd9254fa499d4afe07",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3731
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_destroyed_nml.tex",
+   "sha256": "dcc5534f47e774fd3876514a456515bc6e3b8459fa6f882e43b7fe47157b27b8",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 49121
+  },
+  {
+   "path": "Game\\materials\\rust\\pickup_nml.tex",
+   "sha256": "1e61e64bed6ca41080df1573b57336175bb1cc8d0313266dc88ec7d719c3376a",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 46707
+  },
+  {
+   "path": "Game\\materials\\rust\\plaster_crackedpaint02_col.tex",
+   "sha256": "fb514b67885611e32901e61a964eede1ce949e3964d575f1ee8ffb74a40cdea1",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 140089
+  },
+  {
+   "path": "Game\\materials\\rust\\plaster_crackedpaint02_col_e.tex",
+   "sha256": "04cc6bfa78aae618be71f48f858b6fa24a092d14cc17024018d99f921924af33",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4537
+  },
+  {
+   "path": "Game\\materials\\rust\\plaster_crackedpaint02_nml.tex",
+   "sha256": "e2b390e35ee3e209991d5c8661db850e15a91e5e43ec846e2459f815f24574d0",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 66852
+  },
+  {
+   "path": "Game\\materials\\rust\\policecar_lapd_destroy_int_col.tex",
+   "sha256": "300809cfb8215322fb61de4f6b3f22a4b3257bd45719f6a90c6e2e2776fb87f7",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 102303
+  },
+  {
+   "path": "Game\\materials\\rust\\policecar_lapd_destroy_int_col_e.tex",
+   "sha256": "d442331621c6933b55fc9218c0eab30afacdcdd1b1987aecceaa610764c05e6c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2769
+  },
+  {
+   "path": "Game\\materials\\rust\\policecar_lapd_destroy_int_nml.tex",
+   "sha256": "4c7bc2edf257e450f6996ce1bc9733437cdf9e4cc911c4c32ce69cf9a35b645c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 66062
+  },
+  {
+   "path": "Game\\materials\\rust\\propane_tank2_col.tex",
+   "sha256": "70f9604693858c2aa485f91d6abc88639989957e81e8c6a68ab32b87befe5fb9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139553
+  },
+  {
+   "path": "Game\\materials\\rust\\propane_tank2_col_e.tex",
+   "sha256": "bb958cc8958e30dcc4b9d8eb807cfb1f7d0ac8178a4ebaff369dcd2ac2eb535f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2725
+  },
+  {
+   "path": "Game\\materials\\rust\\propane_tank2_nml.tex",
+   "sha256": "6b309e3439e7d4d237fe5d0b4d540fe2538f7f46ab0d49ef651cdb683b01581b",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 47707
+  },
+  {
+   "path": "Game\\materials\\rust\\rio_bg_vegitation01_col.tex",
+   "sha256": "109f645d00c0f76822321e7c8b691f68f572d97ef2adede0fc9ae5ff8885b458",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 192240
+  },
+  {
+   "path": "Game\\materials\\rust\\rio_bg_vegitation01_col_e.tex",
+   "sha256": "4fa3958e43459d657ae0fa0044a18e6265be7c131601db635e76d7390d4832ab",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2048
+  },
+  {
+   "path": "Game\\materials\\rust\\riverreeds_cattails_col_0.tex",
+   "sha256": "5dd1d98074fea539c4baaffa3131cf6af442aa368e7fcd28a7cc109d502b589e",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 78446
+  },
+  {
+   "path": "Game\\materials\\rust\\riverreeds_cattails_col_0_e.tex",
+   "sha256": "bbcb125397f3bc1814815b012e7fe23078f91d2786b71995d5a4cc03b2610299",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 389
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_2_col.tex",
+   "sha256": "dc3051744ccb3f5e17bc49189ac839e8553771105da7921005400907bdbaf826",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131939
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_2_col_e.tex",
+   "sha256": "e754b120c324faa624b1053b38f5d12b62a5af51c43bc545d7cbc08ca0039383",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2520
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_2_nml.tex",
+   "sha256": "e5aa988a9eb6a5e1c2fd99d2cfd6ca69da2776de82504879f5963622b0bc921f",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 72302
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_4_col.tex",
+   "sha256": "06e12c6737c8fbd04fb6de386e37cdabea1ca3d6d87befeef3d00f53d558c77e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144939
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_4_col_e.tex",
+   "sha256": "a956591b1e6ee105c1c2e58f3e5067fdb4d56a1335be20320569eff6915f4a1f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4508
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_brown_4_nml.tex",
+   "sha256": "c927f8d88c42ef49bebda86d87a68bfac2d0256fff08376868df80c9165e44b5",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73885
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_cliffwall_3_col.tex",
+   "sha256": "f9d6deb65a13856396b8d60c2ef194624d1c261a8775c2076708f42c54d567dd",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 142548
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_cliffwall_3_col_e.tex",
+   "sha256": "dda567956b62ac7630a48ee60dcd098f137f58c8b7450e06171c04299854fa8a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5270
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_cliffwall_3_nml.tex",
+   "sha256": "105bdf15ef0860c450e2f77f1e144cffececc53c1363e8461ad9929f49967b7d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73078
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_pebbles_c.tex",
+   "sha256": "39333d0b5a824fcfc672fbbc6cbb4b75b1c83649abc394c6be53b5a7c264cd4e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 163535
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_pebbles_c_e.tex",
+   "sha256": "43044a07032f4bae98b3bf88fad2497b45f25a64287c5eeae54aeefdcaabb792",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 6909
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_pebbles_n.tex",
+   "sha256": "800aca1371dcf688aaf16854298a196c44fa7e6b057783f6bea3d2edc7452a87",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 71896
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_tan_boulder_col.tex",
+   "sha256": "8d230f7ae9078792f174b65c77f8b6584a829485c0761a4cfdbdcd30d1c17603",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133986
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_tan_boulder_col_e.tex",
+   "sha256": "d478e64943afceae4b2ea9ea5daee22503d6e48723998bd55d52e8d0cddfbf62",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3541
+  },
+  {
+   "path": "Game\\materials\\rust\\rock_tan_boulder_nml.tex",
+   "sha256": "e5298b1d1337c0dacc8b7d8c79384189b5482fd205d8b7222338cc0e2757c7fb",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 74537
+  },
+  {
+   "path": "Game\\materials\\rust\\rusty_barrel_bump.tex",
+   "sha256": "b34f7d4257712fe0f4859f5cee5e064799d93d81c1237f52fb8bfef916005bec",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 64108
+  },
+  {
+   "path": "Game\\materials\\rust\\sky.tex",
+   "sha256": "b1b30a131ea9ec328e126d7aac27c6dcaac079d083db5b64e7c0f283fff8ccb1",
+   "size": 5592540,
+   "compressed": "gz",
+   "csize": 261957
+  },
+  {
+   "path": "Game\\materials\\rust\\sky149___________________.mat",
+   "sha256": "7fdf97fb32e9bf5b5d71dd8cfea521e588139d7638dca61fa892d728bc90a759",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\rust\\sky178______________________________.mat",
+   "sha256": "7fdf97fb32e9bf5b5d71dd8cfea521e588139d7638dca61fa892d728bc90a759",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\rust\\sky179___________________.mat",
+   "sha256": "7fdf97fb32e9bf5b5d71dd8cfea521e588139d7638dca61fa892d728bc90a759",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_col.tex",
+   "sha256": "26f92d5ee5e97619705cac66b1c0499f8a58930dc2c31ad661848e0925c6b857",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 128802
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_col_e.tex",
+   "sha256": "049e567280752c9742ec98e09f4ddc6fd7705db6b637bd99778f74005ef5613e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5153
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_d_col.tex",
+   "sha256": "df2f3a784a578f07bbffca721fe3ccac74989bb551e2cede9bc41ad530ca9c95",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 118597
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_d_col_e.tex",
+   "sha256": "f5b40d76376ef9d3d0945d8bb89c4a963b392258caae2f5f69cc4f3149f94649",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4233
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_d_nml.tex",
+   "sha256": "ad4026571e52cd63eb28a55bb7ff953f30e94785163428d804fce21efa42fc25",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 60792
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_nml.tex",
+   "sha256": "942a855f6b408869beb451b5f71a4e0feb36600f599c30285a02fc829f1da82a",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 61485
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_tread_d_col.tex",
+   "sha256": "a9d9f60cddaf3707bd9add74949bc3be9eae376f7800415cb6c43bad6cd851dc",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 34641
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_tread_d_col_e.tex",
+   "sha256": "8943e8011b3c693a5c06fa18f1da41e3eee83ba26c9120bb802341cda3537c73",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4967
+  },
+  {
+   "path": "Game\\materials\\rust\\t72_tread_nml.tex",
+   "sha256": "7b14fc2c1b6f8b42875b3e2c78de2b55db748e427ef69895463139e920be8856",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 57355
+  },
+  {
+   "path": "Game\\materials\\rust\\tires02_col.tex",
+   "sha256": "9385be4000b49c1f0a3fac28016eeb30edf7b15ad9b34e3b8c9927dafab6faf8",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 60264
+  },
+  {
+   "path": "Game\\materials\\rust\\tires02_col_e.tex",
+   "sha256": "dc3ee665aa741fc2ea5e656c191e335a849d840dd0cd7010ac737d39e345ab99",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2348
+  },
+  {
+   "path": "Game\\materials\\rust\\tires02_nml.tex",
+   "sha256": "ef5cf88a2acff1465c1b8a7b735add79d91919ee29c5482ca1b7e480de701f75",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 70000
+  },
+  {
+   "path": "Game\\materials\\rust\\tree_desertbushy_col.tex",
+   "sha256": "a3feabc4daaa71f905bc05e70696228762f886f9bf7e39b80835e65c823d9b6e",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 128930
+  },
+  {
+   "path": "Game\\materials\\rust\\tree_desertbushy_col_e.tex",
+   "sha256": "7c6cece99a67791ad77c6ab9495235787310a53a499ed77a01b303c5dbdd2a82",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2711
+  },
+  {
+   "path": "Game\\materials\\rust\\tree_pine_col.tex",
+   "sha256": "5742c20d75a728c8ae0726795c4584c001c83bcf1670b3ae78c0d38332d11ec9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 104877
+  },
+  {
+   "path": "Game\\materials\\rust\\tree_pine_col_e.tex",
+   "sha256": "55008b23f0a44610ae073e475e030d4b25148d2371ad7b7c9eacfbf92a9064be",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4003
+  },
+  {
+   "path": "Game\\materials\\rust\\tree_pine_nml.tex",
+   "sha256": "4c32f7b610c4caacf74e3adaebfd5be33200daeb0bf3baddb5b088ac15cbae36",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 38651
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_temp_truck_col.tex",
+   "sha256": "2ab56285c3e3b651e16af2a6b77f788f8c590c7f1967754a34db14e926e3dfcc",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133815
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_temp_truck_col_e.tex",
+   "sha256": "e058bdd02495de7aa868645041b40a7233230dea048f037658cd4f4e1aef94c6",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3586
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_temp_truck_glass_col.tex",
+   "sha256": "b9878863eb72bdc4b1bc2b7f7467ab6bb07ed982f7244134a523eb9b1aa00dae",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 60611
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_temp_truck_glass_col_e.tex",
+   "sha256": "f1143bb6973f1cc7d3531971d46e9fc99c11a37051d7c48ee360dce59f069c92",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4102
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_temp_truck_nml.tex",
+   "sha256": "9002ab97dd04f59d4d1f641e34afc877a80fa02ee47f3f9b6e62fb322d383b4a",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 47837
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_burn_col.tex",
+   "sha256": "1ef33b63ae2e91934cd69a5a07ecad715aabb7e34f4e246040a4eac7a760e56a",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144017
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_burn_col_e.tex",
+   "sha256": "87caff946eb5e9341646dd8667363a4453809940e6ecdadf4073391ab6963e6a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4152
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_burn_nml.tex",
+   "sha256": "bc365fd2b2a81be208df6ff62d86121be721f212763347685f2241463f6d502f",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 69394
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_wheel_burn_col.tex",
+   "sha256": "d59f194e24929eba454c383e9b52944208980e55a7b578d1aeac298ac38ab5a7",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 41869
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_wheel_burn_col_e.tex",
+   "sha256": "e5855ec0c12745ae994f3686f77f814ff846a434dcf19910e45a6e599b154a86",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3168
+  },
+  {
+   "path": "Game\\materials\\rust\\vehicle_zpu4_wheel_burn_nml.tex",
+   "sha256": "592c3d9d9593f20a2ef032cd8cb9da4fe0672d4d83265e33a58ee153834cd54d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 70087
+  },
+  {
+   "path": "Game\\materials\\rust\\water_ocean_foam_scrolling_col.tex",
+   "sha256": "e1f88bffd1633733636126c058c01b850ed29b7f7e1b747375101be5934ea441",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 291546
+  },
+  {
+   "path": "Game\\materials\\rust\\water_ocean_solid_scrolling_col.tex",
+   "sha256": "ae0cd1cedf2cbafa0045881d55945f2f7c95070a4766c649e1bae2709c3a3606",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 122801
+  },
+  {
+   "path": "Game\\materials\\rust\\woodboard_weathered_col.tex",
+   "sha256": "4c5d01a3319931dd688f2220f18527c750cc1ee7b9df62308ff52ee5c31e1d26",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 123319
+  },
+  {
+   "path": "Game\\materials\\rust\\woodboard_weathered_col_e.tex",
+   "sha256": "73e3cde1eeb1321ce635bbbbc25f394702b1269b168bd10cad24e29434effa1d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2358
+  },
+  {
+   "path": "Game\\materials\\rust\\wood_wall_weatherboard_col.tex",
+   "sha256": "40c7325fde0edf6c1e21eb07fb73c9036f273e7f244939522e936c42f9966bf4",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 92618
+  },
+  {
+   "path": "Game\\materials\\rust\\wood_wall_weatherboard_col_e.tex",
+   "sha256": "37ebb7fdada111ef7bc6c68d1d42e719f8db21aa1dc4b86cacbd4074e3447fb1",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2053
+  },
+  {
+   "path": "Game\\materials\\rust\\wood_wall_weatherboard_nml.tex",
+   "sha256": "6b5a636b0b6c07a0b5f9fff3bf2fda6e21e7d907cd65d97814f525985ddd6304",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 33432
+  },
+  {
+   "path": "Game\\materials\\rust\\xpec_light_sticks_nml.tex",
+   "sha256": "e11e434fe14f9ac03dfa152c9f0bec497b55896af4df0e3af9956c97d5652125",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 7584
+  },
+  {
+   "path": "Game\\materials\\rust\\xpec_light_sticks_off_col.tex",
+   "sha256": "ed501bffce7510865ef06577c4f0a69ae55723841cc0833d6cd234f51c1a854b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3811
+  },
+  {
+   "path": "Game\\materials\\rust\\xpec_light_sticks_off_col_e.tex",
+   "sha256": "bf4ce6c358c4adc20b66970752518daa7a6bffdacb815451df8f4158f03675ec",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 957
+  },
+  {
+   "path": "Game\\materials\\rust\\xpec_light_sticks_orange_col.tex",
+   "sha256": "9ae9b43fbf63e8a0a31064d5af43b8e6d0eb2bdcec4b58343d5f85d9c31b668a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 6273
+  },
+  {
+   "path": "Game\\materials\\rust\\xpec_light_sticks_orange_col_e.tex",
+   "sha256": "8b0e1ae32f5b24aa9072d06b6fa6253a31ecd64d96a313ad6a8853c0432b26c4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1265
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_col.tex",
+   "sha256": "f0a7508ac1c6d0eb475f92ec46d790519804958be6f95c99fd66364a4c0c325c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 59627
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_col_e.tex",
+   "sha256": "01ae936d1317d9b1c39c045fcf4ce6cdb4b35624d86178ddf8747baa5c5b6c86",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1777
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_net_col.tex",
+   "sha256": "8c7effe059a6a5efdd47700fdb541738de7a28eb1ee1875d672f4d66c081f01a",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 18758
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_net_col_e.tex",
+   "sha256": "31e1fbbd038404f6faae5b4298b22a16a1e213509fa63dd89f71a486bdd11751",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 100
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_net_nml.tex",
+   "sha256": "56efa242034170bb1044cfd9e0a08b0e0e2eee6f02fb00c1a7d3545313338805",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 22833
+  },
+  {
+   "path": "Game\\materials\\rust\\zodiac_nml.tex",
+   "sha256": "2f7152ab464ca133cf2f5f89c9628d8472283bec9a8dd25b4bbde2d174a164fd",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 24891
+  },
+  {
+   "path": "Game\\materials\\ship\\013______________________.mat",
+   "sha256": "2821f6e30bccae133294b0ff0f84c160f769c2d4d5be33c0509600cb2fbb6d90",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\014_______________________.mat",
+   "sha256": "a0a2f3b5a2df798bccdbb22e3145e1c74bc4e982ecc0b16e0bf2c682dc1f0799",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\015_______________________________.mat",
+   "sha256": "bb4481fb57bbe2c0b8e22c6dc1b69615b40ac77a8c02b89be29862671e66314e",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\016____________________________.mat",
+   "sha256": "5ff94f95381587c2af0f84d9391aadf838c15236ea6a9ed211df0e663e897e7d",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\017________________.mat",
+   "sha256": "84dadea0f26dc8e3bf8bf662f8a58590a753513704bb957d64ed0296a159b546",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\018__________________.mat",
+   "sha256": "a23700e6c8657ae7e003dde753a25db7d0ce7dd1d6084280e964b7eb17c40c89",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\019________________.mat",
+   "sha256": "b074df8fd505299ef6017a37818a5a0d06852d67ad2ec7a2a4c50486d039abbb",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\020____________________________.mat",
+   "sha256": "867cb138d4406949a01be6057f4a9f69edabb08e7f10d6b727d0cb461f2692d5",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\021__________________.mat",
+   "sha256": "cce4dfb24706ed1bc24385a350ec101bf2e24b4340334f55e4130222bb5c2d44",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\022_____________________.mat",
+   "sha256": "b67d55902fe3499308746276b517823715e6dbcfd8b8a4442221399c3aaa5746",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\023___________________.mat",
+   "sha256": "2c245f37b2c90f849beedc92f78eabf203dffa6800800db6431a645412661ae6",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 181
+  },
+  {
+   "path": "Game\\materials\\ship\\024__________________________.mat",
+   "sha256": "71ce69e8cd573faf942d693ce431178d6ff241d5d317c28835c3cee15cb98acf",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\025__________________________.mat",
+   "sha256": "9e71c70c872a2840c0cbe4bd440a5f895bd3dc34329ea88f751ac407b6fe7174",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\026_______________________________________.mat",
+   "sha256": "4bc650be6443ce666fff34d3130417926021ba4989dbf94aa0773acb84df9dca",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\027_____________.mat",
+   "sha256": "5a776af1ec41a434da023a3e6bf2a002ac88a46256b8ffa60225cf6e5a0e8945",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\028___________________________________.mat",
+   "sha256": "28585e3ec108474ba0268ca406c3b9451978cc6908618877eeaa7d9ac3d90337",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\029____________________________.mat",
+   "sha256": "2b5d3c7c4aaf04e2d97b041f8ec5a548854c5596dc9f4c81fdfa05bf4bed9e03",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\030__________________.mat",
+   "sha256": "e2790a115150752cce9f42cba389c6cc37f0068c63c01fe1caffa021326c5368",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 227
+  },
+  {
+   "path": "Game\\materials\\ship\\031_____________________.mat",
+   "sha256": "d8a996f3ce564e05b57c99bfabc06791248cbbb452dd2ef2f19637443322706d",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\032_____________________.mat",
+   "sha256": "e799425690c76107cd3a74c6a138358e8d3c74083f42a4b44ebd0991305b8812",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 228
+  },
+  {
+   "path": "Game\\materials\\ship\\033_________________________________________.mat",
+   "sha256": "4ae06f001804dca3ec17c976ca6dff1fe466aad5f880c6c95dd834313e786fbd",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 226
+  },
+  {
+   "path": "Game\\materials\\ship\\034__________________________________________.mat",
+   "sha256": "668322c2f88412eee7d65c447b91134b52a1bb29e29b321ebe7e8005c4b45ca5",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\035_______________________________________________.mat",
+   "sha256": "967ddb9dcb329ee288e1bf75da8620d883ec148adef0bc109d9927030230f204",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\036________________.mat",
+   "sha256": "45a0be94bf14072fee31a40c1e357f7de7963638c7109e01ff85b0c65bd3b919",
+   "size": 213,
+   "compressed": "gz",
+   "csize": 181
+  },
+  {
+   "path": "Game\\materials\\ship\\037________________.mat",
+   "sha256": "eea0f210147f4a63f24630986f2680ee45880a12998b7c168888f683b0cfe592",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\ship\\038___________________________.mat",
+   "sha256": "ded30560502bdcdcd4f6d33484ed5de37ade061404473b28d7439bf3938e495f",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\039________________________________.mat",
+   "sha256": "9bc298b63e253823d783491157c37d8e8b3de8445beb23184f3b439325e21a66",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\040_______.mat",
+   "sha256": "00e223c428f9da724a1033b079e86f65801de34ceaa33ce50ac9394cbccd60cc",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\041____.mat",
+   "sha256": "983805d4d215aeb912015d8c1aff331efbe9b0a9f86e29918da5aa53de1430ed",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\042________.mat",
+   "sha256": "2f37eda94d37804b4c901af89256731513aac68604831e0f8dd74f838d55c2d3",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\043____________.mat",
+   "sha256": "6d1d11689e465fbce063affc33fd7b9f8cb00d0c47f2268f2595fa1a3c71c105",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\ship\\044________________.mat",
+   "sha256": "6a40e58c24aa0788187d617b1e858018007bec5c345ea94147185777cb4d5f17",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\045__________________.mat",
+   "sha256": "45e6bfa91ca1b1714323020386011041d554d61f06f61b04ed6446dd8adfb2d3",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\046______________.mat",
+   "sha256": "a419ec0ca17ed87e49ab71571cd50325170d59f294d21e512e4d9977683d6a71",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 227
+  },
+  {
+   "path": "Game\\materials\\ship\\047__________________________________.mat",
+   "sha256": "6856a73d791ebba085f2e6b6b52b6ea26f88b0c908264966f8ced6bf387d86be",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\ship\\048__________________________________.mat",
+   "sha256": "5188da50e01d99a99ffa68b7b6d4983667d32981cb32233aa4c43b6a03ff6846",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\ship\\049_______________________________________.mat",
+   "sha256": "1521e79fa5afc9f04c607880035fe7986afb88a302c041c87eed742cf8e1fc73",
+   "size": 297,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\ship\\050__________________________________________.mat",
+   "sha256": "f22bedf3d86baff9c16b4f1804323d6d61aeac065b7ca7c1435dea4673fbeb9b",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\051____________.mat",
+   "sha256": "990ac5d68475c717313d58ae1b0a02b705817dbb7f0a49dcd3873e0fcc63ce5d",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 228
+  },
+  {
+   "path": "Game\\materials\\ship\\052________________.mat",
+   "sha256": "24127a0f0839231b4358afaaff33f5fa6cbd3d11af284282a31642b81fe6c6c6",
+   "size": 345,
+   "compressed": "gz",
+   "csize": 231
+  },
+  {
+   "path": "Game\\materials\\ship\\053___________.mat",
+   "sha256": "75ae95c1a1ca6b23ace953e9c9d4b1ff3039150d0adb806d1b64c78a8741c26f",
+   "size": 345,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\054____________________________________.mat",
+   "sha256": "fa69ef72e10c2a92815a608a1c55518b8a73112a29d9e5c82349f5cd4e58a62c",
+   "size": 345,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\055______________________.mat",
+   "sha256": "cf9754fa4176d202228b6c826b90f838d031bcee2b74db28a4ef2a76c35a748e",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 230
+  },
+  {
+   "path": "Game\\materials\\ship\\056______________________________.mat",
+   "sha256": "997982d99b53738e4f21107d33721f53e6288cf5afc13eb42fb4b9c933e10077",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\057____________________________________________.mat",
+   "sha256": "fb1f28edf463044a202c4e790ae6e9fa8f10b5605b2d33f3fed61a20ff8acd20",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\058___________________________________.mat",
+   "sha256": "b304c54471a083d0a77c241f99c69a979ae1811bb2176a58bd63a6077bf88539",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\059____________________________.mat",
+   "sha256": "717355024dd80a3b810a91999278ee0de3abcaf24cf760270330746451db8d72",
+   "size": 341,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\060__________________________.mat",
+   "sha256": "f8cd747349a522c51de8cd6f978a9a9a42adf0e5ffc4965d297b7f60ee0c7782",
+   "size": 419,
+   "compressed": "gz",
+   "csize": 272
+  },
+  {
+   "path": "Game\\materials\\ship\\061_____________________________.mat",
+   "sha256": "e599ace7467cc55e4fbe83a044a52450ed24b7ae7391c4de9c2252af26a3316a",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 217
+  },
+  {
+   "path": "Game\\materials\\ship\\062________________________________.mat",
+   "sha256": "edcef948916b7595e462d6acef48edeb3a305dc65d312633663f368211153e3f",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\063________________________________.mat",
+   "sha256": "4c83a7af5df3f71e3c67246474f8af7c31f95f7bd1261c700dedc53655867922",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\064________________________________.mat",
+   "sha256": "67f6c8517baf53e1f9aa5b5178f6300ec0664cf7c0e8e5cb81269dceca1f0779",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\065___________________________________.mat",
+   "sha256": "6dacbe0579c68f37a987d31a3d35457102743b637c1d4112dd1819fddf6000c7",
+   "size": 423,
+   "compressed": "gz",
+   "csize": 270
+  },
+  {
+   "path": "Game\\materials\\ship\\066_____________.mat",
+   "sha256": "e26f4752e7c255e5ac7221eedb3cd134ada11d17a4648ce194b5f3baff7981e7",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 216
+  },
+  {
+   "path": "Game\\materials\\ship\\067__________________.mat",
+   "sha256": "65d7a03f3c160f4e8445271cab8e4555424a9e24e86e82c0151feae822b1e829",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\068____________.mat",
+   "sha256": "ff4cef6ccb676971cb72bf0079dc66a806c846d261895e7c33d8adfd3de6f71a",
+   "size": 419,
+   "compressed": "gz",
+   "csize": 271
+  },
+  {
+   "path": "Game\\materials\\ship\\069__________________.mat",
+   "sha256": "883dcfa1e2fc2dc5850f9b11e256edd6d9d9ea48aa6cb9dd8766a73f13c607a5",
+   "size": 435,
+   "compressed": "gz",
+   "csize": 275
+  },
+  {
+   "path": "Game\\materials\\ship\\070_____________________.mat",
+   "sha256": "30b8a636b52a6d6ae94a0651996c27a9c3d6b1763c9aec870a065a52cd79680c",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\071______________________________________.mat",
+   "sha256": "2528a0a96a0bf2344eedc64fe22c6cdae2032447774f8cc1080490368efa7438",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 217
+  },
+  {
+   "path": "Game\\materials\\ship\\072________________________________.mat",
+   "sha256": "45900b34148571d3c7ba94363172be62f9194738916923545bb1fae0a3b06d86",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\073___________________________________.mat",
+   "sha256": "c9f7a43ea03615a3fe53a8b63e0728c2f712af6b2ab9c509c9950f2daa04040a",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\074__________________________________________.mat",
+   "sha256": "b71bee27cc4be75536740bbcb5499aa98f1bae16d46548a55ccf4360a1e6e717",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 224
+  },
+  {
+   "path": "Game\\materials\\ship\\075________________________________________________.mat",
+   "sha256": "a690555cfc0b1ab71032cb09b03fb5700e139ad43e6cda3b1841a9a676611224",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\076__________________________________________________.mat",
+   "sha256": "f4dd85ce7d70adf98ff350953779d42b85f710d176c5b67f3dcec7239a4f7e2a",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\077________________________________________.mat",
+   "sha256": "af1e8662bd3157a4cebc894dfae9ab48a7b4e3ed99de5cc6f2f6b8cd135f60e1",
+   "size": 301,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\078________________________.mat",
+   "sha256": "a5dba2e7a0a204daafd0b234b12395c46603f8c68843f382c10fe5d460b7ec45",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 223
+  },
+  {
+   "path": "Game\\materials\\ship\\079__________________________________________________________.mat",
+   "sha256": "b7e145b8e522e0ad917772b11bbc07b211f077f8e4c1a1f5167b7a3741791563",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\080__________________________________________.mat",
+   "sha256": "28f49af2a2f7acad4a9c4aefb7fd048fa0fbd53438724ca22167587a31736b9f",
+   "size": 317,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\081_______________________.mat",
+   "sha256": "3417eff40e3b4db31e38821d7fa3ec31342ac83ef460e7e9c4a6a5941e850678",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 227
+  },
+  {
+   "path": "Game\\materials\\ship\\082___.mat",
+   "sha256": "b33ebecffe081676f8a89bc098420adb602fbfd2fee1f928f08a241a1b92a4a6",
+   "size": 325,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\083__________________.mat",
+   "sha256": "794582a9b492043ab92f01647d18f402e4c3f2b385cce7625c1759d900f376dd",
+   "size": 197,
+   "compressed": "gz",
+   "csize": 169
+  },
+  {
+   "path": "Game\\materials\\ship\\084________________.mat",
+   "sha256": "921b33daa4d4564b5ff04e27927dd128a4abe667fe045b00c6bb6326df718dc4",
+   "size": 201,
+   "compressed": "gz",
+   "csize": 172
+  },
+  {
+   "path": "Game\\materials\\ship\\085________________.mat",
+   "sha256": "78375019d02852765a8786846577f824825447c223f646b7c427c3eb0be534d0",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\ship\\086___________________.mat",
+   "sha256": "56b8531095acf5bb75a0fcc4d717beaad27c5d838dcfecae9344939ac193b534",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\087_________________.mat",
+   "sha256": "8831c36a96ef78a1aac0843321fee09981c041b560415d045992fa70231f7ac6",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\088_____________________.mat",
+   "sha256": "639cbf69c607b5d50b9f83ad71ecfca7ff34f9c321a7d32da646bf4e50fd4d6b",
+   "size": 357,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\089___________________.mat",
+   "sha256": "d791fb39246c24a8cf863c6c49ded4dc937751aab82431f504191907592f5d82",
+   "size": 357,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\090________________________________.mat",
+   "sha256": "e15c1242e97657a1d90158096a9124ee6b68c9b8423a28a7cfa63bd51bef4aa4",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\091_____________________.mat",
+   "sha256": "dfcd2eea009624055a6bad74442d83d41c020e9e5adc2c4b49bbb5bee90acb26",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\092___________________________.mat",
+   "sha256": "c0728fa7a2b4102094a2614fb3dbb86314441aca5836b6df4764ad62444124e3",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 231
+  },
+  {
+   "path": "Game\\materials\\ship\\093________________________.mat",
+   "sha256": "5800dd34883119429622c2a7ee1851d7524407b2f2d1a189b704937d03d246c6",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 231
+  },
+  {
+   "path": "Game\\materials\\ship\\094________________________.mat",
+   "sha256": "a51317e3ebdd5a4893a3799f4531b8711cc8f7eb33fee109346d573c98e3a42d",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\095____________________________________.mat",
+   "sha256": "985fd84bb36676a6c241ffe2c483339421fb49f5cfe663159197bb80465e9006",
+   "size": 329,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\096_____________________.mat",
+   "sha256": "c756835fbe2efc7f789fec60ad62b1daec43b3435adb25a1df62db1aa0bbafc7",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\097_____________________.mat",
+   "sha256": "1bce410c47b47e16527ba5f5891f9f793be7bca611ebf83cfc9f56f07ee1041e",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\098________________________.mat",
+   "sha256": "44d7ef58378f4ce77acc7a1ab6e8ef322b1cd140ff6de2097b3a5069c254c5a5",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\099_____________.mat",
+   "sha256": "e95a179f84f74e791719d735889885945141f4f82cf05d2573fd1ee684a69b1d",
+   "size": 345,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\100__________________.mat",
+   "sha256": "d46e24a5ad05a9e3a83ba819bd2e26ad1a1cfdc7b50200668fe39431673cbb27",
+   "size": 345,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\101________________.mat",
+   "sha256": "67716dd0d99c381f5e75b9844eddf9c23be3f0ba598c0fa2ea8a9399f371c1e9",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\102________________.mat",
+   "sha256": "b8b6d369757ca290056fec09c0045663c418370f1866d5f6fe6bed60810cc216",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\103________________.mat",
+   "sha256": "8f69367d2708e03d12f46ef47b4bf21bffe52751c63c107afdd7bdc856c00a43",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\104__________________.mat",
+   "sha256": "3dd2c85cd2689968e507d28878b7a5f302824e9fc95cac758f0ed9a5e40a135b",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 234
+  },
+  {
+   "path": "Game\\materials\\ship\\105___________.mat",
+   "sha256": "d05ab6e97a6705519c1cd807c57011c87be56f5b6e8400bd56ff369f0adad966",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\106___________.mat",
+   "sha256": "98e680dbca37bdf0e0e355d84536ab9d202cea4833473bdf10b8ee8d772a5235",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 231
+  },
+  {
+   "path": "Game\\materials\\ship\\107_____.mat",
+   "sha256": "10f5b527bc8391fd8226028e39a3c5cee88d5fda65c17982333dbc89c2634bdb",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\108____.mat",
+   "sha256": "b3b34e5e2c3cee5392f802867670a97ea80445be55955ba3cb871e505bff0a17",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\109___________________________.mat",
+   "sha256": "b2611e2dd1b7a3bf42fecf620308248109db569cd77897453b0a300985b63223",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\110___________________________.mat",
+   "sha256": "dd4bf09034f6644b183b982625eed8e32654018738d53b253da2c98f8e0ace30",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\111_________________________.mat",
+   "sha256": "13a7eaed85fba3046e32b1539a9249c8a74e6cca697f8c3cacf1b1f5d6ac33bd",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\112__________________.mat",
+   "sha256": "dde987988e0508c86fab513ea1715ce599896ca75ae70bc6771d4ba49dcc79e4",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\113____________________.mat",
+   "sha256": "86de4137f7481d2f231dfb8d1b4774090f6cc439a1c54afdd1dcb54e2d0d7109",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\114___________________.mat",
+   "sha256": "b642b9e0f3f9fd97e50f68691088e9d35319af91168cce2dcecc0156b7e7b849",
+   "size": 349,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\115___________________.mat",
+   "sha256": "352fc7317417585568d1388c1d69957cfae97e33a325b9ef6f01bc0d46bebf75",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 232
+  },
+  {
+   "path": "Game\\materials\\ship\\116_______________________.mat",
+   "sha256": "79b7a2fd86f7a64ca86521417345c75a2cb43b2d7f02a2bfa69aad0a6b823a76",
+   "size": 353,
+   "compressed": "gz",
+   "csize": 233
+  },
+  {
+   "path": "Game\\materials\\ship\\117___________________________.mat",
+   "sha256": "91fba6a104b345b85615feee90f6c4dae052a6d636abd63b7ecb6ec2d7592edd",
+   "size": 333,
+   "compressed": "gz",
+   "csize": 229
+  },
+  {
+   "path": "Game\\materials\\ship\\118___________________________.mat",
+   "sha256": "14c688c45a9a04bca5fc509ba567b502c6b9ef812bac1879c51a604b6e274ba7",
+   "size": 337,
+   "compressed": "gz",
+   "csize": 230
+  },
+  {
+   "path": "Game\\materials\\ship\\119_____________________________.mat",
+   "sha256": "211175f81a5da6e84eee243df2a7a10e0374e318158d67bf91d368b7c7d7f180",
+   "size": 415,
+   "compressed": "gz",
+   "csize": 268
+  },
+  {
+   "path": "Game\\materials\\ship\\120___________________.mat",
+   "sha256": "d4f3fb8fb36739db465c38b1c4b3e1ad95d7e7ba658c6337f853e0d523f4695f",
+   "size": 218,
+   "compressed": "gz",
+   "csize": 193
+  },
+  {
+   "path": "Game\\materials\\ship\\121_____________________.mat",
+   "sha256": "61e8d04d4373fee7dee63a3176f8cd5b0a293ed8cfac149ca2bd5e39d8d94c15",
+   "size": 463,
+   "compressed": "gz",
+   "csize": 288
+  },
+  {
+   "path": "Game\\materials\\ship\\122_____________________.mat",
+   "sha256": "c6ae088e53d243d33bf58dd9b1b8712922c2b2762d431180b2b456abe1c331df",
+   "size": 214,
+   "compressed": "gz",
+   "csize": 191
+  },
+  {
+   "path": "Game\\materials\\ship\\123________________________.mat",
+   "sha256": "770e8114e83ca03c37f17410a239de220733e925663976a26502cbdfd612dedd",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 183
+  },
+  {
+   "path": "Game\\materials\\ship\\124____________________.mat",
+   "sha256": "2580773e341a2f334e83f0cb89331da65150b5c3cd4a2cdebdca11e4c5c82d63",
+   "size": 202,
+   "compressed": "gz",
+   "csize": 184
+  },
+  {
+   "path": "Game\\materials\\ship\\125__________________.mat",
+   "sha256": "652c2ebdaaf1eed584a3a90ed27a6130671d8c948fc89a88e3cbfb75e34b681d",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\126________________________.mat",
+   "sha256": "5817029077ca2edf529202a190e2c40da47170dd83e79533cd00180d833d74bf",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\127___________________________.mat",
+   "sha256": "90eb571be925ef6f229b815e8ed2fc98ce72443a08a566689bcda05e37fbf086",
+   "size": 439,
+   "compressed": "gz",
+   "csize": 276
+  },
+  {
+   "path": "Game\\materials\\ship\\128___________________________.mat",
+   "sha256": "a076bfd9b10fbaecb13b0e57061142e9783c77d4fd7f915c227e92a4692d7b65",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 225
+  },
+  {
+   "path": "Game\\materials\\ship\\129___________________.mat",
+   "sha256": "1405574d76866bc40a481ec586af829419402600eea8d21555ae7e94f733374e",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\130_____________________________.mat",
+   "sha256": "cf030a1fd33f9755bd16295dbc2a831a5463936550bd0eccdf22219f6581d241",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\131___________.mat",
+   "sha256": "a138de6578fd6dc69971f36fa3703302926213d9570c2f915ae46118b2786f02",
+   "size": 297,
+   "compressed": "gz",
+   "csize": 211
+  },
+  {
+   "path": "Game\\materials\\ship\\132___________________________.mat",
+   "sha256": "27cf00dd38d204b651d76c2dba5844b4187951a6002347c4605f60ef412f487b",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\133______________________.mat",
+   "sha256": "0ac378339ea455aa7fa8f4bf56e95826d24b3c6f50071fa449becd7d3d3d01ce",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 222
+  },
+  {
+   "path": "Game\\materials\\ship\\134______________________________.mat",
+   "sha256": "45d78caa3f12465a637a4bf1d04adfc2997a5c59790b6c26be4f806fe0e82c36",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\ship\\135___________________________.mat",
+   "sha256": "bdb232f1a526d87c510a93e0821c4b27b365430fb53fcb1c0a3e52e5ceb9111b",
+   "size": 321,
+   "compressed": "gz",
+   "csize": 221
+  },
+  {
+   "path": "Game\\materials\\ship\\136__________________________.mat",
+   "sha256": "b5a0ddc267b3d7d80099546dabcaccc5131d62e3c278f303364305485864b595",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\137__________________________.mat",
+   "sha256": "5a1d8e09bc78166ff9b899f55ec1cc45af1ca0511123c6e307655da78db37ee4",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 215
+  },
+  {
+   "path": "Game\\materials\\ship\\138__________________________________.mat",
+   "sha256": "3661b08a701e8f519b944f727708528d3e92e148abce97cfd9404bb46c62bd2c",
+   "size": 305,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\139__________________________________.mat",
+   "sha256": "0f9dede9c2595e362eb0f8b6da4160076ffb7a900a0a85f37bd187f809ffe7c1",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\140__________________________________.mat",
+   "sha256": "cf067aaa0ff41fc0119b1f949d256fd34f1000033e951e48499bc5d2ca45dfb8",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 212
+  },
+  {
+   "path": "Game\\materials\\ship\\141_________________________.mat",
+   "sha256": "e50c81d9f59ea0c9cdfe1ad36a82e6b5c1ce16cb8fac5fe76b4ee4d0ecb66158",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 209
+  },
+  {
+   "path": "Game\\materials\\ship\\142______________________________________.mat",
+   "sha256": "563ca199c0dc79f5642a76b3d2434502831b55d44126e00dd7ce4cdaef7e4dc9",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\143_______________________.mat",
+   "sha256": "1f2e5643418c0d3b9bb29573cd2c48e1af21e3c4d90563b282de2933c0138285",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\144_______________________________.mat",
+   "sha256": "d3ab521ec9fdb66de773e9be696907f0efdc22521ec6d2f2abb0b5b44c6aa29d",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\145_____________________________.mat",
+   "sha256": "7cac8e0efd94b7473ba2c20265fb7c569e3abb33915840cb63565c20540659ba",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 210
+  },
+  {
+   "path": "Game\\materials\\ship\\146__________________________.mat",
+   "sha256": "786e51bd795d85a07e55a8a92efd23461b81a34489fd19bd33a17837d84c20c5",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\147________________________.mat",
+   "sha256": "1ad70e0ff875e13f4de2de53cf4f3095676afa02f4e8a5dfe7797ad7e9918a1e",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\148______________________.mat",
+   "sha256": "fadfad2cced759c48fce1fb7ab42f85ee04209fd27960c1c37a8b22bbd56582f",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\150______________________.mat",
+   "sha256": "966adbc192b46f36508992b7fdccfc6197973b210f29fbf07add5e77c84d2fae",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\151______________________.mat",
+   "sha256": "c19d20d00e78041998b469473a34ae1d4b948fb42e614a699b5f7cd92eeed465",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\152______________________.mat",
+   "sha256": "bffe408e39cc99c56be978c62599bba4fff8994c695a701b369d9b36c4b69840",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\153_______________________.mat",
+   "sha256": "a829e33755f15bfe35f39a3a93a78efd9986c2d7e3079718d2622e3d37dec4ed",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\154____.mat",
+   "sha256": "869b574749d41fb72151d58977d4f1f2761c6a046c6e502c14fa87e8399baf12",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\155___________________.mat",
+   "sha256": "7fb5b2289118b474b6b0b22c895f3ba98ec26480f98a841189993423c667f314",
+   "size": 309,
+   "compressed": "gz",
+   "csize": 214
+  },
+  {
+   "path": "Game\\materials\\ship\\156___________________.mat",
+   "sha256": "97b8ca4421e4ce9f9760d9c9a7f84b6490029bcbe121641f6c77b0cc01589062",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 219
+  },
+  {
+   "path": "Game\\materials\\ship\\157_____________________________.mat",
+   "sha256": "6dfd5c2fb37e6c3c5f99ba44fd469def311916b04ec4ff02a17cb9f48b51838f",
+   "size": 313,
+   "compressed": "gz",
+   "csize": 218
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_blue_rust.tex",
+   "sha256": "f9d21fa929eb797b4ebadeba1440baf91b94891daaf18121848ab4ba4f1371be",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 117316
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_blue_rust_e.tex",
+   "sha256": "8928a2e57ec5fe4bdab621202448f3317b0b32f157cceb6a194744a81d6c64dc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3578
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_green_rust.tex",
+   "sha256": "9a52326efb5c6ee45290c93add21e1681a0042c4711812ec1711b0a6ce05e8e7",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 98577
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_green_rust_e.tex",
+   "sha256": "6c941485315fbb33cc97f39cb9573e228b23833eab1661c10adc1d53338f3276",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2855
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_white_rust.tex",
+   "sha256": "8ce78cec259ff770714c047b9d70bc840fd1af37c83376d1daa52bb5d70eb994",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 124492
+  },
+  {
+   "path": "Game\\materials\\ship\\55_gallon_drum_white_rust_e.tex",
+   "sha256": "a8527840864258cd27bc05e8b01780fa39a5f953da1b9fe3c7792eddd94038f0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3899
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_destglass_col.tex",
+   "sha256": "de55c0ea3fc5ed5f3ea601d72654ec26a06c416a84b3744097ab2a9715395a22",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 10356
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_destglass_col_e.tex",
+   "sha256": "ba5ce611e5281b916a89b25f6faa7556918078a402903947af3a37a9a684858c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2755
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econdestroy_green_col.tex",
+   "sha256": "85ba084213d6414e608a4c51b32a2c90854be02e88b231a480230c95c5bf44c9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130351
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econdestroy_green_col_e.tex",
+   "sha256": "97f7274c7ec305d18452b04a7b59deda47ab6d4b443268f67de6cefaaf8b08d9",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4399
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econdestroy_yel_col.tex",
+   "sha256": "e966d8b95da2b37eb2668f59999020959fea0dedb9893f48f5ecd372aa5ae681",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 135036
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econdestroy_yel_col_e.tex",
+   "sha256": "bda50ab40e4bdbd6e150eaf5c597584dcfa8b1e5b925760db112eecc7adcbc94",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4826
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_glass_col.tex",
+   "sha256": "2cbdd8a130a80ad5e7c0349e031a4f02ffec9d77f09c1b65493658501ab09aff",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 14744
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_glass_col_e.tex",
+   "sha256": "eef493474727aaa4507a00fd2ead1755ec71c817b991e6cbb8b045b91258e6de",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1328
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_green_col.tex",
+   "sha256": "6bd0b239c1e403abe01c9c0eb472b809331862ed9bab2de264d8988381e13f28",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 121645
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_green_col_e.tex",
+   "sha256": "9d4897600b280d1b68de5ea30a8072771b7f196d9b5fd367aa1d8d82b99da970",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3565
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_red_col.tex",
+   "sha256": "825dcabcbfba7881dcf0e678a51688bfd6859213cfb33e821e6fdbbecd24cc4e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 127902
+  },
+  {
+   "path": "Game\\materials\\ship\\80s_econ_red_col_e.tex",
+   "sha256": "709460e6072987d3644cbe1542066dd959d5d890a390492f18dd42732f5ef3d0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3902
+  },
+  {
+   "path": "Game\\materials\\ship\\bike_col.tex",
+   "sha256": "74ae101191e9f08f45b3b6e46d1f71923abe31a4371f6cbfe396991b4c754c33",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 39535
+  },
+  {
+   "path": "Game\\materials\\ship\\bike_col_e.tex",
+   "sha256": "4ae04ca4ff8f1ee708d6acac8c899d6584c7dafdf697cbb4b4895c868fa7d474",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5198
+  },
+  {
+   "path": "Game\\materials\\ship\\body_wall1_col.tex",
+   "sha256": "149ab7c61f7521f9619b05f59b0033698c9b9d2c8c25a489096257749d2faf54",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 108771
+  },
+  {
+   "path": "Game\\materials\\ship\\body_wall1_col_e.tex",
+   "sha256": "0f9cc6e9c2a93e777366094368975bae86457e85ba8e87ca85b02915f55d7d73",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3211
+  },
+  {
+   "path": "Game\\materials\\ship\\cardboard_box_color.tex",
+   "sha256": "e90ebd1bd606fc71f8ae17da96d2264510e42c41c0e15004b659456afd93ab4f",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 31876
+  },
+  {
+   "path": "Game\\materials\\ship\\cardboard_box_color_e.tex",
+   "sha256": "cb487aa80e7fa3cadbb967de86a69d7b41601fd35ca36040721d2e2869f5635f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2687
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingeblue_col.tex",
+   "sha256": "9c0cdd493e7f914a0c6057fc07706e8ca5192df4e6aabde821e670d2534ee8f8",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1750
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingeblue_col_e.tex",
+   "sha256": "6c8e3b9449a296f144e8518c43199bb15281d6cf860dc4d47d35cdd2ebbd2ae0",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 642
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingegreen_col.tex",
+   "sha256": "ddfe981f4fe9c931d1d047c5695154bbf0c1052299223828f3c47827272cef0d",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1819
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingegreen_col_e.tex",
+   "sha256": "ead0a4ed488dd464da7da8b6140b3d9694264fbe5f627c924133c92ffcc99b04",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 394
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingewhite_col.tex",
+   "sha256": "49d2e3874093f33f991fa6602ca7408b79c3bf38daea73ed8a98c4e99eefaedf",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 2004
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhingewhite_col_e.tex",
+   "sha256": "16dd847fa5667b7e20ba860c4bdb597d7ad6da2f760f893adef081c7df438802",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 140
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhinge_col.tex",
+   "sha256": "3e523d4a2d255654cde7b829ee8574f6dc4be747502cfd41e23cf02594ce9ec1",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 2193
+  },
+  {
+   "path": "Game\\materials\\ship\\cargocontainerdoorhinge_col_e.tex",
+   "sha256": "da9952be331e10249a95279ea0f1c7828ddcd57f08e89cedc9799eb24d386e2a",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 939
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall01_col.tex",
+   "sha256": "dcfc3760556569b1a28c29e7146d0196079f0d597acf73d89c61e22a5fc87a26",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 29940
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall01_col_e.tex",
+   "sha256": "40124590d3fd9f62170b7eb57a37dab2418c9f1ff0e58bd38ba7181c14de0497",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2173
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall07_col.tex",
+   "sha256": "ac3dd7038216bcd57c106ebf24184ff36e955336be28ffc22d86c37aedf5255c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144786
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall07_col_e.tex",
+   "sha256": "0ab84da26f8e547e3b04ff8732404ce76a26bb70cdf7a9b8dc5117135ee0fdb2",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5391
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall08_col.tex",
+   "sha256": "0db98b62a8ced0fbe5814fc07a759b8019ea83c0ff5cbf63e3d9ab2d3381a27f",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 146543
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_brickwall08_col_e.tex",
+   "sha256": "7415fa08bef16a095a307890605622826bd72c2f7bb00b18a6b9f177e3536ffd",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4750
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concrete04_col.tex",
+   "sha256": "34664122c4929ab7ff50aabe584ce76fe008fe54d790afdc082183a7644ed5cc",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 137277
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concrete04_col_e.tex",
+   "sha256": "b6173bfd2d08b70d687d62795e356e5b796158bf7dc7bbaae31471ea0f8e11f9",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4536
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall02_col.tex",
+   "sha256": "a3d0581374773674b151482a396d6d29c0b3414c9ffe88caa7a84bcd6f577900",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133148
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall02_col_e.tex",
+   "sha256": "bbb9cb43855300053f214ce388caeb6169883d789f25eb3c559ecb6bb49d24d6",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2755
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall06_col.tex",
+   "sha256": "a870b008aa7676d19c05e28f75a7be69f66ff5eacd5796eea2854d37eec3a208",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 143502
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall06_col_e.tex",
+   "sha256": "2f63c5cfc48c32a13d8dc830975050885cab46a962e82653bb279003a2911aba",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3795
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall07_col.tex",
+   "sha256": "e25820a08e7bc028ccc43d9736b523328985f34d747a5c33c118b52c5fccaf41",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 140293
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall07_col_e.tex",
+   "sha256": "bcb2298283d142c5bbcc391fd6aace7f3aeea7f29cfa30f50089d71bd5521bf8",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4038
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall10_col.tex",
+   "sha256": "e4089fe2467af7ae92f58668ae2b23d306ea942c696ff88e18de5c8b2a389390",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 141063
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concretewall10_col_e.tex",
+   "sha256": "262879b95bc74ba000b27403674ea23fa4c5d6e2c11638bfc13badcb02521000",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2785
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concrete_05_col.tex",
+   "sha256": "b43b6a4ef0a92f62854e7dfe965e7f94a22eb81333a57115e8ca6de40a790233",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131051
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_concrete_05_col_e.tex",
+   "sha256": "2cebdc7feefe5e1809abe50f629babaa63f999bf8c96207b3d93820411ec1c3d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1259
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_corrugated_01_col.tex",
+   "sha256": "321eebab6cc5e64996ed54566f9791e01390a15b5c37472bef4c1088f94f90bb",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 146749
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_corrugated_01_col_e.tex",
+   "sha256": "011c98319163b56512576118b18e485e3fb12a3e49d8f335d79ecc12143e05e6",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5015
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_dec_darkstain_01_m.tex",
+   "sha256": "7b0cba20c192ea89da344a12ba597fe2630ec1a4f3c5553146aea07b4237cbb1",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 135956
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_07_col.tex",
+   "sha256": "6ac4705b73bc59f176804e3c067e5e0b92a9a1767e3da931c60e28f9168c88ac",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 137716
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_07_col_e.tex",
+   "sha256": "559f7ba46dabcb283f13f5e82bedf635e0ee61358414b3e8e09709f560d8bcfe",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3697
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_12_col.tex",
+   "sha256": "302d374bd478e5849db20ced532a1adc89dd5554be4a84f20544bebebd07d42d",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 74782
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_12_col_e.tex",
+   "sha256": "851bbae51146a99dcd9a00fcff34b274e3d4217d63729aa8aef6863cfa003cb4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5034
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_14_col.tex",
+   "sha256": "381e2b5db00dd8ad2d9365485ff67d192c967bb17e9389fa9452dca75febe4a0",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 57139
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_door_14_col_e.tex",
+   "sha256": "716c8b100966cf62d2a834df160e62c6b88b7cabcd0444301860bab3128f8104",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1184
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_grass_02_col.tex",
+   "sha256": "b52bfa7b5660c4ecfd8972445e6d3b019b2f62055dffd9ca60883415a89784f3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 150278
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_grass_02_col_e.tex",
+   "sha256": "621dd5ee8cbef5c59284a88833c84ede21c87af0778ccd135e0b2c4cec7106ae",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4982
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_ground_gravel02_col.tex",
+   "sha256": "db046912a13f1a60e3e75f9c49ce9eb861a66b0c3baa22965efdb1f9a663a8e2",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 138104
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_ground_gravel02_col_e.tex",
+   "sha256": "197d083553547fb10fe513c26875acfae0686e7e86340fc6c5e0a6ac8ba44e38",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5231
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_plasterwall_long_col.tex",
+   "sha256": "b92676e3a5d3c4f562a06f76ffeef63b240900f377b88898420064ebb8de88cc",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73530
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_plasterwall_long_col_e.tex",
+   "sha256": "1e81d0409d633cb20e55f1fdda6a43800e1023b2055cd2a2e1603eebe051bb1a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4426
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_trim_stainlessteel_1_col.tex",
+   "sha256": "7c531e3e027609a5e219a8bb4588709e0f7dd4f4c0e9a4419f6cd625f90fc7b6",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 118050
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_trim_stainlessteel_1_col_e.tex",
+   "sha256": "f48a89cafd9b5907b2c71780ececd37283f1c9599ade00c353fe123afbfc4a71",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 196
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_trim_stone01_col.tex",
+   "sha256": "6a4ffa3de6a99b4f19f62f0ad2f8937ecf94a758ec6cc0b62d6656928885d554",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 17511
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_trim_stone01_col_e.tex",
+   "sha256": "67131beadaf689d2292edf1b3b42849388c7989725c2e08c03c5c1ff2fe8100b",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 2280
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_wallpaintchipped_5_col.tex",
+   "sha256": "7c4a9c12927a1aabbc1d47a9ba1b4a22ef78abab504686d43f5737223ba6132e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 124574
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_wallpaintchipped_5_col_e.tex",
+   "sha256": "9c55b907c670d518344c0820f4efd4d5a2e25484f53de85448e07bc9dbf9c2e9",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2147
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_window3x4stone_col.tex",
+   "sha256": "ed0271d5fc6ea15c42c8b2e2ef49b0402017553021fea79a52b4bd03bcaffbd9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 135550
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_window3x4stone_col_e.tex",
+   "sha256": "4415d3d98ad71a6aaad1f0b10f6729bee32a8e5c9b2e7e33608212a11b1a558e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4109
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_window_16_col.tex",
+   "sha256": "294391f4ceea4b0c3f4ab458e05853deb722c678869da3be8a0b2676e7e97aa6",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 31965
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_window_16_col_e.tex",
+   "sha256": "d64cd35300efb2a935ee6fa3dabb3190a4e3ef15edd52a444d03766a6e59b05b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2984
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_woodpaint_white_col.tex",
+   "sha256": "61b228ba4a4e79dca6e9a3d578357b813ab149cdcd02c4bf683e74cd0aa27387",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 137570
+  },
+  {
+   "path": "Game\\materials\\ship\\ch_woodpaint_white_col_e.tex",
+   "sha256": "eb8c3d3bdd54125753667cdc21a044d71ba2e530dd768a4a8fbffcea988a41d0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4152
+  },
+  {
+   "path": "Game\\materials\\ship\\com_black.tex",
+   "sha256": "c8c71cf8bd4fa7bb1122f54e4176387d339cd7dc150965c8e2f13ead815130df",
+   "size": 148,
+   "compressed": "gz",
+   "csize": 69
+  },
+  {
+   "path": "Game\\materials\\ship\\com_black_e.tex",
+   "sha256": "2f6c6652f4d39532c01f4c34965d498d713ba1066e44e7f0b184a7f5ce4b489a",
+   "size": 148,
+   "compressed": "gz",
+   "csize": 64
+  },
+  {
+   "path": "Game\\materials\\ship\\com_plasticwall_col.tex",
+   "sha256": "99dee39680453fec6c303d287b5ce0c4d0b1a87480f754cfaa6458fb543fbe1e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 88945
+  },
+  {
+   "path": "Game\\materials\\ship\\com_plasticwall_col_e.tex",
+   "sha256": "44a72edff92dd9af874c60ca2ecfb3d9be4b8a55542a47420c7ddc69a0b9e90e",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1619
+  },
+  {
+   "path": "Game\\materials\\ship\\com_tower_crane_col.tex",
+   "sha256": "ff72c54c4bcec771b2613309e53c22265149524a4a57df21439e56a5ba5e04a9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 132362
+  },
+  {
+   "path": "Game\\materials\\ship\\com_tower_crane_col_e.tex",
+   "sha256": "479e09e224fa06e8227f03f0c901fea0c94dec761318b3924a67999f660ee342",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2540
+  },
+  {
+   "path": "Game\\materials\\ship\\cs_plaster01_col.tex",
+   "sha256": "c074332bd97227765fefe2b9757d2e17bda16d8a4613f5e287097ec6560af22c",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 25970
+  },
+  {
+   "path": "Game\\materials\\ship\\cs_plaster01_col_e.tex",
+   "sha256": "4f5aaf2ce6242872a3a5edbb163dd3225180ab86355538a775417c71c5d9cddd",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1446
+  },
+  {
+   "path": "Game\\materials\\ship\\dry_grass_col.tex",
+   "sha256": "55fc8a2c3031f8470e586bf57478cc956a5995e925dd694c8218116c1bcbe7e7",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 29640
+  },
+  {
+   "path": "Game\\materials\\ship\\dry_grass_col_e.tex",
+   "sha256": "d8c1b787ce4e14d47ec73822af64cd00e0b15762c8e32402a245700168e4b621",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2054
+  },
+  {
+   "path": "Game\\materials\\ship\\dumpster_col.tex",
+   "sha256": "6eb2038773dae2888572dbda64a429bf0617d1fc0e2ad7f18b796a4ffa44b02d",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 143348
+  },
+  {
+   "path": "Game\\materials\\ship\\dumpster_col_e.tex",
+   "sha256": "2b58b94f1bda6bc69e53744be28b015add7ada15be60cd80c2f2f15e3def54dc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4549
+  },
+  {
+   "path": "Game\\materials\\ship\\dumpster_lid_col.tex",
+   "sha256": "b140ad4312ac1e74f73ab5de5400acc41a70a2ce8124cd61a2c0aad5630d74bb",
+   "size": 21980,
+   "compressed": "gz",
+   "csize": 15292
+  },
+  {
+   "path": "Game\\materials\\ship\\dumpster_lid_col_e.tex",
+   "sha256": "cea39383af9b11437b9eb59ebc6108b00cf1577af6d15b9cdbfcc20033d32e4a",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1088
+  },
+  {
+   "path": "Game\\materials\\ship\\electric_box2_c.tex",
+   "sha256": "cf1250503998ac5b96a4da018eaa31f04a95a04ca4decee6be4820b8ac8bf372",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 37392
+  },
+  {
+   "path": "Game\\materials\\ship\\electric_box2_c_e.tex",
+   "sha256": "87f510706c7f4859bab8b5d8bc56912b9f68e283df48f48c7fad9cd88af03a06",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3826
+  },
+  {
+   "path": "Game\\materials\\ship\\inside_wall_col.tex",
+   "sha256": "2aa57c9f98d9c4dd55aa97d9d336041fcf2d197daf44a271c107ca9a52e052ee",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 131684
+  },
+  {
+   "path": "Game\\materials\\ship\\inside_wall_col_e.tex",
+   "sha256": "ea98095e2dce36d6394e59f0edbe961fd7fc7f49d56d0afc79b5dd1a7ca609d2",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1525
+  },
+  {
+   "path": "Game\\materials\\ship\\lightfluohang_col.tex",
+   "sha256": "2bc55332e73ae7ef97d3782d4dbd3bd7bb090425cb5b5572795a7e579dfb50a9",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 48440
+  },
+  {
+   "path": "Game\\materials\\ship\\lightfluohang_col_e.tex",
+   "sha256": "3964db5ba71b835bd1cc411d3d113787e929aed25bb0f5464c702dae8be0f73d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2972
+  },
+  {
+   "path": "Game\\materials\\ship\\light_grass_col.tex",
+   "sha256": "a6f7e6c27b6abcc5d73970923841becb8ff5f1b25075c4df6ce3b2e6b6123053",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 29848
+  },
+  {
+   "path": "Game\\materials\\ship\\light_grass_col_e.tex",
+   "sha256": "f5dce6ec17a4b7bb9f09f067252593741b30ba18f97a4000d477b394f7b08631",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1569
+  },
+  {
+   "path": "Game\\materials\\ship\\me_adobe_top.tex",
+   "sha256": "583acaa35bf6a2ce1af54f4735386923760b95462beb923208252c768ee7923a",
+   "size": 87500,
+   "compressed": "gz",
+   "csize": 45731
+  },
+  {
+   "path": "Game\\materials\\ship\\me_adobe_top_e.tex",
+   "sha256": "fa2ecf08b0a79ca760172e2e639fda1317873223ad349fe0c99305187c08f73c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2821
+  },
+  {
+   "path": "Game\\materials\\ship\\me_asphalt_01.tex",
+   "sha256": "3913b0e7122298e1e0af4189593f72c34da7168f75c859ad804e95afed7f49ad",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130087
+  },
+  {
+   "path": "Game\\materials\\ship\\me_asphalt_01_e.tex",
+   "sha256": "427871dbcb3a38a02bcc3f6e86217034c5802997a50cea4d4854f62f545a9b7b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2353
+  },
+  {
+   "path": "Game\\materials\\ship\\me_brown_plaster.tex",
+   "sha256": "815c901a7402ac9e53de633461618da2177599839822ae79f594d6378f2f1090",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 117397
+  },
+  {
+   "path": "Game\\materials\\ship\\me_brown_plaster_e.tex",
+   "sha256": "72c9ab124280e4c24ae05899678745ac22e89fdc895786bc69e053856e8f8a72",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3173
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_door_col.tex",
+   "sha256": "088d0f65fcbe1f5e49bfb8d370149bd406c7f87d73662a136124ea3bdeeeb4de",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 105364
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_door_col_e.tex",
+   "sha256": "f0a57a7a68da7e178f12baf6beea1457ded81fec6ea5bc937e70a300159fbff9",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2327
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_roof_col.tex",
+   "sha256": "51c8719692a5ba6b29ab04e9cc4153641c992d13eabf36936a6046b1106322be",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 109186
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_roof_col_e.tex",
+   "sha256": "76be1953d73c15ce4895b5a94011a94d608f8e1a46f5a3fe8e9ff494f95b336f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 808
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_wall_col.tex",
+   "sha256": "089d148a9c1752cfd23cc1e23164529ed94f14de3b26a704213f1f9f64f01c76",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 89252
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_ext_wall_col_e.tex",
+   "sha256": "1625e62be4ad86857b097c011ef22071a165075a293948e2ff5fc10861717361",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1584
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trim01_col.tex",
+   "sha256": "8e0bff664a3e8f7af5ecb3e4454b4cc2afecbcab9c9ae961b37973a377a3ab0b",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1468
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trim01_col_e.tex",
+   "sha256": "5922bdb1e5711ef9121365d4f51f04ed1abd3e897bbc02daeebefb4475e6a783",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 344
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trim02_col.tex",
+   "sha256": "45de1762e0cce8f7c27daf3a285f0539d627306aadf331deb2cf156be82763e7",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1927
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trim02_col_e.tex",
+   "sha256": "a1b9e2f36680175c82b1ef31231421579d9d89d44bafae4b71824b12dc27cbbe",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 894
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trimtall_col.tex",
+   "sha256": "e2c1cdc54b6e8621dbe40102c9298b54786e4c4b9665faef50ae6e9fe70dd333",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 11445
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trimtall_col_e.tex",
+   "sha256": "3aac3b9fb7b8b96122a5b54f9b9043246a38c3498d27e79f5370222fdb385992",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 547
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trimwide_col.tex",
+   "sha256": "f064a6e206db1abe8533ca2150f871425b72b2e3b8eefe1d2028f5b307363556",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 12688
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerblue_trimwide_col_e.tex",
+   "sha256": "c52bc3bbdf8a3824178276f7b14c6a210efdb0428cc6d65d4b98dd6ec3b0114c",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 1305
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerexteriordoor_col.tex",
+   "sha256": "966ebea001fc37b48ffb6865af2b8f3d2f181690264b97f914dce1d6111386a3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 117661
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerexteriordoor_col_e.tex",
+   "sha256": "5508ea710491fb0f7f9a11634091978f2ed9a95d8ae53778158654f6565b62a1",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2028
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerexteriorwall_col.tex",
+   "sha256": "d73d0dc119e347744a52c89322db6293b0704cc03614219308ead5500f4f02f2",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 112736
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerexteriorwall_col_e.tex",
+   "sha256": "044d587e755501d7ca869a4a2840e00d610bb93b3d2c846d3658a9e9826a5dfc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1344
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_door_col.tex",
+   "sha256": "0ed7275930792b0e7eb77af839002957815dff54eb061ced1f5b5c631ced2792",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 103733
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_door_col_e.tex",
+   "sha256": "37d9164b4b248f76ab1597c37a602de61e6c9d410dc2ea9f6ae96d43258bd490",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2436
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_roof_col.tex",
+   "sha256": "2ce421324229000035b62b7ece0725846c2fad6c044d122e8fd6b0e98dc4f714",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 104033
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_roof_col_e.tex",
+   "sha256": "2f63849933ab340a0fcaf37edf8232c6306dafc431c3d58f61f05df1b594756b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1821
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_wall_col.tex",
+   "sha256": "8e02c7d1be6470657ac9d18140024e0614454181a1cb83996341c15dfd44f417",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 85697
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_ext_wall_col_e.tex",
+   "sha256": "4a63ebf7acc2eb5d5166aff6c8b7a0b413af6cfa2c13d0c4e99127e3a719ab01",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1406
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trim01_col.tex",
+   "sha256": "13383c69ca8a9ae4d6f91022d3d7fdd2609ef30014f7eb2a7d907bb836d8d33d",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1602
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trim01_col_e.tex",
+   "sha256": "acea4a4284cb7a26041c6442d789cd9aa965aba3ab65e0a9f9c3e801215385ff",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 558
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trim02_col.tex",
+   "sha256": "a632cf6ec59f719293ec1f7e4d455942588a008f0a0da6d856190aaa655ec34c",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1962
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trim02_col_e.tex",
+   "sha256": "7b16438bb7dadbabe782b77a04e775eda8f0eb49059ecb6c091181c0bb350ec7",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 869
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trimtall_col.tex",
+   "sha256": "f4a96a74b578d62cae102c74ba08132f36f456a2889d6031819f41b076791460",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 11936
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trimtall_col_e.tex",
+   "sha256": "cf95cdf3a2a113f84860685ca1c1a2e63ed23706ae80e8ffc627e8de85468225",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 685
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trimwide_col.tex",
+   "sha256": "91b6a742907283113ba0ed54a48670de243adb0739e81e28a218c1eae19e5d83",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 14858
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainergreen_trimwide_col_e.tex",
+   "sha256": "148d3c59aac917a616d5c294659f49ae7f4771f40f4cdda8a2d82ffbcbb827b1",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 1420
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriordoor_col.tex",
+   "sha256": "ac86b4c81209791163e791b7a05b41efbe166d313da097ecf7974e8b706f485d",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 137625
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriordoor_col_e.tex",
+   "sha256": "cde4ee034cb559322771fed8f24e647f031767fb024ce1bebc0c903b485e3eb3",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2589
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriorfloor_col.tex",
+   "sha256": "8aa529080c32b20ca73a4c8983c0af4b4cef99e15c774cc7c4d26e293de23f30",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 125164
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriorfloor_col_e.tex",
+   "sha256": "76cab169594792407baa2772c167f0935755cceda886d0ba131ce51de064d830",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1632
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriorwall_col.tex",
+   "sha256": "4ffaaf9df3a262f5d8d2c5d557f0993ce9d7e9c99461af43ca41d66d77715cc9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 135836
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerinteriorwall_col_e.tex",
+   "sha256": "e311732afda0b20ef2518e3128a73a6076c96f03bd49003bfaa4d9092fedae08",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3020
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainertop_col.tex",
+   "sha256": "28712eeb692880bf293ef426f7bf9843b0f6c1b951304e1becc77885e2a09722",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 120715
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainertop_col_e.tex",
+   "sha256": "3e5aa0c83b6e507f45a00bc14349bca52ab2d35f051b0aaf6aa5fe17e9c29156",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1039
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_door_col.tex",
+   "sha256": "730e01f12a5448fc4fb5e44737a34035bc10226c08b20a5ffad6b2afe18fba59",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 115666
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_door_col_e.tex",
+   "sha256": "59d97ab2013e1d929012e9160ff1b7d21eaf071936b0b5604c60fb59c9c76512",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1408
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_roof_col.tex",
+   "sha256": "690584489b0cee3ce4948e892b7ad242afdb407f8f3dbe2ca6ce1796f31f39e9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 117162
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_roof_col_e.tex",
+   "sha256": "03c07fd22db0b36e7fd86efc6fdc36000efcaecfe9b2c30d2eceecd1180fc6e4",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 409
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_wall_col.tex",
+   "sha256": "90398c833fa51fbe1b5bdde703c4232b3f4df4be69035b5ceca9b6653166e98f",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 112514
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_ext_wall_col_e.tex",
+   "sha256": "6e235dd522a57e06bd8a4706244e6b7e87e91c6e0030dfe7aab95de7b50cb2bc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1033
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trim01_col.tex",
+   "sha256": "5688be67a1ac856fed34743588ab05ee4db7ac4fac1b1211a02a1ace8a01eeab",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1721
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trim01_col_e.tex",
+   "sha256": "7dede80ad0a3b48da0c74f8ea3262a59dadcc241278b66ac3ca791b270d8477c",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 228
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trim02_col.tex",
+   "sha256": "b1eb567d35b3254b0be44afaad6c4d6a9eab838596044012984b03d796c431b5",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1916
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trim02_col_e.tex",
+   "sha256": "ce268cfa4f483178213921f32b6e8bace4c94a7c1c85ad94b2c5b2db8f31b64c",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 356
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trimtall_col.tex",
+   "sha256": "f8630b5d1327b0ca48f2d776d3a5ac1fabfa0cf470d712552b1d44a90bbb5681",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 13961
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trimtall_col_e.tex",
+   "sha256": "9a7e402e4c3b555dd00bb920cd3e54cd591ac3d3cf9e4ea2837378eaddc65e6c",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 129
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trimwide_col.tex",
+   "sha256": "7765065c0ec0a2800b1da655509869b3292d4f2868f9d5020edf748dada5a816",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 14317
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainerwhite_trimwide_col_e.tex",
+   "sha256": "58d0599c3d2258201a52b20f9b2a576f3cbcc975287700628169b2b1e203a97a",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 376
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_decalnumbers03_col_m.tex",
+   "sha256": "bb0b59e157ff3c69c4dffe4d652a6e946bec4cf7a823bee02ce71d18f29a7760",
+   "size": 5580,
+   "compressed": "gz",
+   "csize": 1066
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_decalsignage01_col.tex",
+   "sha256": "e3bc0b5dcc9aba119f2bd593b1dbd014df7d33b51b92a0b699e3c41064007e18",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 2276
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_decalsignage01_col_e.tex",
+   "sha256": "4aba512d73c99af63eab7099abf1924d661807544c63d435136536db02c004b0",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1087
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_decal_text01_col_m.tex",
+   "sha256": "877b278ee6ad5b85f47669ae78b25b7aa4e504feb89d640eb08f391c2757130d",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 4578
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimcorner01_col.tex",
+   "sha256": "9902a4b3a3116e1b72d336924259cfc8e5e63a5f1aa02bc4c34a214a655d0f25",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 1340
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimcorner01_col_e.tex",
+   "sha256": "7363326f5d48b806fcdb4d106277a1fa974ffebea98e8a62a0bab42a69618eb4",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 293
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimcorner02_col.tex",
+   "sha256": "1718813b021320f10421464d3211794a6bef86e9d4c3ba252e5564edecd52116",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 2049
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimcorner02_col_e.tex",
+   "sha256": "5dd7e6dade2ab29f339bbf29b53c11e5aa628722c328ff3c6223f11f650d9e7f",
+   "size": 2868,
+   "compressed": "gz",
+   "csize": 615
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimtall01_col.tex",
+   "sha256": "f2b3c739e54d80960fcb01a03eb0645c35a67e90b6f2bf7788fae355fbe58da0",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 13103
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimtall01_col_e.tex",
+   "sha256": "2a3d3ba75001892aa0528fc7efb2f07f552308a99cff8505580b3696b4f5b17d",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 476
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimwide01_col.tex",
+   "sha256": "41b162df84c61d54132d76d124a3cb0983178a053d36311d22072fbb10dabab8",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 15616
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cargocontainer_exttrimwide01_col_e.tex",
+   "sha256": "dffeb9089277605439c133ebe8286808cfa735a351c805c77554d90a80fc6806",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 1214
+  },
+  {
+   "path": "Game\\materials\\ship\\me_chainlink_fence_color.tex",
+   "sha256": "39d1095fa9a22619e4b41cce2bcf9fb4cce5c8c711d874357ab741d24f19ac3c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 46110
+  },
+  {
+   "path": "Game\\materials\\ship\\me_chainlink_fence_color_e.tex",
+   "sha256": "0b71bd4dd53e667d8d577b8a6c75a8f2b3aefb1428f29d3e945ef1c5aae82665",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4844
+  },
+  {
+   "path": "Game\\materials\\ship\\me_chainlink_fence_pole_color.tex",
+   "sha256": "c2785c814e2f412818f1a1a677b670abf646b380101998bbf28f34de2fc33ef3",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 34586
+  },
+  {
+   "path": "Game\\materials\\ship\\me_chainlink_fence_pole_color_e.tex",
+   "sha256": "11e50012a3e03add3f23ab925545be1dad7d604032e30b9bbc652ea0530db307",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2594
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cinderblock_wall02_col.tex",
+   "sha256": "32a8cdeed0e23185e7fb12509a943cb9a145a16bba1405c7660b3affae652d21",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139449
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cinderblock_wall02_col_e.tex",
+   "sha256": "c3762dc0956c6aefd5074f0d9d43729f18aa108da69d1ea932f460abfca28480",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3413
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cinderblock_wall02_t_col.tex",
+   "sha256": "86cbd248221694ed0f53a556e6de8fa28ac1662ffba5d86ab400addf8e3dc00a",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 2535
+  },
+  {
+   "path": "Game\\materials\\ship\\me_cinderblock_wall02_t_col_e.tex",
+   "sha256": "2969a612c31779683b0210d46baf05c09f825be7aa4f57630483d869b5042872",
+   "size": 2860,
+   "compressed": "gz",
+   "csize": 1373
+  },
+  {
+   "path": "Game\\materials\\ship\\me_corrugated_metal1_col.tex",
+   "sha256": "1bfa790115dfb5164603105ea335e738fda48a926087551ee872557bffc856fd",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 157661
+  },
+  {
+   "path": "Game\\materials\\ship\\me_corrugated_metal1_col_e.tex",
+   "sha256": "bbbe66aeaa97b905daa0baad4eaca3d0fcf6905776bc7faffb9ed07600300944",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5484
+  },
+  {
+   "path": "Game\\materials\\ship\\me_decal_darkstain_01_m.tex",
+   "sha256": "e64e73f5b9497a03c6d63c374a2154e64f96074b79d29eefc55fc95c60a9c751",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 51542
+  },
+  {
+   "path": "Game\\materials\\ship\\me_decal_darkstain_06_m.tex",
+   "sha256": "8811493c905a2ea9738cf0c73a276ed2b16d5358e3ece88c27e417f48cdd9337",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 26163
+  },
+  {
+   "path": "Game\\materials\\ship\\me_door_narrow03.tex",
+   "sha256": "bb0d956b9f5a0167377d89a08e2ca8dbbcf1739be742bc188ad7d3506b17163b",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 76776
+  },
+  {
+   "path": "Game\\materials\\ship\\me_door_narrow03_e.tex",
+   "sha256": "52aaed48e6f18974c0b6784dde62aa0f933597f84c6103c3c94d891890164e20",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5075
+  },
+  {
+   "path": "Game\\materials\\ship\\me_garagedoor1.tex",
+   "sha256": "0e280b0e96ad8f312bc99ff6dfee8bc7d862af33e77d55f053bfe8575e0bd083",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 86298
+  },
+  {
+   "path": "Game\\materials\\ship\\me_garagedoor1_e.tex",
+   "sha256": "06b0f6ab207f7773d9ad981a52a228619f1eb67d21d13e01468c0dad7e747e1d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3334
+  },
+  {
+   "path": "Game\\materials\\ship\\me_glassblock.tex",
+   "sha256": "30bacc86fb187a3c05028f12d39df86d8fd7f9768a2809664407aff3ffece3f1",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 33458
+  },
+  {
+   "path": "Game\\materials\\ship\\me_glassblock_e.tex",
+   "sha256": "e7aafdd4f0e922678197a3fccc81c17ada741cc4bfa586022d2cde41a1545a08",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4611
+  },
+  {
+   "path": "Game\\materials\\ship\\me_metal_rusty02_col.tex",
+   "sha256": "e7a78c092234126393fcf578c3727acaf11fe9946d7abb1068bb163060b78081",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 133385
+  },
+  {
+   "path": "Game\\materials\\ship\\me_metal_rusty02_col_e.tex",
+   "sha256": "b2f514ac7bfc4a3b0141956c2a14d9af28e87cdd367acd2fa6e6e9079ea653ae",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4085
+  },
+  {
+   "path": "Game\\materials\\ship\\me_metal_rusty03_col.tex",
+   "sha256": "ae243d2c09e164c2245b29618a0e78d69bd5f63c57e2728fb9da910be6622c85",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 135505
+  },
+  {
+   "path": "Game\\materials\\ship\\me_metal_rusty03_col_e.tex",
+   "sha256": "06740b11fca67f8f4dce78c39371013f94b2432c157200047d77cf88ef5f490f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4288
+  },
+  {
+   "path": "Game\\materials\\ship\\me_pinewood_col.tex",
+   "sha256": "ab5038c827722b04e8ea880617570636a6663e3b57b719773d85835fd438ed2c",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 69459
+  },
+  {
+   "path": "Game\\materials\\ship\\me_pinewood_col_e.tex",
+   "sha256": "bfdc166326c4383073949ce3e6279c780e2ad003bf6557b193cc2c08f5b1fa10",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3981
+  },
+  {
+   "path": "Game\\materials\\ship\\me_roof.tex",
+   "sha256": "d0df2bf00caae986676235b3a8c719483c9a97771d2b7b1c5ce67e633d279736",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 139448
+  },
+  {
+   "path": "Game\\materials\\ship\\me_roof_e.tex",
+   "sha256": "6a18d00e83a570c62ec9ebfd53e5bb62dd6d19c61e51d4f8367cdd04211847cc",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4102
+  },
+  {
+   "path": "Game\\materials\\ship\\me_sign_pharmacy.tex",
+   "sha256": "ebecca667d88ce5d17a4b61e2c22e8d6a11b9b40ec9d0b38a91355212bbd6eed",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 34417
+  },
+  {
+   "path": "Game\\materials\\ship\\me_sign_pharmacy_e.tex",
+   "sha256": "0608c8a31311996c86a86081afd300d67ac48ddd1796f7dba4a1fd184725044f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4745
+  },
+  {
+   "path": "Game\\materials\\ship\\me_sign_store_orange.tex",
+   "sha256": "572ad4c6ceb995ed1430d0b5e774efbfbad009bee3fa1c9eee392c65e6aa60cb",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 27621
+  },
+  {
+   "path": "Game\\materials\\ship\\me_sign_store_orange_e.tex",
+   "sha256": "a932e0b955754c2a548cd6def3a26bdffd8f6c1177d562e1a8fb8c3edbcabd8d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2668
+  },
+  {
+   "path": "Game\\materials\\ship\\me_trim_metal01_col.tex",
+   "sha256": "c3b0bc71218a6e47fe715256ec499aea689cd25c4133dfbaaeaf8f3854cbe070",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 33463
+  },
+  {
+   "path": "Game\\materials\\ship\\me_trim_metal01_col_e.tex",
+   "sha256": "58253f1bae76d3421f445134f16af439964b1855db2f433bee71f8a386dd02f0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2207
+  },
+  {
+   "path": "Game\\materials\\ship\\me_window2_col.tex",
+   "sha256": "42d0429129549af19c152e44cb11ca1cf79c2b2db0938eda174ad86a919033b2",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 63029
+  },
+  {
+   "path": "Game\\materials\\ship\\me_window2_col_e.tex",
+   "sha256": "412f6c4a851c8e93b0dd77ae9f1b95d280f22e1ab626e56882d7abbc83aad014",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3291
+  },
+  {
+   "path": "Game\\materials\\ship\\me_wood_beam.tex",
+   "sha256": "65691834c3858cd07f1f6d9288d82850f53dda766151a106b085a6c89f56e7ca",
+   "size": 21964,
+   "compressed": "gz",
+   "csize": 18274
+  },
+  {
+   "path": "Game\\materials\\ship\\me_wood_beam_e.tex",
+   "sha256": "2d76f69604d26d1296bbbb829d7f260a2af03e033f3d675cb5af5e2136287217",
+   "size": 5596,
+   "compressed": "gz",
+   "csize": 2554
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_cab_col.tex",
+   "sha256": "98ae2e2b930a935399ec543a328df9d2630c06e44d3b0e9be0ca3e00b750e23b",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 105309
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_cab_col_e.tex",
+   "sha256": "347e1ba4d3e57c85cca9edf01bb54619696c49824027797d5113eb8b1e8174b8",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4232
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_trailer_col.tex",
+   "sha256": "33f7d26b0b72a29e37a434acb7f85e318822db8ac7045c3cd403f62f269c27ae",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 108224
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_trailer_col_e.tex",
+   "sha256": "01e2e261da869a2078dba6722d5648f7095cfce1564a8592970c187cac93a000",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3344
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_trailer_glass_col.tex",
+   "sha256": "e1ea474d7b298c33dc750ec94a51d80e92daec516d0adee543846ce5511bd399",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 136544
+  },
+  {
+   "path": "Game\\materials\\ship\\mtl_truck_trailer_glass_col_e.tex",
+   "sha256": "d97d6a56ece83fb400678dfcd62a0da298dd93b7300c005ec29a182ac752ebf3",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5239
+  },
+  {
+   "path": "Game\\materials\\ship\\pallet_col.tex",
+   "sha256": "3b8dcdfca661c6badd56e6348994a3f05748148ca2970450511ce7c0da2175da",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 140687
+  },
+  {
+   "path": "Game\\materials\\ship\\pallet_col_e.tex",
+   "sha256": "25eed74c533e1d1c6a62d0528eed7abec88c4141b509d5c1e9ec56702125c5d3",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4300
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_00.tex",
+   "sha256": "b52bfa7b5660c4ecfd8972445e6d3b019b2f62055dffd9ca60883415a89784f3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 150278
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_00_e.tex",
+   "sha256": "621dd5ee8cbef5c59284a88833c84ede21c87af0778ccd135e0b2c4cec7106ae",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4982
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_01.tex",
+   "sha256": "3d5b28e2eb332785c16f1caaa822703ff2ac3696550ff914a37e16cbda2ae54c",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 154819
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_01_e.tex",
+   "sha256": "5bdcc7fe9f7f39c129c0d2e51b1c85160b1ce6cd412acef53da02e1a186e84c2",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4428
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_02.tex",
+   "sha256": "f8b1ff887864f3b177c8636fa602b6f4c4079e1588de5426bfcdad5dfc6ec2ba",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 150435
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_02_e.tex",
+   "sha256": "42327262b78030847036ce17c61061813fb863d8c08880feaf25f9e3bd229f2b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4369
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_03.tex",
+   "sha256": "2493c801faa2cfb41cc2a77b3f460b419cad44bfd5bd91dac3610204a0f05449",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 153551
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_03_e.tex",
+   "sha256": "2e6928ef46402c8e43baffefd9e25d49cdff5744a151b77c575ebe72ce814e14",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4798
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_04.tex",
+   "sha256": "254e775e75e8be47e2dc6d52fd3b5be8dec4484d89109bb1bda6d94b9ddaf70a",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 151239
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_04_e.tex",
+   "sha256": "1ce32e214ed0c2ea929a4b75126635137185cf366ab5847cbac6252fd61a0b32",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5399
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_10.tex",
+   "sha256": "bf352024415172836407e36a5485a2e4d293c80c3d28daf155068ee474be5408",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 152879
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_10_e.tex",
+   "sha256": "c4727d9127018d8659dabf187dbd811cec1ddd3698033ed0503308491487d45b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4635
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_11.tex",
+   "sha256": "af6e27335628cfc8fd6e7f70efe8393a64b665919978ac8d1844749e4598c6da",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144544
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_11_e.tex",
+   "sha256": "f272f50ae82702e95225190d0aa1da3fb2d95add73308a2953c4f1d31ce096d6",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3710
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_12.tex",
+   "sha256": "ce36eb388c2b86984695722bc1eb7da455309fd9944e0a3ccd532392cb8ac2c9",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144283
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_12_e.tex",
+   "sha256": "2de01af22f5455b392d1393501f2ee4f5aa67191cbf7043a6ea2dc1aa40f50ac",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3811
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_13.tex",
+   "sha256": "ac2e90fbec0375400cf2ee10cdf10c4a915ddeefb03cfc91e127b53579da3200",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 151928
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_13_e.tex",
+   "sha256": "2931b417969cc91a1c7e9ee616048e4cdafed01b5f87726ee8f19d4613f04c07",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4488
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_20.tex",
+   "sha256": "033bb33e1fc3232200a4d23a9766a907ddc0ad7e268d5ca0f9d447a20348ec85",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 144431
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_20_e.tex",
+   "sha256": "cdf723d01abdb01fb91c71ebe332774f97b97a0d67292f872da38f6d7087ee35",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4845
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_21.tex",
+   "sha256": "9addc3bf9363cfdcd7cd3dbf21572f026c03b3296228a48b20928dcb14169770",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 138364
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_21_e.tex",
+   "sha256": "39f6e74ee3c585faa24494b355180f9c7de70841f9bf8d4974cd7f3d8cbc27b0",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4189
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_22.tex",
+   "sha256": "d0a2891d99e6ab9c8cb8999fd8e8968abfdfb52d4c700b8494fd864d6e96a7b8",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 143532
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_22_e.tex",
+   "sha256": "5b2128bed4e6a293a1c142e05fd30b24e1138cc676a26f88c55afcf774d357e1",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4226
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_30.tex",
+   "sha256": "489766165525be3e6b3630c1e8aa18b7a3821474cb15f54c89ddbaff621c1072",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 140976
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_30_e.tex",
+   "sha256": "3e832a8b3976623ef76b9c0a3dac2b28c6e4b5c6a65264f8c77c0f9e2e052955",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5183
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_31.tex",
+   "sha256": "f67ed066e901ab761ae2854c8d4ba1494a39822d872e2dc2e0fc31909de7028e",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 140750
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_31_e.tex",
+   "sha256": "3c4a2afb92e7c56d47cc7acd541c89bcbee335e772c874481cc6bed0cdb0449d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5036
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_40.tex",
+   "sha256": "db046912a13f1a60e3e75f9c49ce9eb861a66b0c3baa22965efdb1f9a663a8e2",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 138104
+  },
+  {
+   "path": "Game\\materials\\ship\\ship_ground_40_e.tex",
+   "sha256": "197d083553547fb10fe513c26875acfae0686e7e86340fc6c5e0a6ac8ba44e38",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5231
+  },
+  {
+   "path": "Game\\materials\\ship\\shopping_cart_cage_col.tex",
+   "sha256": "080538fedc0d9bfa2727f20aeb54f0ee4330fd3adf0e9d3cc13122f666dbcd0c",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 179287
+  },
+  {
+   "path": "Game\\materials\\ship\\shopping_cart_cage_col_e.tex",
+   "sha256": "54580f25e2eee7886c8d55485b7c4c374626c14ac0ec8ee1cf8ccf51cedee41b",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2931
+  },
+  {
+   "path": "Game\\materials\\ship\\shopping_cart_metal_col.tex",
+   "sha256": "0a05693874069695b40ae44609b2f6bf85a697b1023f06d25724807e1ea8323e",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 35374
+  },
+  {
+   "path": "Game\\materials\\ship\\shopping_cart_metal_col_e.tex",
+   "sha256": "ac8b01b48466f133c6d60be62d450ff259971f622f53e2b5bad6ae4a49532f70",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3583
+  },
+  {
+   "path": "Game\\materials\\ship\\sky.tex",
+   "sha256": "880193ef82d8aa39947a44ee102ef2cf13778955e3d51f0f79cded057e3c8290",
+   "size": 5592540,
+   "compressed": "gz",
+   "csize": 395779
+  },
+  {
+   "path": "Game\\materials\\ship\\sky149___________________.mat",
+   "sha256": "1da79456aab3072c3ccbf7fa94a85daa36733699e5ce2234b408d75f9ca1875e",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\ship\\sky178______________________________.mat",
+   "sha256": "1da79456aab3072c3ccbf7fa94a85daa36733699e5ce2234b408d75f9ca1875e",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\ship\\sky179___________________.mat",
+   "sha256": "1da79456aab3072c3ccbf7fa94a85daa36733699e5ce2234b408d75f9ca1875e",
+   "size": 212,
+   "compressed": "gz",
+   "csize": 185
+  },
+  {
+   "path": "Game\\materials\\ship\\streetlight_col.tex",
+   "sha256": "ca0e15a117df6dbe0138edbdeb4d7e068c074da1264495d71b4994436f7f4ac7",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 71145
+  },
+  {
+   "path": "Game\\materials\\ship\\streetlight_col_e.tex",
+   "sha256": "7b83c30cce6aca74bc6b9c2093219be77182ebdef372fe36a935a86272b3119d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3940
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_civ_col.tex",
+   "sha256": "ab2d17731216b5c107c7b14c2df10e2e436dffcb1c204eaf3642716322815cf1",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 38558
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_civ_col_e.tex",
+   "sha256": "d1c3722a2dac450b7d607b1acb99a8c2f8d7f1f276b8faa827598ebdda87b885",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2421
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_col.tex",
+   "sha256": "ef34dfde3efab5ff3e6e649da40424efb574c60266a4d3342c71fe6cf6a1e669",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 9635
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_col_e.tex",
+   "sha256": "22f83eb250b4a03918e40585baa5279933340184993558a090ca15986bf8e5cf",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2374
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_glass_col.tex",
+   "sha256": "d411f96c664f08e6ebc1da55464ed9add866ea2648ca0b8d75425afbcc9e67c8",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 35485
+  },
+  {
+   "path": "Game\\materials\\ship\\tanker_truck_glass_col_e.tex",
+   "sha256": "a3b290bebb5ba1244a6066f84a434ee40ba016d1e82acdbe8c48bcaf27ba74d3",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2650
+  },
+  {
+   "path": "Game\\materials\\ship\\tires02_col.tex",
+   "sha256": "1345419df34db71697922ebb13d60f5315619582dfb4bd479d9e9b7f5f1f8bd3",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130505
+  },
+  {
+   "path": "Game\\materials\\ship\\tires02_col_e.tex",
+   "sha256": "fee4bd11b24f9e08d06a10d458745e0c30333ef91354486d224897aabd2cba9d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2237
+  },
+  {
+   "path": "Game\\materials\\ship\\transmitting_tower2_col_.tex",
+   "sha256": "3b94f9cebde0aa9bc0f042c9ba08cb6d58b82ca34ba1f6ccdebf7c9f736acc4d",
+   "size": 43820,
+   "compressed": "gz",
+   "csize": 20450
+  },
+  {
+   "path": "Game\\materials\\ship\\transmitting_tower2_col__e.tex",
+   "sha256": "3dea6f2c84d229d31a68877e0f8074d249e65dc52c10fabb74537821d3b01b83",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 2665
+  },
+  {
+   "path": "Game\\materials\\ship\\transmitting_tower_col.tex",
+   "sha256": "92e06e5083ce886882566fdeb91bb1d74efe0c024e3d624cdd1f9d2d07368978",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 130980
+  },
+  {
+   "path": "Game\\materials\\ship\\transmitting_tower_col_e.tex",
+   "sha256": "83c66e721b04414fa3e9eff0804ed1e39391d36baee1dde4ade90cbd40e03e42",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3646
+  },
+  {
+   "path": "Game\\materials\\ship\\trash01_col.tex",
+   "sha256": "3628b2efc846b5a1221a4b684c08fdc76302db57dcb1e5e7ac7b89efaff27a0f",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 145136
+  },
+  {
+   "path": "Game\\materials\\ship\\trash01_col_e.tex",
+   "sha256": "c4057ba5f117ae25abb661f11176de2968c76695d8d18571b0ef49add754b76f",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5627
+  },
+  {
+   "path": "Game\\materials\\ship\\trashbag_black_col.tex",
+   "sha256": "e8ed3d1b68a52d2f4fe1dcecf44c243763e00d6fe129331bcec1f4214e57e370",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 27914
+  },
+  {
+   "path": "Game\\materials\\ship\\trashbag_black_col_e.tex",
+   "sha256": "f73d3a311c1df87a23769dc7e1ba4245fc090c1529e841a4e35800fe1618bee9",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 780
+  },
+  {
+   "path": "Game\\materials\\ship\\trashcan_metal_col.tex",
+   "sha256": "744f96e561b6f6f3763968c077e0c3187e48efcc6148b40c38abe566a6cfc730",
+   "size": 87516,
+   "compressed": "gz",
+   "csize": 73142
+  },
+  {
+   "path": "Game\\materials\\ship\\trashcan_metal_col_e.tex",
+   "sha256": "b3af26d6f49754c473fbfc6f6cfabbc43de9c80f6d5053664cfd7190a9391903",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 4651
+  },
+  {
+   "path": "Game\\materials\\ship\\trash_col.tex",
+   "sha256": "c4a87644eb350d6af7a08bc2c217230f3be50386fedc4941167605566dfd8781",
+   "size": 43828,
+   "compressed": "gz",
+   "csize": 39182
+  },
+  {
+   "path": "Game\\materials\\ship\\trash_col_e.tex",
+   "sha256": "fe295684f6e29d10b04f31beee1e65d6b0521dc2d04c50e1db15337285d04545",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 5521
+  },
+  {
+   "path": "Game\\materials\\ship\\tree_pine_col.tex",
+   "sha256": "ce6b91080652a81ca25ff2f2df5f490dded5142c23ebeb915e52613cbe03a347",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 154387
+  },
+  {
+   "path": "Game\\materials\\ship\\tree_pine_col_e.tex",
+   "sha256": "d0b361b76481aaeb31cc2115c0d1567c2b8560678c84f6f923dd0bc42413d04c",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3630
+  },
+  {
+   "path": "Game\\materials\\ship\\water_ocean_solid_scrolling_col.tex",
+   "sha256": "ae0cd1cedf2cbafa0045881d55945f2f7c95070a4766c649e1bae2709c3a3606",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 122801
+  },
+  {
+   "path": "Game\\materials\\ship\\water_tower2_col_.tex",
+   "sha256": "4a1cb98224db5b36cae4b230b6bd75582abf7ec4ad98f319c96cf10ef136dded",
+   "size": 87500,
+   "compressed": "gz",
+   "csize": 36408
+  },
+  {
+   "path": "Game\\materials\\ship\\water_tower_col.tex",
+   "sha256": "d9585d72b62e696681aa2698374e6273fab1fe7d5bdf2aea2540751080254fd3",
+   "size": 349660,
+   "compressed": "gz",
+   "csize": 158753
+  },
+  {
+   "path": "Game\\materials\\ship\\xpec_delivery_truck_body_col.tex",
+   "sha256": "bedd15762941fde60c2cbb4f5ea07f6809ca329fca6e4b0877e431109c401aef",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 126830
+  },
+  {
+   "path": "Game\\materials\\ship\\xpec_delivery_truck_body_col_e.tex",
+   "sha256": "f455d88785dcefffe6283043485917e1ff6094485a33d7fab74a3803e8c238ae",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 3654
+  },
+  {
+   "path": "Game\\materials\\ship\\xpec_delivery_truck_glass_col.tex",
+   "sha256": "7251f8850223150e69cee3193165fdc6b50b67fda0ea809a55221153405093a2",
+   "size": 174900,
+   "compressed": "gz",
+   "csize": 84344
+  },
+  {
+   "path": "Game\\materials\\ship\\xpec_delivery_truck_glass_col_e.tex",
+   "sha256": "3613b9cb9201c618043a8c0f1c8d592621cdc60890a2368114f1c4eec621ed7d",
+   "size": 11060,
+   "compressed": "gz",
+   "csize": 1987
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.gamedb",
+   "sha256": "4e021e9d0d16633df6dfc335cf97bc1feea484b00ce7c974ddc24a6e6269052d",
+   "size": 77012,
+   "compressed": "gz",
+   "csize": 13343
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.global.wldmsh",
+   "sha256": "acb0d56a8230893153a79cd6e5727f526c295585482330173c8aa7ee8a22f054",
+   "size": 114103984,
+   "compressed": "gz",
+   "csize": 31713262
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15.slvd",
+   "sha256": "57813a7eac92229498bece4dd234a433e349a8aa36c336f6d1b791796991e391",
+   "size": 318849,
+   "compressed": "gz",
+   "csize": 30758
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15.slvs",
+   "sha256": "34c8b0b4567a378c31245c19d4bac843b79c7a2b69ab1b514fe504638eade2ed",
+   "size": 9437188,
+   "compressed": "gz",
+   "csize": 2446271
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15nx.tex",
+   "sha256": "e47ae59c02444f0b3e9a9f2d1fd279256a61f1beb9ae59f04e6f46611becdec7",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 261756
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15ny.tex",
+   "sha256": "7db4342765652d10eb12cd3e83c66a1ff06ccfc1926b8ea6ff8601e1ebf3ea81",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 250329
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15nz.tex",
+   "sha256": "b0f5118f8f08df43d48da886189cdc47d09f975c4aad85b36a4a4073b26c8a15",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 293768
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15px.tex",
+   "sha256": "2fed260acdc0ffe2aed662150200bfd3cbb4cdfe7f07543033831dd980b640a9",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 291235
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15py.tex",
+   "sha256": "f015e275b67a499a28dfc7778391c0059340c380354ba71b72a921791e105b0f",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 225996
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.lsv15pz.tex",
+   "sha256": "0b47ab7f5a43f10ff747d5a4d4bb21986dac0b658fea12e003c5685b16c1256b",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 263016
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.wld",
+   "sha256": "0da6635c10333f30dce34e07be1475908497f3f58c7f27dbeb012deef1fba1fb",
+   "size": 79888746,
+   "compressed": "gz",
+   "csize": 19801924
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.wldclnt",
+   "sha256": "f9fc27d1893797c377a9b19da2a4dd1764f9d00b2dede87e13009421ff094cdf",
+   "size": 205037,
+   "compressed": "gz",
+   "csize": 39284
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_rust_mansion\\tam_rust_mansion.wldsrvr",
+   "sha256": "54419c6e2146ef56b120dcd156c638f1f44dc0e7968b33e780c8001a4a640e47",
+   "size": 102365,
+   "compressed": "gz",
+   "csize": 18388
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.gamedb",
+   "sha256": "a7c9e6b1ff218f2d289f1016fcfb5136a9a5c4a1ce81ce813051c74905c8e458",
+   "size": 76492,
+   "compressed": "gz",
+   "csize": 13295
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.global.wldmsh",
+   "sha256": "10da6530bfa98db12235563dbf26562a59d89dcece4f125f50b35beae091903d",
+   "size": 123928996,
+   "compressed": "gz",
+   "csize": 25277095
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15.slvd",
+   "sha256": "57813a7eac92229498bece4dd234a433e349a8aa36c336f6d1b791796991e391",
+   "size": 318849,
+   "compressed": "gz",
+   "csize": 30758
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15.slvs",
+   "sha256": "34c8b0b4567a378c31245c19d4bac843b79c7a2b69ab1b514fe504638eade2ed",
+   "size": 9437188,
+   "compressed": "gz",
+   "csize": 2446271
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15nx.tex",
+   "sha256": "57497a7daacea062f97f92c1299385353d23873f62a05be3b66c88ff2b93dfe2",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 281081
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15ny.tex",
+   "sha256": "a75dbe0f6700918d91f86e36eaa916363ed045fec0077f7726ba21be79cd5864",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 254546
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15nz.tex",
+   "sha256": "cee1fd4fc86047c94f3acfc14434ee7345360c748824ac1788abb9e26540b5bb",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 271133
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15px.tex",
+   "sha256": "d5bf31d0a28aa5d67ae8fd46cba4bea2d42498168ccad81baed4f9942c3d3295",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 295311
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15py.tex",
+   "sha256": "255d9a1a6b6a536d6a6d4407d213e0516afaa9c1481db7c768fcc5dc542dbca0",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 249449
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.lsv15pz.tex",
+   "sha256": "fd026db1fd3c839f6921f53797110e1f70bff116f038ba4ffecee53dd9ba4a7c",
+   "size": 1048716,
+   "compressed": "gz",
+   "csize": 278729
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.wld",
+   "sha256": "41d1a4ee3fc770f09d591f1a18fa2d2725fb9a06f766d9b4f14c7d0557001bea",
+   "size": 27680050,
+   "compressed": "gz",
+   "csize": 7462650
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.wldclnt",
+   "sha256": "7452554969f87deac2bb09c538da598ba19e235c54257798d1e03209aefea310",
+   "size": 205037,
+   "compressed": "gz",
+   "csize": 39980
+  },
+  {
+   "path": "Game\\worlds\\mp\\tam\\tam_ship_mansion\\tam_ship_mansion.wldsrvr",
+   "sha256": "b4199fefcc738c2bcfdc2de580dc6fcd4afbe83bacc4e0eedb7e66402c64a3cd",
+   "size": 101671,
+   "compressed": "gz",
+   "csize": 17914
   }
  ],
  "patches": [
@@ -174,12 +6290,76 @@
    "offset": "567400",
    "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
    "new": "FF B3 E4 01 00 00 E8 00 00 00 00 58 8B 80 B5 FD 0C 00 FF 50 3C 83 C4 04 FE C0 88 83 C4 08 00 00 0F B6 C0 E9 09 AA B7 FF"
+  },
+  {
+   "name": "host: match time = goal minutes",
+   "file": "Game\\GameServer.dll",
+   "offset": "1DCA33",
+   "old": "B8 CD CC CC CC F7 A6 0C 03 00 00 C1 EA 03",
+   "new": "8B 96 0C 03 00 00 90 90 90 90 90 90 90 90"
+  },
+  {
+   "name": "host: match time = goal minutes",
+   "file": "Game\\GameServer.dll",
+   "offset": "1DCA5D",
+   "old": "B8 CD CC CC CC F7 A6 0C 03 00 00 C1 EA 03",
+   "new": "8B 96 0C 03 00 00 90 90 90 90 90 90 90 90"
+  },
+  {
+   "name": "aim down sights while jumping",
+   "file": "Game\\GameClient.dll",
+   "offset": "20D022",
+   "old": "83 F8 13 75 3C",
+   "new": "E9 D9 B7 20 00"
+  },
+  {
+   "name": "aim down sights while jumping",
+   "file": "Game\\GameClient.dll",
+   "offset": "20D45B",
+   "old": "83 F8 12 5F 75 56",
+   "new": "E9 E0 B3 20 00 90"
+  },
+  {
+   "name": "aim down sights while jumping",
+   "file": "Game\\GameClient.dll",
+   "offset": "418800",
+   "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
+   "new": "83 F8 13 0F 84 1E 48 DF FF 6A 3C 6A 0A 8B CF E8 3D 3F C0 FF 84 C0 0F 85 0B 48 DF FF 6A 3A 6A 0A 8B CF E8 2A 3F C0 FF 84 C0 0F 85 F8 47 DF FF E9 2F 48 DF FF"
+  },
+  {
+   "name": "aim down sights while jumping",
+   "file": "Game\\GameClient.dll",
+   "offset": "418840",
+   "old": "CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC CC",
+   "new": "83 F8 12 0F 84 2F 00 00 00 6A 3C 6A 0A 8B CF E8 FD 3E C0 FF 84 C0 0F 85 1C 00 00 00 6A 3A 6A 0A 8B CF E8 EA 3E C0 FF 84 C0 0F 85 09 00 00 00 5F E9 42 4C DF FF CC CC CC 5F E9 E3 4B DF FF"
+  },
+  {
+   "name": "disable weapon/head walk bob",
+   "file": "Game\\GameClient.dll",
+   "offset": "24813E",
+   "old": "84 C0",
+   "new": "32 C0"
+  },
+  {
+   "name": "maps: Engine.exe LargeAddressAware (Rust/Shipment need >2 GB)",
+   "file": "Engine.exe",
+   "offset": "116",
+   "old": "02",
+   "new": "22"
+  },
+  {
+   "name": "maps: Engine.exe vis/frustum fix (Rust/Shipment)",
+   "file": "Engine.exe",
+   "offset": "27C62F",
+   "old": "75",
+   "new": "EB"
   }
  ],
- "launcher_sha256": "7592baab86c81ddcec576f83832482f9b3244ec6a69a093c29f76f720ba0f6ae",
- "news": "Welcome back to FEAR Online!\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST, sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n    Anyone not in the room when the host starts is left out (no joining mid-match yet).\n\nNew in this version: the Tab scoreboard shows all players (names + teams). Server cleans up old rooms.\nKnown bugs: the 2nd match in a room can get stuck on the loading screen (restart the game between matches for now); Demolition/Soul King don't work with 2 players; weapon select (N) is empty. Full list on the GitHub page.\n\nFound a bug? Press SUPPORT to report it.",
+ "launcher_sha256": "7eaf20ff445f5208de9530cb547bcd7fce6b3a5860de39333131d3eae653b10d",
+ "news": "FEAR Online Community Launcher v1.0\n\nPlay with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.\n\nHOW TO PLAY TOGETHER (in this order):\n 1. HOST clicks HOST and sends the invite code (already copied) to friends.\n 2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.\n 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in and pick the SAME channel.\n 4. FRIENDS click GAME ROOM LIST and double-click the host's room.\n 5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.\n\nBack-to-back matches in the same room now work - no restart needed between matches.\nFull guide and known issues on the GitHub page. Found a bug? Press SUPPORT.",
  "banner": "banner.jpg",
  "banner_sha256": "a888da4b21aa5856a3a9dd6f3e1b4d0ce8d1768523588c018a7f7c116d4234ba",
  "host_zip": "FearHost.zip",
- "host_sha256": "dab5615e3ea1ab48209d3a873e1d7b07272a4384aff2d582104f30b42f9b85f5"
+ "host_sha256": "1d1b4dbe1e6e942051b8c43fc9098424c0be912114955f2aba19081f12cc61d7",
+ "release": "1.0"
 }

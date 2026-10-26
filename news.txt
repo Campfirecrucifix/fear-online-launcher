@@ -1,16 +1,13 @@
-Welcome back to FEAR Online!
+FEAR Online Community Launcher v1.0
 
 Play with your Steam friends - no servers, no port forwarding, nobody sees anyone's IP.
 
 HOW TO PLAY TOGETHER (in this order):
- 1. HOST clicks HOST, sends the invite code (already copied) to friends.
+ 1. HOST clicks HOST and sends the invite code (already copied) to friends.
  2. HOST logs in (any name/password), picks a channel, clicks HOST GAME and creates a room. Don't press START yet.
- 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in, pick the SAME channel.
+ 3. FRIENDS paste the code and click JOIN (or Steam friends list > Join Game), log in and pick the SAME channel.
  4. FRIENDS click GAME ROOM LIST and double-click the host's room.
  5. When EVERYONE is shown in the room: everyone clicks READY, then the host clicks START.
-    Anyone not in the room when the host starts is left out (no joining mid-match yet).
 
-New in this version: the Tab scoreboard shows all players (names + teams). Server cleans up old rooms.
-Known bugs: the 2nd match in a room can get stuck on the loading screen (restart the game between matches for now); Demolition/Soul King don't work with 2 players; weapon select (N) is empty. Full list on the GitHub page.
-
-Found a bug? Press SUPPORT to report it.
+Back-to-back matches in the same room now work - no restart needed between matches.
+Full guide and known issues on the GitHub page. Found a bug? Press SUPPORT.

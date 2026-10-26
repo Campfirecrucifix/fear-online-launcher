@@ -25,13 +25,26 @@ class L : Form {
   static string Hash(byte[] d) { using (var s = SHA256.Create()) return BitConverter.ToString(s.ComputeHash(d)).Replace("-", "").ToLower(); }
   static string Hash(string p) { return Hash(File.ReadAllBytes(p)); }
   static byte[] Hex(object s) { return ((string)s).Split(' ').Select(x => Convert.ToByte(x, 16)).ToArray(); }
-  byte[] Get(string url) {  // download with progress on the top gauge
-    var rq = (HttpWebRequest)WebRequest.Create(url); rq.UserAgent = "FEAR-Online-Launcher"; rq.Headers["Cache-Control"] = "no-cache";
+  byte[] Get(string url, long max = 0) {  // download with progress on the top gauge; max > 0: abort if the response is bigger
+    var rq = (HttpWebRequest)WebRequest.Create(url); rq.UserAgent = "FEAR-Online-Launcher"; rq.Headers["Cache-Control"] = "no-cache"; rq.Timeout = rq.ReadWriteTimeout = 30000;
     using (var rs = rq.GetResponse()) using (var st = rs.GetResponseStream()) using (var ms = new MemoryStream()) {
       long len = rs.ContentLength; var b = new byte[65536]; int n;
-      while ((n = st.Read(b, 0, b.Length)) > 0) { ms.Write(b, 0, n); if (len > 0) { p1 = (double)ms.Length / len; Redraw(); } }
+      if (max > 0 && len > max) throw new Exception("download larger than expected");
+      while ((n = st.Read(b, 0, b.Length)) > 0) { ms.Write(b, 0, n); if (max > 0 && ms.Length > max) throw new Exception("download larger than expected"); if (len > 0) { p1 = (double)ms.Length / len; Redraw(); } }
       p1 = 1; Redraw(); return ms.ToArray(); }
   }
+  static string Safe(string root, string rel) {  // manifest path -> full path, refusing anything outside the game folder
+    if (string.IsNullOrEmpty(rel) || Path.IsPathRooted(rel) || rel.Contains(":") || rel.Split('\\', '/').Contains("..")) throw new Exception("bad path in manifest: " + rel);
+    var full = Path.GetFullPath(Path.Combine(root, rel));
+    if (!full.StartsWith(Path.GetFullPath(root).TrimEnd('\\') + "\\", StringComparison.OrdinalIgnoreCase)) throw new Exception("bad path in manifest: " + rel);
+    return full;
+  }
+  static void Swap(string tmp, string p) {  // move tmp over p (atomic replace when p exists)
+    if (!File.Exists(p)) { File.Move(tmp, p); return; }
+    try { File.Replace(tmp, p, null); } catch (IOException) { File.Delete(p); File.Move(tmp, p); }
+  }
+  static long Num(Dictionary<string, object> f, string k) { return f.ContainsKey(k) ? Convert.ToInt64(f[k]) : -1; }
+  static System.Collections.IEnumerable List(Dictionary<string, object> m, string k) { return m.ContainsKey(k) ? (System.Collections.IEnumerable)m[k] : new object[0]; }
   Bitmap Skin(string f) { try { var p = Path.Combine(skin ?? "", f); return File.Exists(p) ? new Bitmap(p) : null; } catch { return null; } }
   void Play(string wav) { if (!soundOn || skin == null) return; try { var p = Path.Combine(skin, wav); if (File.Exists(p)) new SoundPlayer(p).Play(); } catch { } }
 
@@ -116,7 +129,7 @@ class L : Form {
       try { json = System.Text.Encoding.UTF8.GetString(Get(RAW + "manifest.json")); File.WriteAllText(cache, json); }
       catch { if (!File.Exists(cache)) throw; json = File.ReadAllText(cache); status = "GitHub unreachable - using last known settings."; }
       m = new JavaScriptSerializer().Deserialize<Dictionary<string, object>>(json);
-      ver = "v" + m["version"]; news = m.ContainsKey("news") ? (string)m["news"] : (m.ContainsKey("message") ? (string)m["message"] : "");
+      ver = "v" + (m.ContainsKey("release") ? m["release"] : m["version"]); news = m.ContainsKey("news") ? (string)m["news"] : (m.ContainsKey("message") ? (string)m["message"] : "");
       if (m.ContainsKey("banner") && banner == null) try {
         var bc = Path.Combine(game, "launcher_banner.jpg"); var want = (string)m["banner_sha256"];
         if (!File.Exists(bc) || Hash(bc) != want) { var d = Get(RAW + (string)m["banner"]); if (Hash(d) == want) File.WriteAllBytes(bc, d); }
@@ -128,7 +141,8 @@ class L : Form {
         var d = Get(RAW + "FEAR_Online_Launcher.exe");
         if (Hash(d) == (string)m["launcher_sha256"]) {
           if (File.Exists(me + ".old")) File.Delete(me + ".old");
-          File.Move(me, me + ".old"); File.WriteAllBytes(me, d); Process.Start(me); BeginInvoke((Action)Close); return; }
+          File.Move(me, me + ".old");
+          try { File.WriteAllBytes(me, d); } catch { try { File.Delete(me); } catch { } File.Move(me + ".old", me); throw; } Process.Start(me); BeginInvoke((Action)Close); return; }
       }
       try { if (File.Exists(me + ".old")) File.Delete(me + ".old"); } catch { }
       // Steam's Play button runs "<FEAR Online>\Launcher.exe -steam" (the dead Aeria launcher): replace it with this launcher
@@ -137,28 +151,41 @@ class L : Form {
           if (File.Exists(steamExe) && !File.Exists(steamExe + ".aeria")) File.Move(steamExe, steamExe + ".aeria");
           File.Copy(me, steamExe, true); } } catch { }
       todo.Clear();
-      foreach (Dictionary<string, object> f in (System.Collections.IEnumerable)m["files"]) {
-        var p = Path.Combine(game, (string)f["path"]);
-        if (!File.Exists(p) || Hash(p) != (string)f["sha256"]) { var ff = f; todo.Add(new KeyValuePair<string, Action>((string)f["path"], () => GetFile(ff))); }
+      foreach (Dictionary<string, object> f in List(m, "files")) {
+        var p = Safe(game, (string)f["path"]); long sz = Num(f, "size");
+        if (!File.Exists(p) || (sz >= 0 && new FileInfo(p).Length != sz) || Hash(p) != (string)f["sha256"]) { var ff = f; todo.Add(new KeyValuePair<string, Action>((string)f["path"], () => GetFile(ff))); }
       }
-      foreach (Dictionary<string, object> p in (System.Collections.IEnumerable)m["patches"]) {
-        var path = Path.Combine(game, (string)p["file"]); var b = File.ReadAllBytes(path); int o = Convert.ToInt32((string)p["offset"], 16);
+      foreach (Dictionary<string, object> p in List(m, "patches")) {
+        var path = Safe(game, (string)p["file"]); var b = File.ReadAllBytes(path); int o = Convert.ToInt32((string)p["offset"], 16);
         byte[] n = Hex(p["new"]), old = Hex(p["old"]);
         if (b.Skip(o).Take(n.Length).SequenceEqual(n)) continue;
         if (!b.Skip(o).Take(old.Length).SequenceEqual(old)) { Set(p["file"] + " is an unexpected version. Verify game files in Steam, then press CHECK FILES.", null, false); check.Enabled = true; Redraw(); return; }
-        todo.Add(new KeyValuePair<string, Action>((string)p["file"], () => { File.Copy(path, path + ".bak", true); n.CopyTo(b, o); File.WriteAllBytes(path, b); }));
+        todo.Add(new KeyValuePair<string, Action>((string)p["file"], () => {  // re-read at apply time so several patches to one file accumulate
+          var cur = File.ReadAllBytes(path); if (!File.Exists(path + ".bak")) File.Copy(path, path + ".bak");
+          n.CopyTo(cur, o); try { File.WriteAllBytes(path + ".tmp", cur); Swap(path + ".tmp", path); } finally { if (File.Exists(path + ".tmp")) File.Delete(path + ".tmp"); } }));
       }
       p1 = p2 = 1; progText = "Ready";
       if (todo.Count > 0) { p1 = p2 = 0; progText = todo.Count + " update" + (todo.Count > 1 ? "s" : ""); Set("Update available. Press PATCH.", "PATCH", true); if (AutoJoin != null || AutoHost) BeginInvoke((Action)Go); }
       else { Set("Up to date. HOST a game for your Steam friends, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); else if (AutoHost) { AutoHost = false; BeginInvoke((Action)Go); } }
     } catch (Exception e) { m = null; Set("Error: " + e.Message + "  (press CHECK FILES to retry)", null, false); check.Enabled = true; Redraw(); }
   }
-  void GetFile(Dictionary<string, object> f) {
-    var p = Path.Combine(game, (string)f["path"]); var d = Get(RAW + "files/" + ((string)f["path"]).Replace('\\', '/'));
-    if (Hash(d) != (string)f["sha256"]) throw new Exception("download of " + f["path"] + " was corrupt");
-    Directory.CreateDirectory(Path.GetDirectoryName(p));
-    if (File.Exists(p) && !File.Exists(p + ".bak")) File.Copy(p, p + ".bak");
-    File.WriteAllBytes(p, d);
+  void GetFile(Dictionary<string, object> f) {  // "compressed":"gz" entries are fetched from gz/<path>.gz (sha256 is of the uncompressed file)
+    var p = Safe(game, (string)f["path"]); var gz = f.ContainsKey("compressed") && (string)f["compressed"] == "gz";
+    var rel = string.Join("/", ((string)f["path"]).Replace('\\', '/').Split('/').Select(s => Uri.EscapeDataString(s)).ToArray());
+    long size = Num(f, "size"), csize = gz ? Num(f, "csize") : size;
+    for (int a = 1; ; a++) try { Install(Get(RAW + (gz ? "gz/" + rel + ".gz" : "files/" + rel), csize), gz, (string)f["sha256"], p, size); return; }
+      catch { if (a >= 3) throw; Thread.Sleep(2000 * a); }  // 3 tries with backoff
+  }
+  static void Install(byte[] d, bool gz, string want, string p, long size) {  // decompress to <p>.dl (at most size bytes), verify, then swap into place
+    Directory.CreateDirectory(Path.GetDirectoryName(p)); var tmp = p + ".dl";
+    try {
+      using (Stream src = gz ? (Stream)new System.IO.Compression.GZipStream(new MemoryStream(d), System.IO.Compression.CompressionMode.Decompress) : new MemoryStream(d))
+      using (var o = File.Create(tmp)) { var b = new byte[65536]; int n; long t = 0;
+        while ((n = src.Read(b, 0, b.Length)) > 0) { t += n; if (size >= 0 && t > size) throw new Exception(Path.GetFileName(p) + " is larger than expected"); o.Write(b, 0, n); } }
+      if (Hash(tmp) != want) throw new Exception("download of " + Path.GetFileName(p) + " was corrupt");
+      if (File.Exists(p) && !File.Exists(p + ".bak")) File.Copy(p, p + ".bak");
+      Swap(tmp, p);
+    } finally { if (File.Exists(tmp)) File.Delete(tmp); }
   }
   string Server() { try { var f = Path.Combine(game, "server.txt"); if (File.Exists(f)) { var t = File.ReadAllText(f).Trim(); if (t != "") return t; } } catch { } return "127.0.0.1"; }
   static bool Reachable(string ip, int port) {
@@ -167,6 +194,7 @@ class L : Form {
   void Go() {
     if (m == null) { Recheck(); return; }
     if (todo.Count > 0) {
+      if (Process.GetProcessesByName("Engine").Length > 0) { Set("FEAR Online is running. Close the game, then press PATCH.", null, true); return; }
       Set("Patching...", null, false);
       new Thread(() => { try { for (int i = 0; i < todo.Count; i++) { progText = todo[i].Key; p1 = 0; Redraw(); todo[i].Value(); p1 = 1; p2 = (i + 1.0) / todo.Count; Redraw(); }
                                 todo.Clear(); progText = "Complete"; Set("Patch complete! HOST a game, or enter an invite code and JOIN.", "HOST", true); if (AutoJoin != null) BeginInvoke((Action)(() => Join(AutoJoin))); else if (AutoHost) { AutoHost = false; BeginInvoke((Action)Go); } }
